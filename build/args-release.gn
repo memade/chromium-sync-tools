@@ -1,7 +1,7 @@
 is_clang = true
 is_debug = false
 ffmpeg_branding = "Chrome"
-is_component_ffmpeg = true
+is_component_ffmpeg = false
 proprietary_codecs = true
 is_chrome_branded = false
 is_component_build = false
