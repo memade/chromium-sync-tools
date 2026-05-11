@@ -1,10 +1,12 @@
 solutions = [
-  {
-    "name": "src",
-    "url": "dummy",
-    "deps_file": "DEPS.toolchain",
-    "managed": False,
-    "custom_deps": {},
-    "custom_vars": {'checkout_pgo_profiles': True},
+  { "name"        : 'src',
+    "url"         : 'https://chromium.googlesource.com/chromium/src.git',
+    "deps_file"   : 'DEPS',
+    "managed"     : False,
+    "custom_deps" : {
+    },
+    "custom_vars": {
+	"checkout_pgo_profiles": True
+	},
   },
 ]
