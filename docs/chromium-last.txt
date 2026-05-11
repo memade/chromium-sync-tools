@@ -1,3 +1,14 @@
 fetch --no-history chromium
 gclient sync
 gclient runhooks
+
+cd ~/Developer/chromium/latest/src
+git fetch origin main
+git checkout -B main origin/main
+
+cd ~/Developer/chromium/latest
+gclient sync -D
+
+cd src
+autoninja -C out/release chrome
+
