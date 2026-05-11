@@ -20,6 +20,13 @@ git clone --depth 500 -b 131.0.6778.267 https://chromium.googlesource.com/chromi
 5) gclient runhooks
 
 
+
+# 恢复遗漏的三方库
+git restore --source=HEAD --worktree -- third_party/crabbyavif
+# 缺少源文件时使用
+cd /home/system/Developer/chromium/148.0.7778.94/src
+git -C third_party/dragonbox/src restore --source=HEAD --worktree -- .
+
 嘿 omkar，
 运行这个 cmd
 cd chromium/src
