@@ -1,0 +1,3 @@
+https://chromium.woolyss.com/download/
+
+https://storage.googleapis.com/chromium-browser-snapshots/index.html?prefix=Win/1561324/

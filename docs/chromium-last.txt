@@ -1,0 +1,3 @@
+fetch --no-history chromium
+gclient sync
+gclient runhooks

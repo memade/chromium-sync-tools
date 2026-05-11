@@ -1,0 +1,44 @@
+https://chromereleases.googleblog.com/
+
+https://chromium.googlesource.com/chromium/src.git 
+https://www.chromium.org/developers/change-logs/
+https://groups.google.com/a/chromium.org/g/chromium-dev
+CHROMIUM API_KEY
+https://stackoverflow.com/questions/21276763/google-api-keys-missing-warning-message-when-using-chromium-portable
+
+https://developer.microsoft.com/zh-cn/windows/downloads/sdk-archive/
+https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/
+
+1) git clone --depth 500 -b 138.0.7204.296 https://chromium.googlesource.com/chromium/src.git src 
+2) gclient config --unmanaged https://chromium.googlesource.com/chromium/src.git
+4) gclient sync
+
+git clone --depth 500 -b 131.0.6778.70 https://chromium.googlesource.com/chromium/src.git src 
+git clone --depth 500 -b 131.0.6778.267 https://chromium.googlesource.com/chromium/src.git src 
+
+4.1) gclient sync --reset --force
+5) gclient runhooks
+
+
+嘿 omkar，
+运行这个 cmd
+cd chromium/src
+git rebase-update
+gclient sync
+
+
+last:
+
+fetch chromium
+gclient sync
+cd src
+fetch --nohooks --no-history chromium
+
+
+======================================================================================================
+Hi,
+
+I had the same issue and I fixed it pointing to a specific version:
+
+after run: gclient config https://github.com/shaka-project/shaka-packager.git --name=src --unmanaged
+then run: gclient sync -r v2.6.1
