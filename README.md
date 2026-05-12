@@ -1,10 +1,13 @@
 # Chromium Source And Toolchain Split
 
-This directory now has only two operational scripts:
+This directory has three operational scripts:
 
 ```text
 separate-source.sh   Export a source-only Chromium tree on the current machine.
 sync-toolchain.py    Sync platform toolchains from a flattened source checkout.
+clean-generated-tracked.py
+                     Stop tracking hook/build metadata and platform payloads
+                     that were accidentally committed in older source imports.
 ```
 
 ## 1. Export Source
@@ -67,10 +70,25 @@ and Vulkan/SPIR-V dependencies. In this flattened company source repository,
 those files must be tracked.
 
 If an earlier import already tracked generated hook/build files, remove them
-from the company repository once after re-exporting, for example with
-`git rm --cached <path>` or by committing the deletions produced by the new
-export. Otherwise later `gclient sync` or local builds can keep showing them as
-modified even though they are not source changes.
+from the company repository once after re-exporting:
+
+```bash
+python3 sync/clean-generated-tracked.py --src ../chromium-company-src
+```
+
+On Windows:
+
+```bat
+py sync\clean-generated-tracked.py --src src
+```
+
+The script runs `git rm --cached` for known generated/toolchain paths while
+leaving local files on disk, and adds matching entries to `.git/info/exclude`.
+Commit the staged deletions once. Pass `--all-toolchains` if an older import
+also tracked larger platform payload directories such as `third_party/node`,
+`third_party/llvm-build`, or depot_tools `.cipd_bin`. Otherwise later
+`gclient sync` or local builds can keep showing generated files as modified
+even though they are not source changes.
 
 ## 2. Sync Toolchain On Each Platform
 
