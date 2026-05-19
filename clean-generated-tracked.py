@@ -8,103 +8,7 @@ from pathlib import Path
 import subprocess
 import sys
 
-
-GENERATED_PATHS = (
-    ".landmines",
-    "build/config/gclient_args.gni",
-    "build/config/siso/.sisoenv",
-    "build/config/siso/.sisorc",
-    "build/config/siso/backend_config/backend.star",
-    "build/util/LASTCHANGE",
-    "build/util/LASTCHANGE.committime",
-    "build/util/LASTCHANGE_commit_position.h",
-    "buildtools/reclient_cfgs/reproxy.cfg",
-    "buildtools/reclient_cfgs/chromium-browser-clang",
-    "buildtools/reclient_cfgs/python",
-    "buildtools/reclient_cfgs/win-cross",
-    "chromeos/tast_control.gni",
-    "gpu/config/gpu_lists_version.h",
-    "gpu/webgpu/DAWN_VERSION",
-    "gpu/webgpu/dawn_commit_hash.h",
-    "skia/ext/skia_commit_hash.h",
-    "testing/location_tags.json",
-    "third_party/depot_tools/.cipd_client_cache",
-)
-
-COMMON_PAYLOAD_PATHS = (
-    "chrome/build/pgo_profiles",
-    "third_party/devtools-frontend/src/third_party/esbuild",
-    "third_party/devtools-frontend/src/third_party/rollup_libs",
-    "third_party/devtools-frontend/src/node_modules/@rollup/rollup-*",
-)
-
-TOOLCHAIN_PAYLOAD_PATHS = (
-    "third_party/depot_tools/.cipd_bin",
-    "third_party/gperf",
-    "third_party/microsoft_dxheaders/src",
-    "third_party/microsoft_webauthn/src",
-    "third_party/openxr/src",
-    "third_party/perl",
-    "build/linux/debian_*-sysroot",
-    "third_party/dawn/build/linux/debian_*-sysroot",
-    "third_party/llvm-build",
-    "third_party/rust-toolchain",
-    "third_party/node/linux",
-    "third_party/node/mac",
-    "third_party/node/mac_arm64",
-    "third_party/node/win",
-    "third_party/node/node_modules",
-    "buildtools/linux64-format",
-    "buildtools/mac-format",
-    "buildtools/mac_arm64-format",
-    "buildtools/win-format",
-)
-
-LOCAL_EXCLUDE_ENTRIES = (
-    "/DEPS.toolchain",
-    "/.landmines",
-    "/build/config/gclient_args.gni",
-    "/build/config/siso/.sisoenv",
-    "/build/config/siso/.sisorc",
-    "/build/config/siso/backend_config/backend.star",
-    "/build/util/LASTCHANGE",
-    "/build/util/LASTCHANGE.committime",
-    "/build/util/LASTCHANGE_commit_position.h",
-    "/buildtools/reclient_cfgs/reproxy.cfg",
-    "/buildtools/reclient_cfgs/chromium-browser-clang/",
-    "/buildtools/reclient_cfgs/python/",
-    "/buildtools/reclient_cfgs/win-cross/",
-    "/chromeos/tast_control.gni",
-    "/gpu/config/gpu_lists_version.h",
-    "/gpu/webgpu/DAWN_VERSION",
-    "/gpu/webgpu/dawn_commit_hash.h",
-    "/skia/ext/skia_commit_hash.h",
-    "/testing/location_tags.json",
-    "/chrome/build/pgo_profiles/",
-    "/third_party/devtools-frontend/src/third_party/esbuild/",
-    "/third_party/devtools-frontend/src/third_party/rollup_libs/",
-    "/third_party/devtools-frontend/src/node_modules/@rollup/rollup-*/",
-    "/third_party/gperf/",
-    "/third_party/microsoft_dxheaders/src/",
-    "/third_party/microsoft_webauthn/src/",
-    "/third_party/openxr/src/",
-    "/third_party/perl/",
-    "/build/linux/debian_*-sysroot/",
-    "/third_party/dawn/build/linux/debian_*-sysroot/",
-    "/third_party/llvm-build/",
-    "/third_party/rust-toolchain/",
-    "/third_party/node/linux/",
-    "/third_party/node/mac/",
-    "/third_party/node/mac_arm64/",
-    "/third_party/node/win/",
-    "/third_party/node/node_modules/",
-    "/buildtools/linux64-format/",
-    "/buildtools/mac-format/",
-    "/buildtools/mac_arm64-format/",
-    "/buildtools/win-format/",
-    "/third_party/depot_tools/.cipd_bin/",
-    "/third_party/depot_tools/.cipd_client_cache/",
-)
+from generated_paths import DEFAULT_CLEAN_PATHS, FULL_CLEAN_PATHS, LOCAL_EXCLUDE_ENTRIES
 
 
 def log(message: str) -> None:
@@ -231,9 +135,9 @@ def main() -> int:
     args = parser.parse_args()
 
     source = find_source_dir(args.src)
-    pathspecs = GENERATED_PATHS + COMMON_PAYLOAD_PATHS
+    pathspecs = DEFAULT_CLEAN_PATHS
     if args.all_toolchains:
-        pathspecs += TOOLCHAIN_PAYLOAD_PATHS
+        pathspecs = FULL_CLEAN_PATHS
 
     paths = tracked_paths(source, pathspecs)
     missing_excludes = missing_local_git_exclude_entries(source, LOCAL_EXCLUDE_ENTRIES)

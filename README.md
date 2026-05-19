@@ -1,6 +1,6 @@
 # Chromium Source And Toolchain Split
 
-This directory has three operational scripts:
+This directory has four operational scripts:
 
 ```text
 separate-source.sh   Export a source-only Chromium tree on the current machine.
@@ -8,6 +8,8 @@ sync-toolchain.py    Sync platform toolchains from a flattened source checkout.
 clean-generated-tracked.py
                      Stop tracking hook/build metadata and platform payloads
                      that were accidentally committed in older source imports.
+safe-git.py          Guarded pull/push wrapper that blocks generated or
+                     platform-specific toolchain files from entering src Git.
 ```
 
 ## 1. Export Source
@@ -89,6 +91,43 @@ also tracked larger platform payload directories such as `third_party/node`,
 `third_party/llvm-build`, or depot_tools `.cipd_bin`. Otherwise later
 `gclient sync` or local builds can keep showing generated files as modified
 even though they are not source changes.
+
+## Daily Safe Pull And Push
+
+After the initial cleanup, use the guarded Git wrapper from every platform
+instead of plain `git pull` or `git push`:
+
+```bash
+python3 sync/safe-git.py pull --src src
+python3 sync/safe-git.py push --src src
+```
+
+On Windows:
+
+```bat
+py sync\safe-git.py pull --src src
+py sync\safe-git.py push --src src
+```
+
+`safe-git.py pull` runs `git fetch`, scans the incoming commits, and refuses to
+pull if the remote would add or modify generated/toolchain paths such as
+`third_party/ninja/ninja`, depot_tools CIPD clients, siso, LUCI tools, ResultDB
+tools, local hook metadata, PGO profiles, or platform payloads.
+
+`safe-git.py push` first updates `.git/info/exclude`, removes protected paths
+from the Git index with `git rm --cached`, and then scans outgoing commits. If
+cleanup staged deletions, commit them once and run the push command again:
+
+```bash
+python3 sync/safe-git.py clean --src src
+git -C src commit -m "Stop tracking generated toolchain files"
+python3 sync/safe-git.py push --src src
+```
+
+The wrapper allows protected path deletions because that is how the flattened
+source repository is cleaned up. It blocks protected path additions or
+modifications, which prevents a macOS, Linux, or Windows workspace from pushing
+its local tool binaries into the shared source repository.
 
 ## 2. Sync Toolchain On Each Platform
 
