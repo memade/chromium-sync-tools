@@ -12,6 +12,9 @@ safe-git.py          Guarded pull/push wrapper that blocks generated or
                      platform-specific toolchain files from entering src Git.
 ```
 
+For the day-to-day Windows, macOS, and Linux workflow, see
+`PLATFORM_WORKFLOW.zh-CN.md`.
+
 ## 1. Export Source
 
 Run this from the current Ubuntu checkout:
