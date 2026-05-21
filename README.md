@@ -5,6 +5,9 @@ This directory has four operational scripts:
 ```text
 separate-source.sh   Export a source-only Chromium tree on the current machine.
 sync-toolchain.py    Sync platform toolchains from a flattened source checkout.
+copy-macos-arm64-widevine.py
+                     Copy local Google Chrome Widevine CDM into src for macOS
+                     arm64 builds.
 clean-generated-tracked.py
                      Stop tracking hook/build metadata and platform payloads
                      that were accidentally committed in older source imports.
@@ -177,6 +180,16 @@ The generated `DEPS.toolchain` also keeps the platform CIPD payloads from the
 flattened DevTools checkout that Chromium builds need, including esbuild and the
 Rollup native package. Those are intentionally excluded from the source export
 and re-synced per platform.
+
+For macOS arm64 builds with `bundle_widevine_cdm = true`, copy Widevine from the
+local Google Chrome install:
+
+```bash
+python3 sync/copy-macos-arm64-widevine.py --src src
+```
+
+This writes `src/third_party/widevine/cdm/mac/arm64/` and keeps that local
+payload ignored by Git.
 
 Some small platform Git dependencies are also preserved because they provide
 Windows-only build inputs that a Linux source export will not contain, such as

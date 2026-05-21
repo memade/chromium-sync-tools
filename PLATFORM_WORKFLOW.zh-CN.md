@@ -96,6 +96,24 @@ broium-workspace/src/DEPS.toolchain
 并同步当前平台需要的 Clang、Rust、GN/Ninja、Node、sysroot、PGO 等工具链
 内容。这些内容是本机环境的一部分，不应该提交到 `src` 仓库。
 
+## macOS arm64 本机 Widevine
+
+如果 macOS arm64 构建启用了 `bundle_widevine_cdm = true`，需要从本机 Google
+Chrome 复制 Widevine CDM：
+
+```bash
+python3 sync/copy-macos-arm64-widevine.py --src src
+```
+
+脚本会从 `/Applications/Google Chrome.app` 当前版本复制到：
+
+```text
+src/third_party/widevine/cdm/mac/arm64/
+```
+
+并把 `/third_party/widevine/cdm/mac/` 加入本地 `.git/info/exclude`。这类文件是
+本机平台 payload，默认不要提交到公司 `src` 仓库。
+
 ## 日常拉取代码
 
 以后更新源码，不要进入 `src` 后直接 `git pull`。先确认 `src` 工作区干净：
