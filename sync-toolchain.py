@@ -30,6 +30,8 @@ NESTED_TOOLCHAIN_DEPS: dict[str, dict[str, set[str]]] = {
     "third_party/devtools-frontend/src": {
         "deps": {
             "third_party/esbuild",
+        },
+        "optional_deps": {
             "third_party/rollup_libs",
         },
         "hooks": {
@@ -246,6 +248,19 @@ def add_nested_toolchain_deps(
                 fail(
                     f"nested dependency {dep_name!r} is missing from {nested_deps_path}"
                 )
+
+            dep_value = nested_deps[dep_name]
+            if is_git_dep(dep_value):
+                fail(f"nested dependency {dep_name!r} is a Git dependency")
+
+            deps[deps_path(SOLUTION_NAME, nested_root, dep_name)] = copy.deepcopy(
+                dep_value
+            )
+            kept += 1
+
+        for dep_name in sorted(config.get("optional_deps", set())):
+            if dep_name not in nested_deps:
+                continue
 
             dep_value = nested_deps[dep_name]
             if is_git_dep(dep_value):
