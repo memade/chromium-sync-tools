@@ -4,7 +4,10 @@
 This script is for a flattened company Chromium source tree where v8, skia,
 angle, dawn, and other DEPS Git dependencies are committed as normal files.
 It generates src/DEPS.toolchain by keeping GCS/CIPD dependencies and hooks, but
-removing Git dependencies and recursive DEPS traversal.
+removing Git dependencies and recursive DEPS traversal. For older Chromium
+branches whose flattened source export may not contain platform-conditional
+Git source dependencies, missing conditional Git deps are kept so gclient can
+sync them locally.
 """
 
 from __future__ import annotations
@@ -209,15 +212,81 @@ def is_git_dep(value: Any) -> bool:
     return False
 
 
-def filter_deps_map(deps: dict[str, Any]) -> tuple[dict[str, Any], int]:
+def dep_checkout_path(source: Path, name: str) -> Path:
+    relative_name = name
+    solution_prefix = f"{SOLUTION_NAME}/"
+    if relative_name.startswith(solution_prefix):
+        relative_name = relative_name[len(solution_prefix) :]
+    return source / Path(relative_name.replace("/", os.sep))
+
+
+def is_local_git_checkout(path: Path) -> bool:
+    return (path / ".git").exists()
+
+
+def host_os_name() -> str:
+    if sys.platform == "darwin":
+        return "mac"
+    if sys.platform.startswith("linux"):
+        return "linux"
+    if os.name == "nt" or sys.platform.startswith(("win32", "cygwin")):
+        return "win"
+    return sys.platform
+
+
+def condition_matches_host_platform(condition: str) -> bool:
+    host_os = host_os_name()
+    tokens = (
+        f"checkout_{host_os}",
+        f'host_os == "{host_os}"',
+        f"host_os == '{host_os}'",
+    )
+    return any(token in condition for token in tokens)
+
+
+def is_host_platform_conditional_git_dep(value: Any) -> bool:
+    if not isinstance(value, dict):
+        return False
+
+    condition = value.get("condition")
+    if not isinstance(condition, str):
+        return False
+
+    return condition_matches_host_platform(condition)
+
+
+def needs_local_git_sync(source: Path, name: str, value: Any) -> bool:
+    if not is_host_platform_conditional_git_dep(value):
+        return False
+
+    checkout_path = dep_checkout_path(source, name)
+    return not checkout_path.exists() or is_local_git_checkout(checkout_path)
+
+
+def local_git_exclude_entry(name: str) -> str:
+    relative_name = name
+    solution_prefix = f"{SOLUTION_NAME}/"
+    if relative_name.startswith(solution_prefix):
+        relative_name = relative_name[len(solution_prefix) :]
+    return f"/{relative_name.rstrip('/')}/"
+
+
+def filter_deps_map(
+    source: Path, deps: dict[str, Any]
+) -> tuple[dict[str, Any], int, tuple[str, ...]]:
     kept: dict[str, Any] = {}
     skipped = 0
+    local_git_source_deps: list[str] = []
     for name, value in deps.items():
         if is_git_dep(value) and name not in TOOLCHAIN_GIT_DEPS:
-            skipped += 1
+            if needs_local_git_sync(source, name, value):
+                kept[name] = value
+                local_git_source_deps.append(name)
+            else:
+                skipped += 1
         else:
             kept[name] = value
-    return kept, skipped
+    return kept, skipped, tuple(local_git_source_deps)
 
 
 def format_assignment(name: str, value: Any) -> str:
@@ -284,9 +353,11 @@ def add_nested_toolchain_deps(
     return hooks, kept
 
 
-def write_toolchain_deps(source: Path) -> tuple[Path, int, int]:
+def write_toolchain_deps(source: Path) -> tuple[Path, int, int, tuple[str, ...]]:
     scope = load_deps(source / "DEPS")
-    filtered_deps, skipped = filter_deps_map(dict(scope.get("deps", {})))
+    filtered_deps, skipped, local_git_source_deps = filter_deps_map(
+        source, dict(scope.get("deps", {}))
+    )
     nested_hooks, nested_kept = add_nested_toolchain_deps(source, filtered_deps)
 
     output: list[str] = [
@@ -322,10 +393,12 @@ def write_toolchain_deps(source: Path) -> tuple[Path, int, int]:
 
     generated = source / GENERATED_DEPS
     generated.write_text("".join(output), encoding="utf-8")
-    return generated, skipped, nested_kept
+    return generated, skipped, nested_kept, local_git_source_deps
 
 
-def ensure_local_git_exclude(source: Path) -> None:
+def ensure_local_git_exclude(
+    source: Path, extra_entries: tuple[str, ...] = ()
+) -> None:
     git_dir_text = git_output(source, ["rev-parse", "--git-dir"])
     if not git_dir_text:
         return
@@ -340,9 +413,8 @@ def ensure_local_git_exclude(source: Path) -> None:
         return
 
     existing = exclude_file.read_text(encoding="utf-8") if exclude_file.exists() else ""
-    missing = [
-        entry for entry in LOCAL_GIT_EXCLUDE_ENTRIES if f"{entry}\n" not in existing
-    ]
+    entries = LOCAL_GIT_EXCLUDE_ENTRIES + extra_entries
+    missing = [entry for entry in entries if f"{entry}\n" not in existing]
     if missing:
         with exclude_file.open("a", encoding="utf-8") as handle:
             if existing and not existing.endswith("\n"):
@@ -466,10 +538,15 @@ def main() -> int:
     if os.name == "nt" and not args.dry_run:
         run(["git", "config", "--global", "core.longpaths", "true"])
 
-    generated_deps, skipped_git_deps, nested_toolchain_deps = write_toolchain_deps(
-        source
+    (
+        generated_deps,
+        skipped_git_deps,
+        nested_toolchain_deps,
+        local_git_source_deps,
+    ) = write_toolchain_deps(source)
+    ensure_local_git_exclude(
+        source, tuple(local_git_exclude_entry(name) for name in local_git_source_deps)
     )
-    ensure_local_git_exclude(source)
 
     custom_vars: dict[str, Any] = {}
     if not args.no_pgo_profiles:
@@ -480,6 +557,11 @@ def main() -> int:
     log(f"Wrote {gclient_path}")
     log(f"Skipped {skipped_git_deps} Git source deps")
     log(f"Kept {nested_toolchain_deps} nested toolchain deps")
+    if local_git_source_deps:
+        log(
+            "Kept "
+            f"{len(local_git_source_deps)} missing/local conditional Git source deps"
+        )
     if custom_vars:
         log(f"Enabled custom vars: {custom_vars}")
 
