@@ -60,6 +60,7 @@ TOOLCHAIN_GIT_CLEANUP_GLOBS = (
 )
 
 PLATFORM_PAYLOAD_CLEANUP_GLOBS = (
+    "buildtools/reclient",
     "third_party/devtools-frontend/src/third_party/esbuild",
     "third_party/devtools-frontend/src/third_party/rollup_libs",
     "third_party/devtools-frontend/src/node_modules/@rollup/rollup-*",
@@ -76,8 +77,7 @@ LOCAL_GIT_EXCLUDE_ENTRIES = (
     "/build/util/LASTCHANGE",
     "/build/util/LASTCHANGE.committime",
     "/build/util/LASTCHANGE_commit_position.h",
-    "/buildtools/reclient/NOTICE",
-    "/buildtools/reclient/scandeps_server.sym",
+    "/buildtools/reclient/",
     "/buildtools/reclient_cfgs/reproxy.cfg",
     "/buildtools/reclient_cfgs/chromium-browser-clang/",
     "/buildtools/reclient_cfgs/python/",
