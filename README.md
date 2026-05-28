@@ -50,6 +50,7 @@ The export keeps source files, including `v8`, `third_party/skia`,
 - `buildtools/*-format`
 - hook/build metadata generated locally by Chromium, including `.landmines`,
   `build/config/gclient_args.gni`, `build/util/LASTCHANGE*`,
+  `buildtools/reclient/NOTICE`, `buildtools/reclient/scandeps_server.sym`,
   `buildtools/reclient_cfgs/reproxy.cfg`, `chromeos/tast_control.gni`,
   `gpu/config/gpu_lists_version.h`, `gpu/webgpu/DAWN_VERSION`,
   `gpu/webgpu/dawn_commit_hash.h`, `skia/ext/skia_commit_hash.h`, and
