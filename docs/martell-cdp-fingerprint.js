@@ -1242,6 +1242,427 @@
         return martellPruneProfile(target);
     }
 
+    function martellBroiumSwitchValue(value) {
+        if (Array.isArray(value)) {
+            return value.map(function(item) {
+                return martellString(item).trim();
+            }).filter(Boolean);
+        }
+        if ("number" === typeof value)
+            return Number.isFinite(value) ? value : null;
+        if ("boolean" === typeof value)
+            return value;
+        value = martellString(value).trim();
+        return value ? value : null;
+    }
+
+    function martellBroiumSwitchArgValue(value) {
+        if (Array.isArray(value))
+            return value.join(",");
+        return martellString(value);
+    }
+
+    function martellAddBroiumSwitch(target, name, value, source) {
+        value = martellBroiumSwitchValue(value);
+        if (null === value || "undefined" === typeof value)
+            return false;
+        if (Array.isArray(value) && !value.length)
+            return false;
+        target.switches[name] = value;
+        target.args.push(true === value ? "--" + name : "--" + name + "=" + martellBroiumSwitchArgValue(value));
+        if (source)
+            target.coverage.push({
+                switch: name,
+                source: source
+            });
+        return true;
+    }
+
+    function martellPositiveIntegerSwitchValue(value) {
+        var number = martellNumber(value, null);
+        return Number.isFinite(number) && number > 0 && Math.round(number) === number ? number : null;
+    }
+
+    function martellVersionSwitchValue(value) {
+        value = martellString(value).trim();
+        return /^\d+(?:\.\d+)*$/.test(value) ? value : null;
+    }
+
+    function martellBroiumShaderPrecisionEnumMap() {
+        return {
+            VERTEX_SHADER: 35633,
+            FRAGMENT_SHADER: 35632,
+            LOW_FLOAT: 36336,
+            MEDIUM_FLOAT: 36337,
+            HIGH_FLOAT: 36338,
+            LOW_INT: 36339,
+            MEDIUM_INT: 36340,
+            HIGH_INT: 36341
+        };
+    }
+
+    function martellBroiumShaderPrecisionFormat(shaderPrecision) {
+        var enumMap = martellBroiumShaderPrecisionEnumMap();
+        var result = {};
+        shaderPrecision = shaderPrecision || {};
+        Object.keys(shaderPrecision).forEach(function(shaderName) {
+            var shaderEnum = enumMap[shaderName];
+            var precisionGroup = shaderPrecision[shaderName] || {};
+            var compiled = {};
+            Object.keys(precisionGroup).forEach(function(precisionName) {
+                var precisionEnum = enumMap[precisionName];
+                var value = precisionGroup[precisionName];
+                if (!shaderEnum || !precisionEnum || !value)
+                    return;
+                compiled[String(precisionEnum)] = martellClonePlain(value);
+            });
+            if (shaderEnum && 0 < Object.keys(compiled).length)
+                result[String(shaderEnum)] = compiled;
+        });
+        return result;
+    }
+
+    function martellBroiumWebglContextConfig(context) {
+        context = context || {};
+        var result = {};
+        var getParameter = {};
+        var parameters = context.parameterEnums || {};
+        Object.keys(parameters).forEach(function(enumValue) {
+            var item = parameters[enumValue];
+            if (!item || !martellIsTypedProfileValue(item.value))
+                return;
+            getParameter[String(enumValue)] = {
+                type: item.type || martellWebglParameterType(item.value, item.name || ""),
+                value: item.value
+            };
+        });
+        if (0 < Object.keys(getParameter).length)
+            result.getParameter = getParameter;
+        if (Array.isArray(context.supportedExtensions))
+            result.extensions = {
+                list: context.supportedExtensions.slice()
+            };
+        if (context.contextAttributes)
+            result.contextAttributes = martellClonePlain(context.contextAttributes);
+        var shaderPrecisionFormat = martellBroiumShaderPrecisionFormat(context.shaderPrecision);
+        if (0 < Object.keys(shaderPrecisionFormat).length)
+            result.shaderPrecisionFormat = shaderPrecisionFormat;
+        return martellPruneProfile(result) || {};
+    }
+
+    function martellAddBroiumGenericArg(target, arg) {
+        arg = martellString(arg).trim();
+        if (!arg)
+            return;
+        target.args.push(arg);
+        target.genericArgs.push(arg);
+    }
+
+    function martellAddBroiumGenericSwitchArg(target, name, value, source) {
+        value = martellBroiumSwitchValue(value);
+        if (null === value || "undefined" === typeof value)
+            return false;
+        if (Array.isArray(value) && !value.length)
+            return false;
+        martellAddBroiumGenericArg(target, "--" + name + "=" + martellBroiumSwitchArgValue(value));
+        if (source)
+            target.coverage.push({
+                arg: name,
+                source: source
+            });
+        return true;
+    }
+
+    function martellBuildBroiumWebglConfig(webglValues, canvasValues) {
+        webglValues = webglValues || {};
+        canvasValues = canvasValues || {};
+        var contexts = {};
+        Object.keys(webglValues.contexts || {}).forEach(function(contextName) {
+            var context = martellBroiumWebglContextConfig(webglValues.contexts[contextName]);
+            if (0 < Object.keys(context).length)
+                contexts[contextName] = context;
+        });
+        var canvasHashes = webglValues.observed && webglValues.observed.canvasHashes || {};
+        var result = {
+            enable: !!webglValues.enabled,
+            profile: webglValues.suggestedProfile || "",
+            dataURL: {
+                enable: true,
+                mode: "png-text-chunk",
+                observed: {
+                    canvas2dDataUrlHash: canvasValues.dataUrlHash,
+                    canvas2dImageDataHash: canvasValues.imageDataHash,
+                    webglCanvasHashes: canvasHashes
+                }
+            },
+            readPixels: {
+                enable: !!webglValues.enabled,
+                mode: "coordinate-stable-lowbit",
+                strength: 1,
+                stride: 23,
+                samples: 1
+            },
+            contextCreation: {
+                allowSoftwareWhenMajorPerformanceCaveat: false
+            },
+            contexts: contexts
+        };
+        return martellPruneProfile(result);
+    }
+
+    function martellBuildBroiumAudioConfig(audioValues) {
+        audioValues = audioValues || {};
+        var context = audioValues.context || {};
+        var offline = audioValues.offline || {};
+        var observed = !!(Object.keys(context).length || Object.keys(offline).length);
+        return martellPruneProfile({
+            enable: observed,
+            mode: "sample-stable-lowbit",
+            scope: "all",
+            analyser: true,
+            stride: 97,
+            strength: 1,
+            protectHeadSamples: 64,
+            protectTailSamples: 512,
+            observed: {
+                context: context,
+                offline: {
+                    hash: offline.hash,
+                    sampleRate: offline.sampleRate,
+                    length: offline.length,
+                    numberOfChannels: offline.numberOfChannels
+                }
+            }
+        });
+    }
+
+    function martellBuildBroiumCanvas2dConfig(canvasValues) {
+        canvasValues = canvasValues || {};
+        return martellPruneProfile({
+            enable: !!canvasValues.supported,
+            mode: "stable-profile",
+            observed: {
+                dataUrlHash: canvasValues.dataUrlHash,
+                imageDataHash: canvasValues.imageDataHash,
+                dataUrlLength: canvasValues.dataUrlLength,
+                textMetrics: canvasValues.textMetrics
+            }
+        });
+    }
+
+    function martellBuildBroiumNativeSurfaces(config) {
+        config = config || {};
+        var graphics = config.graphics || {};
+        var active = ["identity", "navigator", "screen", "locale"];
+        if (config.runtime)
+            active.push("runtime");
+        if (config.fonts)
+            active.push("fonts");
+        if (graphics.webgl)
+            active.push("webgl");
+        if (graphics.canvas2d)
+            active.push("canvas");
+        if (config.audio)
+            active.push("audio");
+        return {
+            active: martellUnique(active),
+            planned: [
+                "media",
+                "network",
+                "storage",
+                "security",
+                "apiSurface",
+                "webgpu"
+            ]
+        };
+    }
+
+    function martellBroiumCapability(surface, status, source, notes) {
+        var result = {
+            surface: surface,
+            status: status,
+            source: source
+        };
+        if (Array.isArray(notes) && notes.length)
+            result.notes = notes.slice();
+        return result;
+    }
+
+    function martellBuildBroiumCapabilityMatrix(chromium, nativeSurfaces) {
+        var config = chromium && chromium.config || {};
+        var graphics = config.graphics || {};
+        var active = nativeSurfaces && nativeSurfaces.active || [];
+        function activeSurface(name) {
+            return -1 !== active.indexOf(name);
+        }
+        return [
+            martellBroiumCapability("identity", activeSurface("identity") ? "native-supported" : "disabled", "config.identity.values"),
+            martellBroiumCapability("navigator", activeSurface("navigator") ? "native-supported" : "disabled", "config.navigator.values"),
+            martellBroiumCapability("screen", activeSurface("screen") ? "native-supported" : "disabled", "config.screen.values"),
+            martellBroiumCapability("locale", activeSurface("locale") ? "native-supported" : "disabled", "config.locale.values"),
+            martellBroiumCapability("runtime", config.runtime ? "partial-native" : "not-observed", "config.runtime.values", [
+                "v8Keys hash-seed config is emitted; API surface gating still needs native work"
+            ]),
+            martellBroiumCapability("fonts", config.fonts ? "partial-native" : "not-observed", "config.fonts.values", [
+                "font profile and explicit family allow-list are emitted"
+            ]),
+            martellBroiumCapability("graphics.webgl", graphics.webgl ? "partial-native" : "not-observed", "config.graphics.webgl.values", [
+                "numeric getParameter, shaderPrecisionFormat, contextAttributes, extensions, readPixels, and dataURL policy are emitted"
+            ]),
+            martellBroiumCapability("graphics.canvas2d", graphics.canvas2d ? "partial-native" : "not-observed", "config.graphics.canvas2d.values", [
+                "observed hashes are preserved; exact 2D text/layout replay remains native follow-up"
+            ]),
+            martellBroiumCapability("audio", config.audio ? "partial-native" : "not-observed", "config.audio.values", [
+                "stable sample shaping config is emitted; exact offline hash replay remains native follow-up"
+            ]),
+            martellBroiumCapability("media", config.media ? "planned" : "not-observed", "config.media.values"),
+            martellBroiumCapability("network", config.network ? "launch-policy" : "not-observed", "config.network.values"),
+            martellBroiumCapability("storage", config.storage ? "planned" : "not-observed", "config.storage.values"),
+            martellBroiumCapability("security", config.security ? "partial-native" : "not-observed", "config.security.values"),
+            martellBroiumCapability("apiSurface", config.apiSurface ? "planned" : "not-observed", "config.apiSurface.values"),
+            martellBroiumCapability("graphics.webgpu", graphics.webgpu ? "planned" : "not-observed", "config.graphics.webgpu.values")
+        ];
+    }
+
+    function martellBuildBroiumFontSwitches(target, fontValues) {
+        fontValues = fontValues || {};
+        var profile = martellString(fontValues.profile).trim();
+        if ("windows" === profile)
+            profile = "windows_en_us";
+        if (/^windows_zh/.test(profile))
+            profile = "windows_zh_cn";
+        if (/^macos/.test(profile))
+            profile = "macos_en_us";
+        if (/^linux/.test(profile))
+            profile = "linux_en_us";
+        martellAddBroiumSwitch(target, "brofp-font-profile", profile, "fonts.profile");
+        var detected = [].concat(fontValues.detected || [], fontValues.maybeDetected || []);
+        martellAddBroiumSwitch(target, "brofp-fonts", martellUnique(detected), "fonts.detected");
+    }
+
+    function martellBuildBroiumWindowArgs(target, screenValues) {
+        screenValues = screenValues || {};
+        var win = screenValues.window || {};
+        var width = martellPositiveIntegerSwitchValue(win.outerWidth || screenValues.availWidth || screenValues.width);
+        var height = martellPositiveIntegerSwitchValue(win.outerHeight || screenValues.availHeight || screenValues.height);
+        if (width && height) {
+            martellAddBroiumGenericSwitchArg(target, "window-size", [width, height], "screen.window.outerWidth,outerHeight");
+            martellAddBroiumGenericSwitchArg(target, "window-position", [
+                martellInteger(win.screenX, 0),
+                martellInteger(win.screenY, 0)
+            ], "screen.window.screenX,screenY");
+            martellAddBroiumGenericArg(target, "--start-maximized");
+        }
+    }
+
+    function martellBuildBroiumLaunchConfig(chromium) {
+        chromium = chromium || {};
+        var config = chromium.config || {};
+        var identity = config.identity && config.identity.values || {};
+        var browser = identity.browser || chromium.browser || {};
+        var userAgentData = identity.userAgentData || {};
+        var navigatorValues = config.navigator && config.navigator.values || {};
+        var localeValues = config.locale && config.locale.values || {};
+        var screenValues = config.screen && config.screen.values || {};
+        var runtimeValues = config.runtime && config.runtime.values || {};
+        var fontValues = config.fonts && config.fonts.values || {};
+        var canvasValues = config.graphics && config.graphics.canvas2d && config.graphics.canvas2d.values || {};
+        var webglValues = config.graphics && config.graphics.webgl && config.graphics.webgl.values || {};
+        var audioValues = config.audio && config.audio.values || {};
+        var networkValues = config.network && config.network.values || {};
+        var nativeSurfaces = martellBuildBroiumNativeSurfaces(config);
+        var target = {
+            switches: {},
+            args: [],
+            genericArgs: [],
+            coverage: []
+        };
+        martellAddBroiumSwitch(target, "brofp-brand", browser.brand, "identity.browser.brand");
+        martellAddBroiumSwitch(target, "brofp-brand-version", martellVersionSwitchValue(browser.version), "identity.browser.version");
+        martellAddBroiumSwitch(target, "brofp-platform", identity.platform, "identity.platform");
+        martellAddBroiumSwitch(target, "brofp-ua-platform", userAgentData.platform || browser.platform, "identity.userAgentData.platform");
+        martellAddBroiumSwitch(target, "brofp-platform-version", martellVersionSwitchValue(userAgentData.platformVersion || browser.platformVersion), "identity.userAgentData.platformVersion");
+        martellAddBroiumSwitch(target, "brofp-architecture", userAgentData.architecture || browser.architecture, "identity.userAgentData.architecture");
+        martellAddBroiumSwitch(target, "brofp-bitness", userAgentData.bitness || browser.bitness, "identity.userAgentData.bitness");
+        if ("boolean" === typeof userAgentData.wow64)
+            martellAddBroiumSwitch(target, "brofp-wow64", userAgentData.wow64 ? 1 : 0, "identity.userAgentData.wow64");
+        martellAddBroiumSwitch(target, "brofp-form-factors", userAgentData.formFactors, "identity.userAgentData.formFactors");
+        martellAddBroiumSwitch(target, "brofp-tz", localeValues.timeZone, "locale.timeZone");
+        martellAddBroiumSwitch(target, "brofp-locale", localeValues.locale || localeValues.language, "locale.locale");
+        martellAddBroiumSwitch(target, "brofp-languages", localeValues.languages, "locale.languages");
+        martellAddBroiumGenericSwitchArg(target, "lang", localeValues.locale || localeValues.language, "locale.locale");
+        var dnt = martellString(navigatorValues.doNotTrack).trim();
+        if ("0" === dnt || "1" === dnt)
+            martellAddBroiumSwitch(target, "brofp-dnt", dnt, "navigator.doNotTrack");
+        martellAddBroiumSwitch(target, "brofp-cpu", martellPositiveIntegerSwitchValue(navigatorValues.hardwareConcurrency), "navigator.hardwareConcurrency");
+        martellAddBroiumSwitch(target, "brofp-mem", martellPositiveIntegerSwitchValue(navigatorValues.deviceMemory), "navigator.deviceMemory");
+        var screenWidth = martellPositiveIntegerSwitchValue(screenValues.width);
+        var screenHeight = martellPositiveIntegerSwitchValue(screenValues.height);
+        var screenScale = martellNumber(screenValues.devicePixelRatio, null);
+        if (screenWidth && screenHeight && Number.isFinite(screenScale) && screenScale > 0)
+            martellAddBroiumSwitch(target, "brofp-screen", [screenWidth, screenHeight, screenScale], "screen.width,height,devicePixelRatio");
+        martellAddBroiumSwitch(target, "brofp-native-mode", true, "broium.default.nativeMode");
+        martellAddBroiumSwitch(target, "brofp-native-surfaces", nativeSurfaces.active, "broium.nativeSurfaces.active");
+        martellAddBroiumSwitch(target, "brofp-webgl-mode", webglValues.enabled ? "native" : null, "graphics.webgl.enabled");
+        martellBuildBroiumFontSwitches(target, fontValues);
+        martellBuildBroiumWindowArgs(target, screenValues);
+        martellAddBroiumGenericArg(target, "--no-first-run");
+        martellAddBroiumGenericArg(target, "--no-default-browser-check");
+        if (networkValues.webrtc && networkValues.webrtc.recommendedIpHandlingPolicy)
+            martellAddBroiumGenericArg(target, "--webrtc-ip-handling-policy=" + networkValues.webrtc.recommendedIpHandlingPolicy);
+        target.coverage.push({
+            config: "v8Keys",
+            source: "runtime.v8"
+        });
+        if (config.graphics && config.graphics.webgl)
+            target.coverage.push({
+                config: "webgl",
+                source: "graphics.webgl.values"
+            });
+        if (config.graphics && config.graphics.canvas2d)
+            target.coverage.push({
+                config: "canvas2d",
+                source: "graphics.canvas2d.values"
+            });
+        if (config.audio)
+            target.coverage.push({
+                config: "audio",
+                source: "audio.values"
+            });
+        var cfg = {
+            identify: chromium.browser && chromium.browser.profileHash || "",
+            switches: target.switches,
+            v8Keys: {
+                enable: true,
+                mode: "hash-seed",
+                seedMaterialHash: runtimeValues.v8 && runtimeValues.v8.seedMaterialHash || chromium.browser && chromium.browser.profileHash || ""
+            },
+            nativeSurfaces: nativeSurfaces,
+            webgl: martellBuildBroiumWebglConfig(webglValues, canvasValues),
+            canvas2d: martellBuildBroiumCanvas2dConfig(canvasValues),
+            audio: martellBuildBroiumAudioConfig(audioValues),
+            capabilities: martellBuildBroiumCapabilityMatrix(chromium, nativeSurfaces),
+            args: target.genericArgs
+        };
+        return martellPruneProfile({
+            schema: "broium.launch-config.v1",
+            browser: chromium.browser,
+            warnings: chromium.warnings || [],
+            switches: target.switches,
+            args: target.args,
+            cfg: cfg,
+            nativeSurfaces: nativeSurfaces,
+            capabilities: cfg.capabilities,
+            coverage: target.coverage,
+            implementation: martellImplementationPlan("partial", "p0", [
+                "compiled native-supported identity, UA brand/version, platform, locale/languages/Accept-Language, screen, CPU, memory, DNT, fonts, V8 hash seed, WebGL getParameter/extension/readback/dataURL config, canvas observations, and audio stable-shaping config"
+            ], [
+                "compile remaining UA OS-token cross-platform variants into native code",
+                "add exact canvas 2D text/layout replay, exact offline audio hash replay, media/plugin/speech voice inventory, WebRTC candidate profile, storage quota, permissions, WebAuthn, WebGPU, and API-surface gates as native hooks land"
+            ])
+        });
+    }
+
     function martellBuildRuntimeChromiumConfig(chromium) {
         chromium = chromium || {};
         var config = chromium.config || {};
@@ -2860,6 +3281,7 @@
         try {
             result.profile = martellBuildBrowserProfile(result, options);
             result.chromium = martellBuildChromiumProfile(result.profile, options);
+            result.broium = martellBuildBroiumLaunchConfig(result.chromium);
             result.training = martellBuildTrainingProfile(result.profile, result.chromium);
             result.trainingDataset = martellBuildTrainingDataset(result.training);
         } catch (error) {
@@ -2882,10 +3304,12 @@
         }
         if (!options.enableAsyncProfile) {
             result.chromium = martellApplyChromiumWarnings(martellBuildChromiumProfile(profile, options), profile);
+            result.broium = martellBuildBroiumLaunchConfig(result.chromium);
             result.training = martellBuildTrainingProfile(profile, result.chromium);
             result.trainingDataset = martellBuildTrainingDataset(result.training);
             result.profile = martellPruneProfile(profile);
             result.chromium = martellPruneProfile(result.chromium);
+            result.broium = martellPruneProfile(result.broium);
             result.training = martellPruneProfile(result.training);
             result.trainingDataset = martellPruneProfile(result.trainingDataset);
             return Promise.resolve(result);
@@ -2912,10 +3336,12 @@
             profile.collector.asyncProfile.completed = completed;
             profile.collector.asyncProfile.durationMs = Math.round(martellNowMs() - started);
             result.chromium = martellApplyChromiumWarnings(martellBuildChromiumProfile(profile, options), profile);
+            result.broium = martellBuildBroiumLaunchConfig(result.chromium);
             result.training = martellBuildTrainingProfile(profile, result.chromium);
             result.trainingDataset = martellBuildTrainingDataset(result.training);
             result.profile = martellPruneProfile(profile);
             result.chromium = martellPruneProfile(result.chromium);
+            result.broium = martellPruneProfile(result.broium);
             result.training = martellPruneProfile(result.training);
             result.trainingDataset = martellPruneProfile(result.trainingDataset);
             return result;
@@ -8349,9 +8775,35 @@
         });
     }
 
+    function martellCompileFingerprintResult(result, options) {
+        result = martellClonePlain(result);
+        options = martellNormalizeOptions(options);
+        if (!result || "object" !== typeof result)
+            return Promise.resolve(result);
+        try {
+            if (!result.profile && Array.isArray(result.values))
+                result.profile = martellBuildBrowserProfile(result, options);
+            if (!result.chromium && result.profile)
+                result.chromium = martellBuildChromiumProfile(result.profile, options);
+            if (result.chromium)
+                result.broium = martellBuildBroiumLaunchConfig(result.chromium);
+            if (result.profile && result.chromium) {
+                result.training = martellBuildTrainingProfile(result.profile, result.chromium);
+                result.trainingDataset = martellBuildTrainingDataset(result.training);
+            }
+        } catch (error) {
+            result.profileError = error && (error.message || error.toString()) || "profile-compile-error";
+        }
+        return Promise.resolve(martellPruneProfile(result));
+    }
+
     const api = Object.freeze({
         endpoints: MARTELL_FINGERPRINT_ENDPOINTS,
-        collect: collectMartellFingerprint
+        collect: collectMartellFingerprint,
+        compile: martellCompileFingerprintResult,
+        buildBroiumLaunchConfig: function(chromium) {
+            return martellBuildBroiumLaunchConfig(chromium);
+        }
     });
 
     global.MartellFingerprint = api;
