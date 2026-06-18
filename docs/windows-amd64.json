@@ -1,7 +1,7 @@
 {
     "error": 0,
-    "payload": "!253;;;;;;;;;;;;!6;webgl2;function WebGL2RenderingContext() { [native code] };4;;2;;!0;!2;;;!4;1781667398737;-2;8999.382;15;!13;1781667398.765;unknown;1781667398.819;1781667398.822;;1781667398.911;Other;;1781667398.737;1781667398.737;;;;-2;Infinity;0;TypeError;0;-1;!2;06a3381100d26b8db67e60ecf68b5bdc;b80180b9486cf917fd655fd5bc64be5d;!9;767610154;138366985;-37541694;1304817168;892902886;1189721904;1572607885;-2030102919;-1146346734;!8;2;2;2;8295;8295;8295;18;6;;1970/1/1 上午8:00:00;!13;8275,169;8275,169;8275,169;8275,169;8275,169;8275,169;8275,169;8275,169;8275,169;8275,169;8275,169;8275,169;8275,169;6a36cd586af9af49b504ffe67c4af8a5;!13;96;50.8;28.5;1920;1080;3;3;1;3;2;5;1;2;!2;!2;application/pdf;Portable Document Format;!2;text/pdf;Portable Document Format;1;!2;1;;-1;!23;chrome://new-tab-page/;;862;862;navigate;1162;;6.400000000372529;6.400000000372529;6.400000000372529;6.400000000372529;;6.400000000372529;27.5;27.5;6.400000000372529;text/html;navigation;;;;;navigate;!5;!3;PDF Viewer;#22;#5;!3;Chrome PDF Viewer;#22;#5;!3;Chromium PDF Viewer;#22;#5;!3;Microsoft Edge PDF Viewer;#22;#5;!3;WebKit built-in PDF;#22;#5;1;!8;!2;window.SecurityPolicyViolationEvent;function SecurityPolicyViolationEvent() { [native code] };!2;window.SVGFESpecularLightingElement;function SVGFESpecularLightingElement() { [native code] };!2;window.ReadableByteStreamController;function ReadableByteStreamController() { [native code] };!2;window.PerformanceObserverEntryList;function PerformanceObserverEntryList() { [native code] };!2;window.FileSystemWritableFileStream;function FileSystemWritableFileStream() { [native code] };!2;window.IntegrityViolationReportBody;function IntegrityViolationReportBody() { [native code] };!2;window.webkitSpeechRecognitionError;function SpeechRecognitionErrorEvent() { [native code] };!2;window.webkitSpeechRecognitionEvent;function SpeechRecognitionEvent() { [native code] };0;;#17;[object IDBFactory];#3;;function () { [native code] };chrome://new-tab-page/;0;visible;0;1;1;1;1;1;1;[object WebAssembly];;#29;;1;1;0;chrome://new-tab-page/;0;0;0;0;;;;;939;953;0;0;1920;1040;939;953;0;#33;1;#26;4395630592;landscape-primary;;;0;0;1920;1080;1920;1040;32;32;;;1;Mozilla/5.0 (Windows NT 10.0\\; Win64\\; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36;5.0 (Windows NT 10.0\\; Win64\\; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36;Mozilla;;Gecko;20030107;Google Inc.;;;Win32;;;28;0;;zh-TW;zh-TW,zh,en-US,en;;;;1;32;;;1;;;0;0;1;;;;;;;;;1781667406695;-480;;4g;;1.65;200;0;;;;1781667398737;0;0;1781667398744;1781667398744;1781667398744;1781667398744;1781667398744;0;1781667398744;1781667398765;1781667398765;undefined;undefined;number;[object Window];#19;#19;#39;function eval() { [native code] };#47;#44;function open() { [native code] };;function close() { [native code] };;0;function log() { [native code] };#1;#1;#1;;;function IntersectionObserver() { [native code] };#36;1;string;[object GPU];#38;;;;#6;;#6;#28;Asia/Shanghai;zh-TW;1;;;;;新分頁;;1;0;;#25;1;1;!5;0.6599555694183141;0.7413752996514944;0.3868973507838793;0.9371550304171958;0.595429787692665;!9;;function toString() { [native code] };toString;function toString() { [native code] };function toString() { [native code] };function getOwnPropertyDescriptors() { [native code] };function getPrototypeOf() { [native code] };c is not a constructor;TypeError;0;!3;;Windows;!3;!2;Google Chrome;149;!2;Chromium;149;!2;Not)A\\;Brand;24;8zI0LvxFOgeSgjo0a2osoKisT0a07oes;!6;0;0;939;953;0;0;!8;function getParameter() { [native code] };WebGL 2.0 (OpenGL ES 3.0 Chromium);#20;WebKit;WebKit WebGL;ANGLE (Intel, Intel(R) UHD Graphics 770 (0x0000A780) Direct3D11 vs_5_0 ps_5_0, D3D11);Google Inc. (Intel);34;!3;ae8b6d4f;953237eb41d70fcc8d010c53ab943662;510f85225149d7d71202af5b8b7ca6fe;!2;f1db0a06a624adb62b0774ad9e67cc41;91eed477ca8ee447d7cac73a1fbad80f;!2;AddSearchProvider;IsSearchProviderInstalled;!4;0.01;;48000;running;-1;!4;100;1;0;Infinity;1;!2;1,2,3,4,5,6,7,16,36,45,47,49,50,53,56,80;1;!2;1,2,3,36,49,53,56,80;1;!3;0,1,2,3,4,5,6,9,10,12,80,82,84,86,94,96;7,8,11,91,92,101,102;1;!3;0,1,2,3,4,5,6,80,82,84,86,94,96;9,10,92,101,102;1;-3;!3;-3;-3;-3;0;-1;-1;!5;-3;;;;!0;!5;-3;;;;!0;!5;-3;;;;!0;!5;-3;;;;!0;d879937400cbe67e33edeeef8363d597;;-3;!3;;;;!4;;;;16;-1;!2;!22;!2;conditionalCreate;true;!2;conditionalGet;true;!2;extension:appid;true;!2;extension:appidExclude;true;!2;extension:credBlob;true;!2;extension:credProps;true;!2;extension:credentialProtectionPolicy;true;!2;extension:enforceCredentialProtectionPolicy;true;!2;extension:getCredBlob;true;!2;extension:hmacCreateSecret;true;!2;extension:largeBlob;true;!2;extension:minPinLength;true;!2;extension:payment;true;!2;extension:prf;true;!2;hybridTransport;true;!2;immediateGet;true;!2;passkeyPlatformAuthenticator;true;!2;relatedOrigins;true;!2;signalAllAcceptedCredentials;true;!2;signalCurrentUserDetails;true;!2;signalUnknownCredential;true;!2;userVerifyingPlatformAuthenticator;;1129;!10;7965;8987.9;9089.9;9106.9;9123.9;9140.9;9157.9;9174.9;9191.9;9208.9;!22;!3;de-DE;Google Deutsch;Google Deutsch;!3;en-US;Google US English;Google US English;!3;en-GB;Google UK English Female;Google UK English Female;!3;en-GB;Google UK English Male;Google UK English Male;!3;es-ES;Google español;Google español;!3;es-US;Google español de Estados Unidos;Google español de Estados Unidos;!3;fr-FR;Google français;Google français;!3;hi-IN;Google हिन्दी;Google हिन्दी;!3;id-ID;Google Bahasa Indonesia;Google Bahasa Indonesia;!3;it-IT;Google italiano;Google italiano;!3;ja-JP;Google 日本語;Google 日本語;!3;ko-KR;Google 한국의;Google 한국의;!3;nl-NL;Google Nederlands;Google Nederlands;!3;pl-PL;Google polski;Google polski;!3;pt-BR;Google português do Brasil;Google português do Brasil;!3;ru-RU;Google русский;Google русский;!3;zh-CN;Google 普通话（中国大陆）;Google 普通话（中国大陆）;!3;zh-HK;Google 粤語（香港）;Google 粤語（香港）;!3;zh-TW;Google 國語（臺灣）;Google 國語（臺灣）;!3;zh-CN;Microsoft Huihui - Chinese (Simplified, PRC);Microsoft Huihui - Chinese (Simplified, PRC);!3;zh-CN;Microsoft Kangkang - Chinese (Simplified, PRC);Microsoft Kangkang - Chinese (Simplified, PRC);!3;zh-CN;Microsoft Yaoyao - Chinese (Simplified, PRC);Microsoft Yaoyao - Chinese (Simplified, PRC);!2;10737418240;;-1;!10;x86;64;!3;!2;Google Chrome;149;!2;Chromium;149;!2;Not)A\\;Brand;24;!3;!2;Google Chrome;149.0.7827.114;!2;Chromium;149.0.7827.114;!2;Not)A\\;Brand;24.0.0.0;0;;Windows;10.0.0;0;!1;Desktop;!1;candidate:3122141894 1 udp 2113937151 e334ab47-b6cc-4aaa-8b0f-bd5a05950a98.local 64900 typ host generation 0 ufrag VD7u network-cost 999;!1;candidate:2784216207 1 udp 2113937151 e334ab47-b6cc-4aaa-8b0f-bd5a05950a98.local 64920 typ host generation 0 ufrag ABua network-cost 999;1255.300000000745;!0;!244;qH:scheduler;hdr 0.30000000074505806;ptQs-73: 7958.0999999996275;ptQe-72: 7958.0999999996275;ptQplt-0.5;ptQs-72: 7958.5999999996275;ptQe-71: 7958.5999999996275;ptQplt-0;ptQs-71: 7958.5999999996275;ai 0 18;ptQe-70: 7976.199999999255;ptQplt-0.09999999962747097;ptQs-70: 7976.299999998882;ptQe-69: 7976.4000000003725;ptQplt-0;ptQs-69: 7976.4000000003725;ptQe-68: 7976.5;ptQplt-0;ptQs-68: 7976.5;ptQe-67: 7976.5999999996275;ptQplt-0;ptQs-67: 7976.5999999996275;ptQe-66: 7976.699999999255;ptQplt-0.40000000037252903;ptQs-66: 7977.0999999996275;ptQe-65: 7977.0999999996275;ptQplt-0.40000000037252903;ptQs-65: 7977.5;ptQe-64: 7977.5999999996275;ptQplt-0;ptQs-64: 7977.5999999996275;ptQe-63: 7977.699999999255;ptQplt-0;ptQs-63: 7977.699999999255;ptQe-62: 7977.699999999255;ptQplt-0.09999999962747097;ptQs-62: 7977.799999998882;ptQe-61: 7977.799999998882;ptQplt-0;ptQs-61: 7977.799999998882;ptQe-60: 7977.799999998882;ptQplt-0;ptQs-60: 7977.799999998882;ptQe-59: 7977.799999998882;ptQplt-0.10000000149011612;ptQs-59: 7977.9000000003725;ptQe-58: 7977.9000000003725;ptQplt-0;ptQs-58: 7977.9000000003725;ptQe-57: 7977.9000000003725;ptQplt-0;ptQs-57: 7977.9000000003725;ptQe-56: 7977.9000000003725;ptQplt-0;ptQs-56: 7977.9000000003725;ptQe-55: 7977.9000000003725;ptQplt-0.09999999962747097;ptQs-55: 7978;ptQe-54: 7978;ptQplt-0;ptQs-54: 7978;ptQe-53: 7978;ptQplt-0;ptQs-53: 7978;ptQe-52: 7978.0999999996275;ptQplt-0;ptQs-52: 7978.0999999996275;ptQe-51: 7978.0999999996275;ptQplt-0;ptQs-51: 7978.0999999996275;ptQe-50: 7978.0999999996275;ptQplt-0.09999999962747097;ptQs-50: 7978.199999999255;ptQe-49: 7978.199999999255;ptQplt-0;ptQs-49: 7978.199999999255;ptQe-48: 7978.199999999255;ptQplt-0;ptQs-48: 7978.199999999255;ptQe-47: 7978.299999998882;ptQplt-0;ptQs-47: 7978.299999998882;ptQe-46: 7978.299999998882;ptQplt-0;ptQs-46: 7978.299999998882;aii 25 0;ptQe-45: 7978.4000000003725;ptQplt-0;ptQs-45: 7978.4000000003725;ptQe-44: 7978.4000000003725;ptQplt-0;ptQs-44: 7978.4000000003725;ptQe-43: 7978.4000000003725;ptQplt-0;ptQs-43: 7978.4000000003725;ptQe-42: 7978.5;ptQplt-0;ptQs-42: 7978.5;ai 29 1013;ptQe-41: 8991.099999999627;ptQplt-0.40000000037252903;ptQs-41: 8991.5;ai 30 1;ptQe-40: 8992.199999999255;ptQplt-0;ptQs-40: 8992.199999999255;canvas 0;context 4;webgl 6;ptQe-39: 8998.400000000373;ptQplt-0;ptQs-39: 8998.400000000373;ptQe-38: 8998.5;ptQplt-0;ptQs-38: 8998.5;ptQe-37: 8998.5;ptQplt-0;ptQs-37: 8998.5;ptQe-36: 8998.599999999627;ptQplt-0;ptQs-36: 8998.599999999627;ptQe-35: 8998.900000000373;ptQplt-0;ptQs-35: 8998.900000000373;ptQe-34: 8998.900000000373;ptQplt-0;ptQs-34: 8998.900000000373;ptQe-33: 8999;ptQplt-0;ptQs-33: 8999;ptQe-32: 8999.099999999627;ptQplt-0;ptQs-32: 8999.099999999627;ptQe-31: 8999.099999999627;ptQplt-0;ptQs-31: 8999.099999999627;ptQe-30: 8999.299999998882;ptQplt-0;ptQs-30: 8999.299999998882;ptQe-29: 8999.299999998882;ptQplt-0;ptQs-29: 8999.299999998882;s 10 2;ptQe-28: 9001.199999999255;ptQplt-0;ptQs-28: 9001.199999999255;s 11 23;ptQe-27: 9024.299999998882;ptQplt-0.10000000149011612;ptQs-27: 9024.400000000373;s 12 18;ptQe-26: 9042.5;ptQplt-0;ptQs-26: 9042.5;ptQe-25: 9042.599999999627;ptQplt-0;ptQs-25: 9042.599999999627;s 14 6;ptQe-24: 9048.299999998882;ptQplt-0;ptQs-24: 9048.400000000373;s 15 7;ptQe-23: 9055.299999998882;ptQplt-0.2000000011175871;ptQs-23: 9055.5;ptQe-22: 9055.599999999627;ptQplt-0;ptQs-22: 9055.599999999627;ptQe-21: 9055.900000000373;ptQplt-0;ptQs-21: 9055.900000000373;ptQe-20: 9056.099999999627;ptQplt-0;ptQs-20: 9056.099999999627;s 19 1;ptQe-19: 9056.599999999627;ptQplt-0;ptQs-19: 9056.599999999627;ptQe-18: 9056.599999999627;ptQplt-0;ptQs-18: 9056.599999999627;ptQe-17: 9056.699999999255;ptQplt-0;ptQs-17: 9056.699999999255;ptQe-16: 9056.699999999255;ptQplt-0;ptQs-16: 9056.699999999255;ptQe-15: 9056.799999998882;ptQplt-0;ptQs-15: 9056.799999998882;ptQe-14: 9056.799999998882;ptQplt-0;ptQs-14: 9056.799999998882;s 25 6;ptQe-13: 9063.199999999255;ptQplt-0.09999999962747097;ptQs-13: 9063.299999998882;ptQe-12: 9063.299999998882;ptQplt-0;ptQs-12: 9063.299999998882;s 27 1;ptQe-11: 9064.199999999255;ptQplt-0;ptQs-11: 9064.199999999255;ptQe-10: 9064.199999999255;ptQplt-0;ptQs-10: 9064.199999999255;ptQe-9: 9064.299999998882;ptQplt-0;ptQs-9: 9064.299999998882;ptQe-8: 9064.299999998882;ptQplt-0;ptQs-8: 9064.299999998882;ptQe-7: 9064.299999998882;ptQplt-0;ptQs-7: 9064.299999998882;s 32 7;ptQe-6: 9071.699999999255;ptQplt-0.09999999962747097;ptQs-6: 9071.799999998882;ptQe-5: 9071.900000000373;ptQplt-0;ptQs-5: 9071.900000000373;s 34 6;ptQe-4: 9077.400000000373;ptQplt-0;ptQs-4: 9077.400000000373;s 35 22;ptQe-3: 9099.400000000373;ptQplt-0.19999999925494194;ptQs-3: 9099.599999999627;s 36 6;ptQe-2: 9105.5;ptQplt-0.09999999962747097;ptQs-2: 9105.599999999627;ptQe-1: 9105.699999999255;ptQplt-0;ptQs-1: 9105.699999999255;ptQe-0: 9105.699999999255;aii 17 0;aii 25 0;aii 25 0.09999999962747097;aii 25 0;aii 25 0.09999999962747097;!0;",
-    "features": "[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",[\"webgl2\",null,4,0,2,\"\"],[],[0,0],[1781667398737,-2,8999.382,15],[1781667398.765,\"unknown\",1781667398.819,1781667398.822,0,1781667398.911,\"Other\",\"\",1781667398.737,1781667398.737,false,false,false],\"-2\",\"Infinity\",\"0\",\"TypeError\",\"0\",\"-1\",[\"06a3381100d26b8db67e60ecf68b5bdc\",\"b80180b9486cf917fd655fd5bc64be5d\"],[767610154,138366985,-37541694,1304817168,892902886,1189721904,1572607885,-2030102919,-1146346734],[2,2,2,8295,8295,8295,18,6],\"\",\"1970/1/1 上午8:00:00\",[\"8275,169\",\"8275,169\",\"8275,169\",\"8275,169\",\"8275,169\",\"8275,169\",\"8275,169\",\"8275,169\",\"8275,169\",\"8275,169\",\"8275,169\",\"8275,169\",\"8275,169\"],\"6a36cd586af9af49b504ffe67c4af8a5\",[96,50.8,28.5,1920,1080,3,3,1,3,2,5,1,2],[[\"application/pdf\",\"Portable Document Format\"],[\"text/pdf\",\"Portable Document Format\"]],\"1\",[1,0],\"-1\",[\"chrome://new-tab-page/\",\"\",862,862,\"navigate\",1162,\"\",6.400000000372529,6.400000000372529,6.400000000372529,6.400000000372529,\"\",6.400000000372529,27.5,27.5,6.400000000372529,\"text/html\",\"navigation\",\"\",\"\",\"\",\"\",\"navigate\"],[[\"PDF Viewer\",\"#22\",\"#5\"],[\"Chrome PDF Viewer\",\"#22\",\"#5\"],[\"Chromium PDF Viewer\",\"#22\",\"#5\"],[\"Microsoft Edge PDF Viewer\",\"#22\",\"#5\"],[\"WebKit built-in PDF\",\"#22\",\"#5\"]],\"1\",[[\"window.SecurityPolicyViolationEvent\",\"function SecurityPolicyViolationEvent() { [native code] }\"],[\"window.SVGFESpecularLightingElement\",\"function SVGFESpecularLightingElement() { [native code] }\"],[\"window.ReadableByteStreamController\",\"function ReadableByteStreamController() { [native code] }\"],[\"window.PerformanceObserverEntryList\",\"function PerformanceObserverEntryList() { [native code] }\"],[\"window.FileSystemWritableFileStream\",\"function FileSystemWritableFileStream() { [native code] }\"],[\"window.IntegrityViolationReportBody\",\"function IntegrityViolationReportBody() { [native code] }\"],[\"window.webkitSpeechRecognitionError\",\"function SpeechRecognitionErrorEvent() { [native code] }\"],[\"window.webkitSpeechRecognitionEvent\",\"function SpeechRecognitionEvent() { [native code] }\"]],\"0\",\"\",\"#17\",\"[object IDBFactory]\",\"#3\",\"\",\"function () { [native code] }\",\"chrome://new-tab-page/\",\"0\",\"visible\",\"0\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"[object WebAssembly]\",\"\",\"#29\",\"\",\"1\",\"1\",\"0\",\"chrome://new-tab-page/\",\"0\",\"0\",\"0\",\"0\",\"\",\"\",\"\",\"\",\"939\",\"953\",\"0\",\"0\",\"1920\",\"1040\",\"939\",\"953\",\"0\",\"#33\",\"1\",\"#26\",\"4395630592\",\"landscape-primary\",\"\",\"\",\"0\",\"0\",\"1920\",\"1080\",\"1920\",\"1040\",\"32\",\"32\",\"\",\"\",\"1\",\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\",\"5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\",\"Mozilla\",\"\",\"Gecko\",\"20030107\",\"Google Inc.\",\"\",\"\",\"Win32\",\"\",\"\",\"28\",\"0\",\"\",\"zh-TW\",\"zh-TW,zh,en-US,en\",\"\",\"\",\"\",\"1\",\"32\",\"\",\"\",\"1\",\"\",\"\",\"0\",\"0\",\"1\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"1781667406695\",\"-480\",\"\",\"4g\",\"\",\"1.65\",\"200\",\"0\",\"\",\"\",\"\",\"1781667398737\",\"0\",\"0\",\"1781667398744\",\"1781667398744\",\"1781667398744\",\"1781667398744\",\"1781667398744\",\"0\",\"1781667398744\",\"1781667398765\",\"1781667398765\",\"undefined\",\"undefined\",\"number\",\"[object Window]\",\"#19\",\"#19\",\"#39\",\"function eval() { [native code] }\",\"#47\",\"#44\",\"function open() { [native code] }\",\"\",\"function close() { [native code] }\",\"\",\"0\",\"function log() { [native code] }\",\"#1\",\"#1\",\"#1\",\"\",\"\",\"function IntersectionObserver() { [native code] }\",\"#36\",\"1\",\"string\",\"[object GPU]\",\"#38\",\"\",\"\",\"\",\"#6\",\"\",\"#6\",\"#28\",\"Asia/Shanghai\",\"zh-TW\",\"1\",\"\",\"\",\"\",\"\",\"新分頁\",\"\",\"1\",\"0\",\"\",\"#25\",\"1\",\"1\",[0.6599555694183141,0.7413752996514944,0.3868973507838793,0.9371550304171958,0.595429787692665],[0,\"function toString() { [native code] }\",\"toString\",\"function toString() { [native code] }\",\"function toString() { [native code] }\",\"function getOwnPropertyDescriptors() { [native code] }\",\"function getPrototypeOf() { [native code] }\",\"c is not a constructor\",\"TypeError\"],\"0\",[0,\"Windows\",[[\"Google Chrome\",\"149\"],[\"Chromium\",\"149\"],[\"Not)A;Brand\",\"24\"]]],\"8zI0LvxFOgeSgjo0a2osoKisT0a07oes\",[\"0\",\"0\",\"939\",\"953\",\"0\",\"0\"],[null,\"WebGL 2.0 (OpenGL ES 3.0 Chromium)\",\"#20\",\"WebKit\",\"WebKit WebGL\",\"ANGLE (Intel, Intel(R) UHD Graphics 770 (0x0000A780) Direct3D11 vs_5_0 ps_5_0, D3D11)\",\"Google Inc. (Intel)\",34],[\"ae8b6d4f\",\"953237eb41d70fcc8d010c53ab943662\",\"510f85225149d7d71202af5b8b7ca6fe\"],[\"f1db0a06a624adb62b0774ad9e67cc41\",\"91eed477ca8ee447d7cac73a1fbad80f\"],[\"AddSearchProvider\",\"IsSearchProviderInstalled\"],[0.01,0,48000,\"running\"],\"-1\",[\"100\",\"1\",\"0\",\"Infinity\"],\"1\",[\"1,2,3,4,5,6,7,16,36,45,47,49,50,53,56,80\",\"1\"],[\"1,2,3,36,49,53,56,80\",\"1\"],[\"0,1,2,3,4,5,6,9,10,12,80,82,84,86,94,96\",\"7,8,11,91,92,101,102\",\"1\"],[\"0,1,2,3,4,5,6,80,82,84,86,94,96\",\"9,10,92,101,102\",\"1\"],\"-3\",[-3,-3,-3],\"0\",\"-1\",\"-1\",[-3,0,0,\"\",[]],[-3,0,0,\"\",[]],[-3,0,0,\"\",[]],[-3,0,0,\"\",[]],\"d879937400cbe67e33edeeef8363d597\",\"\",\"-3\",[null,null,null],[null,null,null,16],\"-1\",[[[\"conditionalCreate\",true],[\"conditionalGet\",true],[\"extension:appid\",true],[\"extension:appidExclude\",true],[\"extension:credBlob\",true],[\"extension:credProps\",true],[\"extension:credentialProtectionPolicy\",true],[\"extension:enforceCredentialProtectionPolicy\",true],[\"extension:getCredBlob\",true],[\"extension:hmacCreateSecret\",true],[\"extension:largeBlob\",true],[\"extension:minPinLength\",true],[\"extension:payment\",true],[\"extension:prf\",true],[\"hybridTransport\",true],[\"immediateGet\",true],[\"passkeyPlatformAuthenticator\",true],[\"relatedOrigins\",true],[\"signalAllAcceptedCredentials\",true],[\"signalCurrentUserDetails\",true],[\"signalUnknownCredential\",true],[\"userVerifyingPlatformAuthenticator\",false]],1129],[7965,8987.9,9089.9,9106.9,9123.9,9140.9,9157.9,9174.9,9191.9,9208.9],[[\"de-DE\",\"Google Deutsch\",\"Google Deutsch\"],[\"en-US\",\"Google US English\",\"Google US English\"],[\"en-GB\",\"Google UK English Female\",\"Google UK English Female\"],[\"en-GB\",\"Google UK English Male\",\"Google UK English Male\"],[\"es-ES\",\"Google español\",\"Google español\"],[\"es-US\",\"Google español de Estados Unidos\",\"Google español de Estados Unidos\"],[\"fr-FR\",\"Google français\",\"Google français\"],[\"hi-IN\",\"Google हिन्दी\",\"Google हिन्दी\"],[\"id-ID\",\"Google Bahasa Indonesia\",\"Google Bahasa Indonesia\"],[\"it-IT\",\"Google italiano\",\"Google italiano\"],[\"ja-JP\",\"Google 日本語\",\"Google 日本語\"],[\"ko-KR\",\"Google 한국의\",\"Google 한국의\"],[\"nl-NL\",\"Google Nederlands\",\"Google Nederlands\"],[\"pl-PL\",\"Google polski\",\"Google polski\"],[\"pt-BR\",\"Google português do Brasil\",\"Google português do Brasil\"],[\"ru-RU\",\"Google русский\",\"Google русский\"],[\"zh-CN\",\"Google 普通话（中国大陆）\",\"Google 普通话（中国大陆）\"],[\"zh-HK\",\"Google 粤語（香港）\",\"Google 粤語（香港）\"],[\"zh-TW\",\"Google 國語（臺灣）\",\"Google 國語（臺灣）\"],[\"zh-CN\",\"Microsoft Huihui - Chinese (Simplified, PRC)\",\"Microsoft Huihui - Chinese (Simplified, PRC)\"],[\"zh-CN\",\"Microsoft Kangkang - Chinese (Simplified, PRC)\",\"Microsoft Kangkang - Chinese (Simplified, PRC)\"],[\"zh-CN\",\"Microsoft Yaoyao - Chinese (Simplified, PRC)\",\"Microsoft Yaoyao - Chinese (Simplified, PRC)\"]],[10737418240,0],\"-1\",[\"x86\",\"64\",[[\"Google Chrome\",\"149\"],[\"Chromium\",\"149\"],[\"Not)A;Brand\",\"24\"]],[[\"Google Chrome\",\"149.0.7827.114\"],[\"Chromium\",\"149.0.7827.114\"],[\"Not)A;Brand\",\"24.0.0.0\"]],\"0\",\"\",\"Windows\",\"10.0.0\",\"0\",[\"Desktop\"]],[\"candidate:3122141894 1 udp 2113937151 e334ab47-b6cc-4aaa-8b0f-bd5a05950a98.local 64900 typ host generation 0 ufrag VD7u network-cost 999\"],[\"candidate:2784216207 1 udp 2113937151 e334ab47-b6cc-4aaa-8b0f-bd5a05950a98.local 64920 typ host generation 0 ufrag ABua network-cost 999\"],\"1255.300000000745\",[],[\"qH:scheduler\",\"hdr 0.30000000074505806\",\"ptQs-73: 7958.0999999996275\",\"ptQe-72: 7958.0999999996275\",\"ptQplt-0.5\",\"ptQs-72: 7958.5999999996275\",\"ptQe-71: 7958.5999999996275\",\"ptQplt-0\",\"ptQs-71: 7958.5999999996275\",\"ai 0 18\",\"ptQe-70: 7976.199999999255\",\"ptQplt-0.09999999962747097\",\"ptQs-70: 7976.299999998882\",\"ptQe-69: 7976.4000000003725\",\"ptQplt-0\",\"ptQs-69: 7976.4000000003725\",\"ptQe-68: 7976.5\",\"ptQplt-0\",\"ptQs-68: 7976.5\",\"ptQe-67: 7976.5999999996275\",\"ptQplt-0\",\"ptQs-67: 7976.5999999996275\",\"ptQe-66: 7976.699999999255\",\"ptQplt-0.40000000037252903\",\"ptQs-66: 7977.0999999996275\",\"ptQe-65: 7977.0999999996275\",\"ptQplt-0.40000000037252903\",\"ptQs-65: 7977.5\",\"ptQe-64: 7977.5999999996275\",\"ptQplt-0\",\"ptQs-64: 7977.5999999996275\",\"ptQe-63: 7977.699999999255\",\"ptQplt-0\",\"ptQs-63: 7977.699999999255\",\"ptQe-62: 7977.699999999255\",\"ptQplt-0.09999999962747097\",\"ptQs-62: 7977.799999998882\",\"ptQe-61: 7977.799999998882\",\"ptQplt-0\",\"ptQs-61: 7977.799999998882\",\"ptQe-60: 7977.799999998882\",\"ptQplt-0\",\"ptQs-60: 7977.799999998882\",\"ptQe-59: 7977.799999998882\",\"ptQplt-0.10000000149011612\",\"ptQs-59: 7977.9000000003725\",\"ptQe-58: 7977.9000000003725\",\"ptQplt-0\",\"ptQs-58: 7977.9000000003725\",\"ptQe-57: 7977.9000000003725\",\"ptQplt-0\",\"ptQs-57: 7977.9000000003725\",\"ptQe-56: 7977.9000000003725\",\"ptQplt-0\",\"ptQs-56: 7977.9000000003725\",\"ptQe-55: 7977.9000000003725\",\"ptQplt-0.09999999962747097\",\"ptQs-55: 7978\",\"ptQe-54: 7978\",\"ptQplt-0\",\"ptQs-54: 7978\",\"ptQe-53: 7978\",\"ptQplt-0\",\"ptQs-53: 7978\",\"ptQe-52: 7978.0999999996275\",\"ptQplt-0\",\"ptQs-52: 7978.0999999996275\",\"ptQe-51: 7978.0999999996275\",\"ptQplt-0\",\"ptQs-51: 7978.0999999996275\",\"ptQe-50: 7978.0999999996275\",\"ptQplt-0.09999999962747097\",\"ptQs-50: 7978.199999999255\",\"ptQe-49: 7978.199999999255\",\"ptQplt-0\",\"ptQs-49: 7978.199999999255\",\"ptQe-48: 7978.199999999255\",\"ptQplt-0\",\"ptQs-48: 7978.199999999255\",\"ptQe-47: 7978.299999998882\",\"ptQplt-0\",\"ptQs-47: 7978.299999998882\",\"ptQe-46: 7978.299999998882\",\"ptQplt-0\",\"ptQs-46: 7978.299999998882\",\"aii 25 0\",\"ptQe-45: 7978.4000000003725\",\"ptQplt-0\",\"ptQs-45: 7978.4000000003725\",\"ptQe-44: 7978.4000000003725\",\"ptQplt-0\",\"ptQs-44: 7978.4000000003725\",\"ptQe-43: 7978.4000000003725\",\"ptQplt-0\",\"ptQs-43: 7978.4000000003725\",\"ptQe-42: 7978.5\",\"ptQplt-0\",\"ptQs-42: 7978.5\",\"ai 29 1013\",\"ptQe-41: 8991.099999999627\",\"ptQplt-0.40000000037252903\",\"ptQs-41: 8991.5\",\"ai 30 1\",\"ptQe-40: 8992.199999999255\",\"ptQplt-0\",\"ptQs-40: 8992.199999999255\",\"canvas 0\",\"context 4\",\"webgl 6\",\"ptQe-39: 8998.400000000373\",\"ptQplt-0\",\"ptQs-39: 8998.400000000373\",\"ptQe-38: 8998.5\",\"ptQplt-0\",\"ptQs-38: 8998.5\",\"ptQe-37: 8998.5\",\"ptQplt-0\",\"ptQs-37: 8998.5\",\"ptQe-36: 8998.599999999627\",\"ptQplt-0\",\"ptQs-36: 8998.599999999627\",\"ptQe-35: 8998.900000000373\",\"ptQplt-0\",\"ptQs-35: 8998.900000000373\",\"ptQe-34: 8998.900000000373\",\"ptQplt-0\",\"ptQs-34: 8998.900000000373\",\"ptQe-33: 8999\",\"ptQplt-0\",\"ptQs-33: 8999\",\"ptQe-32: 8999.099999999627\",\"ptQplt-0\",\"ptQs-32: 8999.099999999627\",\"ptQe-31: 8999.099999999627\",\"ptQplt-0\",\"ptQs-31: 8999.099999999627\",\"ptQe-30: 8999.299999998882\",\"ptQplt-0\",\"ptQs-30: 8999.299999998882\",\"ptQe-29: 8999.299999998882\",\"ptQplt-0\",\"ptQs-29: 8999.299999998882\",\"s 10 2\",\"ptQe-28: 9001.199999999255\",\"ptQplt-0\",\"ptQs-28: 9001.199999999255\",\"s 11 23\",\"ptQe-27: 9024.299999998882\",\"ptQplt-0.10000000149011612\",\"ptQs-27: 9024.400000000373\",\"s 12 18\",\"ptQe-26: 9042.5\",\"ptQplt-0\",\"ptQs-26: 9042.5\",\"ptQe-25: 9042.599999999627\",\"ptQplt-0\",\"ptQs-25: 9042.599999999627\",\"s 14 6\",\"ptQe-24: 9048.299999998882\",\"ptQplt-0\",\"ptQs-24: 9048.400000000373\",\"s 15 7\",\"ptQe-23: 9055.299999998882\",\"ptQplt-0.2000000011175871\",\"ptQs-23: 9055.5\",\"ptQe-22: 9055.599999999627\",\"ptQplt-0\",\"ptQs-22: 9055.599999999627\",\"ptQe-21: 9055.900000000373\",\"ptQplt-0\",\"ptQs-21: 9055.900000000373\",\"ptQe-20: 9056.099999999627\",\"ptQplt-0\",\"ptQs-20: 9056.099999999627\",\"s 19 1\",\"ptQe-19: 9056.599999999627\",\"ptQplt-0\",\"ptQs-19: 9056.599999999627\",\"ptQe-18: 9056.599999999627\",\"ptQplt-0\",\"ptQs-18: 9056.599999999627\",\"ptQe-17: 9056.699999999255\",\"ptQplt-0\",\"ptQs-17: 9056.699999999255\",\"ptQe-16: 9056.699999999255\",\"ptQplt-0\",\"ptQs-16: 9056.699999999255\",\"ptQe-15: 9056.799999998882\",\"ptQplt-0\",\"ptQs-15: 9056.799999998882\",\"ptQe-14: 9056.799999998882\",\"ptQplt-0\",\"ptQs-14: 9056.799999998882\",\"s 25 6\",\"ptQe-13: 9063.199999999255\",\"ptQplt-0.09999999962747097\",\"ptQs-13: 9063.299999998882\",\"ptQe-12: 9063.299999998882\",\"ptQplt-0\",\"ptQs-12: 9063.299999998882\",\"s 27 1\",\"ptQe-11: 9064.199999999255\",\"ptQplt-0\",\"ptQs-11: 9064.199999999255\",\"ptQe-10: 9064.199999999255\",\"ptQplt-0\",\"ptQs-10: 9064.199999999255\",\"ptQe-9: 9064.299999998882\",\"ptQplt-0\",\"ptQs-9: 9064.299999998882\",\"ptQe-8: 9064.299999998882\",\"ptQplt-0\",\"ptQs-8: 9064.299999998882\",\"ptQe-7: 9064.299999998882\",\"ptQplt-0\",\"ptQs-7: 9064.299999998882\",\"s 32 7\",\"ptQe-6: 9071.699999999255\",\"ptQplt-0.09999999962747097\",\"ptQs-6: 9071.799999998882\",\"ptQe-5: 9071.900000000373\",\"ptQplt-0\",\"ptQs-5: 9071.900000000373\",\"s 34 6\",\"ptQe-4: 9077.400000000373\",\"ptQplt-0\",\"ptQs-4: 9077.400000000373\",\"s 35 22\",\"ptQe-3: 9099.400000000373\",\"ptQplt-0.19999999925494194\",\"ptQs-3: 9099.599999999627\",\"s 36 6\",\"ptQe-2: 9105.5\",\"ptQplt-0.09999999962747097\",\"ptQs-2: 9105.599999999627\",\"ptQe-1: 9105.699999999255\",\"ptQplt-0\",\"ptQs-1: 9105.699999999255\",\"ptQe-0: 9105.699999999255\",\"aii 17 0\",\"aii 25 0\",\"aii 25 0.09999999962747097\",\"aii 25 0\",\"aii 25 0.09999999962747097\"],[]]",
+    "payload": "!253;;;;;;;;;;;;!6;webgl2;function WebGL2RenderingContext() { [native code] };3;;2;;!0;!2;;;!4;1781752401120;-2;6394.402;15;!13;1781752401.144;unknown;1781752401.195;1781752401.2;;1781752401.228;Other;;1781752401.12;1781752401.12;;;;-2;10000;0;TypeError;0;-1;!2;06a3381100d26b8db67e60ecf68b5bdc;b80180b9486cf917fd655fd5bc64be5d;!9;-83272704;-1903060747;613067742;1532063332;1804740746;-1267260322;1708620605;1397438097;-1480419356;!8;2;3;3;8304;8304;8304;21;9;;1970/1/1 上午8:00:00;!13;8275,169;8275,169;8275,169;8275,169;8275,169;8275,169;8275,169;8275,169;8275,169;8275,169;8275,169;8275,169;8275,169;6a36cd586af9af49b504ffe67c4af8a5;!13;96;50.8;28.5;1920;1080;3;3;1;3;2;5;1;2;!2;!2;application/pdf;Portable Document Format;!2;text/pdf;Portable Document Format;1;!2;1;;-1;!23;chrome://new-tab-page/;;862;862;navigate;1162;;5.7000000001862645;5.7000000001862645;5.7000000001862645;5.7000000001862645;;5.7000000001862645;23.799999999813735;23.799999999813735;5.7000000001862645;text/html;navigation;;;;;navigate;!5;!3;PDF Viewer;#22;#5;!3;Chrome PDF Viewer;#22;#5;!3;Chromium PDF Viewer;#22;#5;!3;Microsoft Edge PDF Viewer;#22;#5;!3;WebKit built-in PDF;#22;#5;1;!8;!2;window.SecurityPolicyViolationEvent;function SecurityPolicyViolationEvent() { [native code] };!2;window.SVGFESpecularLightingElement;function SVGFESpecularLightingElement() { [native code] };!2;window.ReadableByteStreamController;function ReadableByteStreamController() { [native code] };!2;window.PerformanceObserverEntryList;function PerformanceObserverEntryList() { [native code] };!2;window.FileSystemWritableFileStream;function FileSystemWritableFileStream() { [native code] };!2;window.IntegrityViolationReportBody;function IntegrityViolationReportBody() { [native code] };!2;window.webkitSpeechRecognitionError;function SpeechRecognitionErrorEvent() { [native code] };!2;window.webkitSpeechRecognitionEvent;function SpeechRecognitionEvent() { [native code] };0;;#17;[object IDBFactory];#3;;function () { [native code] };chrome://new-tab-page/;0;visible;0;1;1;1;1;1;1;[object WebAssembly];;#29;;1;1;0;chrome://new-tab-page/;0;0;0;0;;;;;939;953;0;0;1920;1040;939;953;0;#33;1;#26;4395630592;landscape-primary;;;0;0;1920;1080;1920;1040;32;32;;;1;Mozilla/5.0 (Windows NT 10.0\\; Win64\\; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36;5.0 (Windows NT 10.0\\; Win64\\; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36;Mozilla;;Gecko;20030107;Google Inc.;;;Win32;;;28;0;;zh-TW;zh-TW,zh,en-US,en;;;;1;32;;;1;;;0;0;1;;;;;;;;;1781752406497;-480;;4g;;1.4;100;0;;;;1781752401120;0;0;1781752401126;1781752401126;1781752401126;1781752401126;1781752401126;0;1781752401126;1781752401144;1781752401144;undefined;undefined;number;[object Window];#19;#19;#39;function eval() { [native code] };#47;#44;function open() { [native code] };;function close() { [native code] };;0;function log() { [native code] };#1;#1;#1;;;function IntersectionObserver() { [native code] };#36;1;string;[object GPU];#38;;;;#6;;#6;#28;Asia/Shanghai;zh-TW;1;;;;;新分頁;;1;0;;#25;1;1;!5;0.3819688872707755;0.010333023301196897;0.514316335760804;0.6995025659815558;0.9558777498238971;!9;;function toString() { [native code] };toString;function toString() { [native code] };function toString() { [native code] };function getOwnPropertyDescriptors() { [native code] };function getPrototypeOf() { [native code] };c is not a constructor;TypeError;0;!3;;Windows;!3;!2;Google Chrome;149;!2;Chromium;149;!2;Not)A\\;Brand;24;DqzbmIezWGkDKJjOLMveVa0HibAiEqFk;!6;0;0;939;953;0;0;!8;function getParameter() { [native code] };WebGL 2.0 (OpenGL ES 3.0 Chromium);#20;WebKit;WebKit WebGL;ANGLE (Intel, Intel(R) UHD Graphics 770 (0x0000A780) Direct3D11 vs_5_0 ps_5_0, D3D11);Google Inc. (Intel);36;!3;ae8b6d4f;953237eb41d70fcc8d010c53ab943662;510f85225149d7d71202af5b8b7ca6fe;!2;f1db0a06a624adb62b0774ad9e67cc41;91eed477ca8ee447d7cac73a1fbad80f;!2;AddSearchProvider;IsSearchProviderInstalled;!4;0.01;;48000;running;-1;!4;100;1;0;Infinity;1;!2;1,2,3,4,5,6,7,16,36,45,47,49,50,53,56,80;1;!2;1,2,3,36,49,53,56,80;1;!3;0,1,2,3,4,5,6,9,10,12,80,82,84,86,94,96;7,8,11,91,92,101,102;1;!3;0,1,2,3,4,5,6,80,82,84,86,94,96;9,10,92,101,102;1;-3;!3;-3;-3;-3;0;-1;-1;!5;-3;;;;!0;!5;-3;;;;!0;!5;-3;;;;!0;!5;-3;;;;!0;d879937400cbe67e33edeeef8363d597;;-3;!3;;;;!4;;;;16;-1;!2;!22;!2;conditionalCreate;true;!2;conditionalGet;true;!2;extension:appid;true;!2;extension:appidExclude;true;!2;extension:credBlob;true;!2;extension:credProps;true;!2;extension:credentialProtectionPolicy;true;!2;extension:enforceCredentialProtectionPolicy;true;!2;extension:getCredBlob;true;!2;extension:hmacCreateSecret;true;!2;extension:largeBlob;true;!2;extension:minPinLength;true;!2;extension:payment;true;!2;extension:prf;true;!2;hybridTransport;true;!2;immediateGet;true;!2;passkeyPlatformAuthenticator;true;!2;relatedOrigins;true;!2;signalAllAcceptedCredentials;true;!2;signalCurrentUserDetails;true;!2;signalUnknownCredential;true;!2;userVerifyingPlatformAuthenticator;;1108.0999999996275;!9;5378.6;6384.9;6487.4;6504.4;6521.4;6538.4;6555.4;6572.4;6589.5;!22;!3;de-DE;Google Deutsch;Google Deutsch;!3;en-US;Google US English;Google US English;!3;en-GB;Google UK English Female;Google UK English Female;!3;en-GB;Google UK English Male;Google UK English Male;!3;es-ES;Google español;Google español;!3;es-US;Google español de Estados Unidos;Google español de Estados Unidos;!3;fr-FR;Google français;Google français;!3;hi-IN;Google हिन्दी;Google हिन्दी;!3;id-ID;Google Bahasa Indonesia;Google Bahasa Indonesia;!3;it-IT;Google italiano;Google italiano;!3;ja-JP;Google 日本語;Google 日本語;!3;ko-KR;Google 한국의;Google 한국의;!3;nl-NL;Google Nederlands;Google Nederlands;!3;pl-PL;Google polski;Google polski;!3;pt-BR;Google português do Brasil;Google português do Brasil;!3;ru-RU;Google русский;Google русский;!3;zh-CN;Google 普通话（中国大陆）;Google 普通话（中国大陆）;!3;zh-HK;Google 粤語（香港）;Google 粤語（香港）;!3;zh-TW;Google 國語（臺灣）;Google 國語（臺灣）;!3;zh-CN;Microsoft Huihui - Chinese (Simplified, PRC);Microsoft Huihui - Chinese (Simplified, PRC);!3;zh-CN;Microsoft Kangkang - Chinese (Simplified, PRC);Microsoft Kangkang - Chinese (Simplified, PRC);!3;zh-CN;Microsoft Yaoyao - Chinese (Simplified, PRC);Microsoft Yaoyao - Chinese (Simplified, PRC);!2;10737418240;;-1;!10;x86;64;!3;!2;Google Chrome;149;!2;Chromium;149;!2;Not)A\\;Brand;24;!3;!2;Google Chrome;149.0.7827.114;!2;Chromium;149.0.7827.114;!2;Not)A\\;Brand;24.0.0.0;0;;Windows;10.0.0;0;!1;Desktop;!1;candidate:532264583 1 udp 2113937151 fcc03ed7-8fcc-4071-a607-4b7d92e789bd.local 59182 typ host generation 0 ufrag hIsX network-cost 999;!1;candidate:4288101715 1 udp 2113937151 fcc03ed7-8fcc-4071-a607-4b7d92e789bd.local 59202 typ host generation 0 ufrag RzJ9 network-cost 999;1229.7999999998137;!0;!243;qH:scheduler;hdr 0.5;ptQs-73: 5377.299999999814;ptQe-72: 5377.299999999814;ptQplt-0.5;ptQs-72: 5377.799999999814;ptQe-71: 5377.799999999814;ptQplt-0;ptQs-71: 5377.799999999814;ai 0 16;ptQe-70: 5394;ptQplt-0.09999999962747097;ptQs-70: 5394.0999999996275;ptQe-69: 5394.0999999996275;ptQplt-0;ptQs-69: 5394.0999999996275;ptQe-68: 5394.200000000186;ptQplt-0;ptQs-68: 5394.200000000186;ptQe-67: 5394.299999999814;ptQplt-0.09999999962747097;ptQs-67: 5394.399999999441;ptQe-66: 5394.399999999441;ptQplt-0.8000000007450581;ptQs-66: 5395.200000000186;ptQe-65: 5395.399999999441;ptQplt-0.30000000074505806;ptQs-65: 5395.700000000186;ptQe-64: 5395.899999999441;ptQplt-0.10000000055879354;ptQs-64: 5396;ptQe-63: 5396;ptQplt-0;ptQs-63: 5396;ptQe-62: 5396.0999999996275;ptQplt-0;ptQs-62: 5396.0999999996275;ptQe-61: 5396.0999999996275;ptQplt-0;ptQs-61: 5396.0999999996275;ptQe-60: 5396.0999999996275;ptQplt-0;ptQs-60: 5396.0999999996275;ptQe-59: 5396.200000000186;ptQplt-0;ptQs-59: 5396.200000000186;ptQe-58: 5396.200000000186;ptQplt-0;ptQs-58: 5396.200000000186;ptQe-57: 5396.200000000186;ptQplt-0;ptQs-57: 5396.200000000186;ptQe-56: 5396.200000000186;ptQplt-0;ptQs-56: 5396.200000000186;ptQe-55: 5396.299999999814;ptQplt-0;ptQs-55: 5396.299999999814;ptQe-54: 5396.299999999814;ptQplt-0;ptQs-54: 5396.299999999814;ptQe-53: 5396.399999999441;ptQplt-0;ptQs-53: 5396.399999999441;ptQe-52: 5396.399999999441;ptQplt-0;ptQs-52: 5396.399999999441;ptQe-51: 5396.399999999441;ptQplt-0;ptQs-51: 5396.399999999441;ptQe-50: 5396.5;ptQplt-0;ptQs-50: 5396.5;ptQe-49: 5396.5;ptQplt-0;ptQs-49: 5396.5;ptQe-48: 5396.5;ptQplt-0;ptQs-48: 5396.5;ptQe-47: 5396.5;ptQplt-0;ptQs-47: 5396.5;ptQe-46: 5396.5999999996275;ptQplt-0;ptQs-46: 5396.5999999996275;aii 25 0;ptQe-45: 5396.700000000186;ptQplt-0;ptQs-45: 5396.700000000186;ptQe-44: 5396.799999999814;ptQplt-0;ptQs-44: 5396.799999999814;ptQe-43: 5396.799999999814;ptQplt-0;ptQs-43: 5396.799999999814;ptQe-42: 5396.799999999814;ptQplt-0;ptQs-42: 5396.799999999814;ai 29 990;ptQe-41: 6387.200000000186;ptQplt-0.2999999998137355;ptQs-41: 6387.5;ai 30 1;ptQe-40: 6388.200000000186;ptQplt-0;ptQs-40: 6388.200000000186;canvas 0;context 3;webgl 6;ptQe-39: 6393.899999999441;ptQplt-0;ptQs-39: 6393.899999999441;ptQe-38: 6393.899999999441;ptQplt-0.10000000055879354;ptQs-38: 6394;ptQe-37: 6394;ptQplt-0;ptQs-37: 6394;ptQe-36: 6394;ptQplt-0;ptQs-36: 6394;ptQe-35: 6394.299999999814;ptQplt-0;ptQs-35: 6394.299999999814;ptQe-34: 6394.299999999814;ptQplt-0;ptQs-34: 6394.299999999814;ptQe-33: 6394.5;ptQplt-0;ptQs-33: 6394.5;ptQe-32: 6394.5;ptQplt-0;ptQs-32: 6394.5;ptQe-31: 6394.5999999996275;ptQplt-0;ptQs-31: 6394.5999999996275;ptQe-30: 6394.799999999814;ptQplt-0;ptQs-30: 6394.799999999814;ptQe-29: 6394.799999999814;ptQplt-0;ptQs-29: 6394.799999999814;s 10 2;ptQe-28: 6396.399999999441;ptQplt-0;ptQs-28: 6396.399999999441;s 11 24;ptQe-27: 6420.799999999814;ptQplt-0.09999999962747097;ptQs-27: 6420.899999999441;s 12 22;ptQe-26: 6442.5;ptQplt-0.09999999962747097;ptQs-26: 6442.5999999996275;ptQe-25: 6442.700000000186;ptQplt-0;ptQs-25: 6442.700000000186;s 14 6;ptQe-24: 6448.5999999996275;ptQplt-0;ptQs-24: 6448.5999999996275;s 15 7;ptQe-23: 6455.299999999814;ptQplt-0.09999999962747097;ptQs-23: 6455.399999999441;ptQe-22: 6455.5;ptQplt-0.09999999962747097;ptQs-22: 6455.5999999996275;ptQe-21: 6455.799999999814;ptQplt-0;ptQs-21: 6455.799999999814;ptQe-20: 6456.0999999996275;ptQplt-0;ptQs-20: 6456.0999999996275;ptQe-19: 6456.5;ptQplt-0;ptQs-19: 6456.5;ptQe-18: 6456.5999999996275;ptQplt-0;ptQs-18: 6456.5999999996275;ptQe-17: 6456.5999999996275;ptQplt-0;ptQs-17: 6456.5999999996275;ptQe-16: 6456.700000000186;ptQplt-0;ptQs-16: 6456.700000000186;ptQe-15: 6456.799999999814;ptQplt-0;ptQs-15: 6456.799999999814;ptQe-14: 6456.799999999814;ptQplt-0;ptQs-14: 6456.799999999814;s 25 6;ptQe-13: 6463.0999999996275;ptQplt-0;ptQs-13: 6463.0999999996275;ptQe-12: 6463.200000000186;ptQplt-0;ptQs-12: 6463.200000000186;s 27 1;ptQe-11: 6464;ptQplt-0;ptQs-11: 6464;ptQe-10: 6464;ptQplt-0;ptQs-10: 6464;ptQe-9: 6464.0999999996275;ptQplt-0;ptQs-9: 6464.0999999996275;ptQe-8: 6464.0999999996275;ptQplt-0;ptQs-8: 6464.0999999996275;ptQe-7: 6464.200000000186;ptQplt-0;ptQs-7: 6464.200000000186;s 32 7;ptQe-6: 6470.799999999814;ptQplt-0.09999999962747097;ptQs-6: 6470.899999999441;ptQe-5: 6470.899999999441;ptQplt-0;ptQs-5: 6470.899999999441;s 34 6;ptQe-4: 6476.399999999441;ptQplt-0;ptQs-4: 6476.399999999441;s 35 21;ptQe-3: 6497.299999999814;ptQplt-0.40000000037252903;ptQs-3: 6497.700000000186;s 36 5;ptQe-2: 6503;ptQplt-0.09999999962747097;ptQs-2: 6503.0999999996275;ptQe-1: 6503.0999999996275;ptQplt-0.10000000055879354;ptQs-1: 6503.200000000186;ptQe-0: 6503.200000000186;aii 17 0.09999999962747097;aii 25 0;aii 25 0;aii 25 0;aii 25 0;!0;",
+    "features": "[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",[\"webgl2\",null,3,0,2,\"\"],[],[0,0],[1781752401120,-2,6394.402,15],[1781752401.144,\"unknown\",1781752401.195,1781752401.2,0,1781752401.228,\"Other\",\"\",1781752401.12,1781752401.12,false,false,false],\"-2\",\"10000\",\"0\",\"TypeError\",\"0\",\"-1\",[\"06a3381100d26b8db67e60ecf68b5bdc\",\"b80180b9486cf917fd655fd5bc64be5d\"],[-83272704,-1903060747,613067742,1532063332,1804740746,-1267260322,1708620605,1397438097,-1480419356],[2,3,3,8304,8304,8304,21,9],\"\",\"1970/1/1 上午8:00:00\",[\"8275,169\",\"8275,169\",\"8275,169\",\"8275,169\",\"8275,169\",\"8275,169\",\"8275,169\",\"8275,169\",\"8275,169\",\"8275,169\",\"8275,169\",\"8275,169\",\"8275,169\"],\"6a36cd586af9af49b504ffe67c4af8a5\",[96,50.8,28.5,1920,1080,3,3,1,3,2,5,1,2],[[\"application/pdf\",\"Portable Document Format\"],[\"text/pdf\",\"Portable Document Format\"]],\"1\",[1,0],\"-1\",[\"chrome://new-tab-page/\",\"\",862,862,\"navigate\",1162,\"\",5.7000000001862645,5.7000000001862645,5.7000000001862645,5.7000000001862645,\"\",5.7000000001862645,23.799999999813735,23.799999999813735,5.7000000001862645,\"text/html\",\"navigation\",\"\",\"\",\"\",\"\",\"navigate\"],[[\"PDF Viewer\",\"#22\",\"#5\"],[\"Chrome PDF Viewer\",\"#22\",\"#5\"],[\"Chromium PDF Viewer\",\"#22\",\"#5\"],[\"Microsoft Edge PDF Viewer\",\"#22\",\"#5\"],[\"WebKit built-in PDF\",\"#22\",\"#5\"]],\"1\",[[\"window.SecurityPolicyViolationEvent\",\"function SecurityPolicyViolationEvent() { [native code] }\"],[\"window.SVGFESpecularLightingElement\",\"function SVGFESpecularLightingElement() { [native code] }\"],[\"window.ReadableByteStreamController\",\"function ReadableByteStreamController() { [native code] }\"],[\"window.PerformanceObserverEntryList\",\"function PerformanceObserverEntryList() { [native code] }\"],[\"window.FileSystemWritableFileStream\",\"function FileSystemWritableFileStream() { [native code] }\"],[\"window.IntegrityViolationReportBody\",\"function IntegrityViolationReportBody() { [native code] }\"],[\"window.webkitSpeechRecognitionError\",\"function SpeechRecognitionErrorEvent() { [native code] }\"],[\"window.webkitSpeechRecognitionEvent\",\"function SpeechRecognitionEvent() { [native code] }\"]],\"0\",\"\",\"#17\",\"[object IDBFactory]\",\"#3\",\"\",\"function () { [native code] }\",\"chrome://new-tab-page/\",\"0\",\"visible\",\"0\",\"1\",\"1\",\"1\",\"1\",\"1\",\"1\",\"[object WebAssembly]\",\"\",\"#29\",\"\",\"1\",\"1\",\"0\",\"chrome://new-tab-page/\",\"0\",\"0\",\"0\",\"0\",\"\",\"\",\"\",\"\",\"939\",\"953\",\"0\",\"0\",\"1920\",\"1040\",\"939\",\"953\",\"0\",\"#33\",\"1\",\"#26\",\"4395630592\",\"landscape-primary\",\"\",\"\",\"0\",\"0\",\"1920\",\"1080\",\"1920\",\"1040\",\"32\",\"32\",\"\",\"\",\"1\",\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\",\"5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36\",\"Mozilla\",\"\",\"Gecko\",\"20030107\",\"Google Inc.\",\"\",\"\",\"Win32\",\"\",\"\",\"28\",\"0\",\"\",\"zh-TW\",\"zh-TW,zh,en-US,en\",\"\",\"\",\"\",\"1\",\"32\",\"\",\"\",\"1\",\"\",\"\",\"0\",\"0\",\"1\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"1781752406497\",\"-480\",\"\",\"4g\",\"\",\"1.4\",\"100\",\"0\",\"\",\"\",\"\",\"1781752401120\",\"0\",\"0\",\"1781752401126\",\"1781752401126\",\"1781752401126\",\"1781752401126\",\"1781752401126\",\"0\",\"1781752401126\",\"1781752401144\",\"1781752401144\",\"undefined\",\"undefined\",\"number\",\"[object Window]\",\"#19\",\"#19\",\"#39\",\"function eval() { [native code] }\",\"#47\",\"#44\",\"function open() { [native code] }\",\"\",\"function close() { [native code] }\",\"\",\"0\",\"function log() { [native code] }\",\"#1\",\"#1\",\"#1\",\"\",\"\",\"function IntersectionObserver() { [native code] }\",\"#36\",\"1\",\"string\",\"[object GPU]\",\"#38\",\"\",\"\",\"\",\"#6\",\"\",\"#6\",\"#28\",\"Asia/Shanghai\",\"zh-TW\",\"1\",\"\",\"\",\"\",\"\",\"新分頁\",\"\",\"1\",\"0\",\"\",\"#25\",\"1\",\"1\",[0.3819688872707755,0.010333023301196897,0.514316335760804,0.6995025659815558,0.9558777498238971],[0,\"function toString() { [native code] }\",\"toString\",\"function toString() { [native code] }\",\"function toString() { [native code] }\",\"function getOwnPropertyDescriptors() { [native code] }\",\"function getPrototypeOf() { [native code] }\",\"c is not a constructor\",\"TypeError\"],\"0\",[0,\"Windows\",[[\"Google Chrome\",\"149\"],[\"Chromium\",\"149\"],[\"Not)A;Brand\",\"24\"]]],\"DqzbmIezWGkDKJjOLMveVa0HibAiEqFk\",[\"0\",\"0\",\"939\",\"953\",\"0\",\"0\"],[null,\"WebGL 2.0 (OpenGL ES 3.0 Chromium)\",\"#20\",\"WebKit\",\"WebKit WebGL\",\"ANGLE (Intel, Intel(R) UHD Graphics 770 (0x0000A780) Direct3D11 vs_5_0 ps_5_0, D3D11)\",\"Google Inc. (Intel)\",36],[\"ae8b6d4f\",\"953237eb41d70fcc8d010c53ab943662\",\"510f85225149d7d71202af5b8b7ca6fe\"],[\"f1db0a06a624adb62b0774ad9e67cc41\",\"91eed477ca8ee447d7cac73a1fbad80f\"],[\"AddSearchProvider\",\"IsSearchProviderInstalled\"],[0.01,0,48000,\"running\"],\"-1\",[\"100\",\"1\",\"0\",\"Infinity\"],\"1\",[\"1,2,3,4,5,6,7,16,36,45,47,49,50,53,56,80\",\"1\"],[\"1,2,3,36,49,53,56,80\",\"1\"],[\"0,1,2,3,4,5,6,9,10,12,80,82,84,86,94,96\",\"7,8,11,91,92,101,102\",\"1\"],[\"0,1,2,3,4,5,6,80,82,84,86,94,96\",\"9,10,92,101,102\",\"1\"],\"-3\",[-3,-3,-3],\"0\",\"-1\",\"-1\",[-3,0,0,\"\",[]],[-3,0,0,\"\",[]],[-3,0,0,\"\",[]],[-3,0,0,\"\",[]],\"d879937400cbe67e33edeeef8363d597\",\"\",\"-3\",[null,null,null],[null,null,null,16],\"-1\",[[[\"conditionalCreate\",true],[\"conditionalGet\",true],[\"extension:appid\",true],[\"extension:appidExclude\",true],[\"extension:credBlob\",true],[\"extension:credProps\",true],[\"extension:credentialProtectionPolicy\",true],[\"extension:enforceCredentialProtectionPolicy\",true],[\"extension:getCredBlob\",true],[\"extension:hmacCreateSecret\",true],[\"extension:largeBlob\",true],[\"extension:minPinLength\",true],[\"extension:payment\",true],[\"extension:prf\",true],[\"hybridTransport\",true],[\"immediateGet\",true],[\"passkeyPlatformAuthenticator\",true],[\"relatedOrigins\",true],[\"signalAllAcceptedCredentials\",true],[\"signalCurrentUserDetails\",true],[\"signalUnknownCredential\",true],[\"userVerifyingPlatformAuthenticator\",false]],1108.0999999996275],[5378.6,6384.9,6487.4,6504.4,6521.4,6538.4,6555.4,6572.4,6589.5],[[\"de-DE\",\"Google Deutsch\",\"Google Deutsch\"],[\"en-US\",\"Google US English\",\"Google US English\"],[\"en-GB\",\"Google UK English Female\",\"Google UK English Female\"],[\"en-GB\",\"Google UK English Male\",\"Google UK English Male\"],[\"es-ES\",\"Google español\",\"Google español\"],[\"es-US\",\"Google español de Estados Unidos\",\"Google español de Estados Unidos\"],[\"fr-FR\",\"Google français\",\"Google français\"],[\"hi-IN\",\"Google हिन्दी\",\"Google हिन्दी\"],[\"id-ID\",\"Google Bahasa Indonesia\",\"Google Bahasa Indonesia\"],[\"it-IT\",\"Google italiano\",\"Google italiano\"],[\"ja-JP\",\"Google 日本語\",\"Google 日本語\"],[\"ko-KR\",\"Google 한국의\",\"Google 한국의\"],[\"nl-NL\",\"Google Nederlands\",\"Google Nederlands\"],[\"pl-PL\",\"Google polski\",\"Google polski\"],[\"pt-BR\",\"Google português do Brasil\",\"Google português do Brasil\"],[\"ru-RU\",\"Google русский\",\"Google русский\"],[\"zh-CN\",\"Google 普通话（中国大陆）\",\"Google 普通话（中国大陆）\"],[\"zh-HK\",\"Google 粤語（香港）\",\"Google 粤語（香港）\"],[\"zh-TW\",\"Google 國語（臺灣）\",\"Google 國語（臺灣）\"],[\"zh-CN\",\"Microsoft Huihui - Chinese (Simplified, PRC)\",\"Microsoft Huihui - Chinese (Simplified, PRC)\"],[\"zh-CN\",\"Microsoft Kangkang - Chinese (Simplified, PRC)\",\"Microsoft Kangkang - Chinese (Simplified, PRC)\"],[\"zh-CN\",\"Microsoft Yaoyao - Chinese (Simplified, PRC)\",\"Microsoft Yaoyao - Chinese (Simplified, PRC)\"]],[10737418240,0],\"-1\",[\"x86\",\"64\",[[\"Google Chrome\",\"149\"],[\"Chromium\",\"149\"],[\"Not)A;Brand\",\"24\"]],[[\"Google Chrome\",\"149.0.7827.114\"],[\"Chromium\",\"149.0.7827.114\"],[\"Not)A;Brand\",\"24.0.0.0\"]],\"0\",\"\",\"Windows\",\"10.0.0\",\"0\",[\"Desktop\"]],[\"candidate:532264583 1 udp 2113937151 fcc03ed7-8fcc-4071-a607-4b7d92e789bd.local 59182 typ host generation 0 ufrag hIsX network-cost 999\"],[\"candidate:4288101715 1 udp 2113937151 fcc03ed7-8fcc-4071-a607-4b7d92e789bd.local 59202 typ host generation 0 ufrag RzJ9 network-cost 999\"],\"1229.7999999998137\",[],[\"qH:scheduler\",\"hdr 0.5\",\"ptQs-73: 5377.299999999814\",\"ptQe-72: 5377.299999999814\",\"ptQplt-0.5\",\"ptQs-72: 5377.799999999814\",\"ptQe-71: 5377.799999999814\",\"ptQplt-0\",\"ptQs-71: 5377.799999999814\",\"ai 0 16\",\"ptQe-70: 5394\",\"ptQplt-0.09999999962747097\",\"ptQs-70: 5394.0999999996275\",\"ptQe-69: 5394.0999999996275\",\"ptQplt-0\",\"ptQs-69: 5394.0999999996275\",\"ptQe-68: 5394.200000000186\",\"ptQplt-0\",\"ptQs-68: 5394.200000000186\",\"ptQe-67: 5394.299999999814\",\"ptQplt-0.09999999962747097\",\"ptQs-67: 5394.399999999441\",\"ptQe-66: 5394.399999999441\",\"ptQplt-0.8000000007450581\",\"ptQs-66: 5395.200000000186\",\"ptQe-65: 5395.399999999441\",\"ptQplt-0.30000000074505806\",\"ptQs-65: 5395.700000000186\",\"ptQe-64: 5395.899999999441\",\"ptQplt-0.10000000055879354\",\"ptQs-64: 5396\",\"ptQe-63: 5396\",\"ptQplt-0\",\"ptQs-63: 5396\",\"ptQe-62: 5396.0999999996275\",\"ptQplt-0\",\"ptQs-62: 5396.0999999996275\",\"ptQe-61: 5396.0999999996275\",\"ptQplt-0\",\"ptQs-61: 5396.0999999996275\",\"ptQe-60: 5396.0999999996275\",\"ptQplt-0\",\"ptQs-60: 5396.0999999996275\",\"ptQe-59: 5396.200000000186\",\"ptQplt-0\",\"ptQs-59: 5396.200000000186\",\"ptQe-58: 5396.200000000186\",\"ptQplt-0\",\"ptQs-58: 5396.200000000186\",\"ptQe-57: 5396.200000000186\",\"ptQplt-0\",\"ptQs-57: 5396.200000000186\",\"ptQe-56: 5396.200000000186\",\"ptQplt-0\",\"ptQs-56: 5396.200000000186\",\"ptQe-55: 5396.299999999814\",\"ptQplt-0\",\"ptQs-55: 5396.299999999814\",\"ptQe-54: 5396.299999999814\",\"ptQplt-0\",\"ptQs-54: 5396.299999999814\",\"ptQe-53: 5396.399999999441\",\"ptQplt-0\",\"ptQs-53: 5396.399999999441\",\"ptQe-52: 5396.399999999441\",\"ptQplt-0\",\"ptQs-52: 5396.399999999441\",\"ptQe-51: 5396.399999999441\",\"ptQplt-0\",\"ptQs-51: 5396.399999999441\",\"ptQe-50: 5396.5\",\"ptQplt-0\",\"ptQs-50: 5396.5\",\"ptQe-49: 5396.5\",\"ptQplt-0\",\"ptQs-49: 5396.5\",\"ptQe-48: 5396.5\",\"ptQplt-0\",\"ptQs-48: 5396.5\",\"ptQe-47: 5396.5\",\"ptQplt-0\",\"ptQs-47: 5396.5\",\"ptQe-46: 5396.5999999996275\",\"ptQplt-0\",\"ptQs-46: 5396.5999999996275\",\"aii 25 0\",\"ptQe-45: 5396.700000000186\",\"ptQplt-0\",\"ptQs-45: 5396.700000000186\",\"ptQe-44: 5396.799999999814\",\"ptQplt-0\",\"ptQs-44: 5396.799999999814\",\"ptQe-43: 5396.799999999814\",\"ptQplt-0\",\"ptQs-43: 5396.799999999814\",\"ptQe-42: 5396.799999999814\",\"ptQplt-0\",\"ptQs-42: 5396.799999999814\",\"ai 29 990\",\"ptQe-41: 6387.200000000186\",\"ptQplt-0.2999999998137355\",\"ptQs-41: 6387.5\",\"ai 30 1\",\"ptQe-40: 6388.200000000186\",\"ptQplt-0\",\"ptQs-40: 6388.200000000186\",\"canvas 0\",\"context 3\",\"webgl 6\",\"ptQe-39: 6393.899999999441\",\"ptQplt-0\",\"ptQs-39: 6393.899999999441\",\"ptQe-38: 6393.899999999441\",\"ptQplt-0.10000000055879354\",\"ptQs-38: 6394\",\"ptQe-37: 6394\",\"ptQplt-0\",\"ptQs-37: 6394\",\"ptQe-36: 6394\",\"ptQplt-0\",\"ptQs-36: 6394\",\"ptQe-35: 6394.299999999814\",\"ptQplt-0\",\"ptQs-35: 6394.299999999814\",\"ptQe-34: 6394.299999999814\",\"ptQplt-0\",\"ptQs-34: 6394.299999999814\",\"ptQe-33: 6394.5\",\"ptQplt-0\",\"ptQs-33: 6394.5\",\"ptQe-32: 6394.5\",\"ptQplt-0\",\"ptQs-32: 6394.5\",\"ptQe-31: 6394.5999999996275\",\"ptQplt-0\",\"ptQs-31: 6394.5999999996275\",\"ptQe-30: 6394.799999999814\",\"ptQplt-0\",\"ptQs-30: 6394.799999999814\",\"ptQe-29: 6394.799999999814\",\"ptQplt-0\",\"ptQs-29: 6394.799999999814\",\"s 10 2\",\"ptQe-28: 6396.399999999441\",\"ptQplt-0\",\"ptQs-28: 6396.399999999441\",\"s 11 24\",\"ptQe-27: 6420.799999999814\",\"ptQplt-0.09999999962747097\",\"ptQs-27: 6420.899999999441\",\"s 12 22\",\"ptQe-26: 6442.5\",\"ptQplt-0.09999999962747097\",\"ptQs-26: 6442.5999999996275\",\"ptQe-25: 6442.700000000186\",\"ptQplt-0\",\"ptQs-25: 6442.700000000186\",\"s 14 6\",\"ptQe-24: 6448.5999999996275\",\"ptQplt-0\",\"ptQs-24: 6448.5999999996275\",\"s 15 7\",\"ptQe-23: 6455.299999999814\",\"ptQplt-0.09999999962747097\",\"ptQs-23: 6455.399999999441\",\"ptQe-22: 6455.5\",\"ptQplt-0.09999999962747097\",\"ptQs-22: 6455.5999999996275\",\"ptQe-21: 6455.799999999814\",\"ptQplt-0\",\"ptQs-21: 6455.799999999814\",\"ptQe-20: 6456.0999999996275\",\"ptQplt-0\",\"ptQs-20: 6456.0999999996275\",\"ptQe-19: 6456.5\",\"ptQplt-0\",\"ptQs-19: 6456.5\",\"ptQe-18: 6456.5999999996275\",\"ptQplt-0\",\"ptQs-18: 6456.5999999996275\",\"ptQe-17: 6456.5999999996275\",\"ptQplt-0\",\"ptQs-17: 6456.5999999996275\",\"ptQe-16: 6456.700000000186\",\"ptQplt-0\",\"ptQs-16: 6456.700000000186\",\"ptQe-15: 6456.799999999814\",\"ptQplt-0\",\"ptQs-15: 6456.799999999814\",\"ptQe-14: 6456.799999999814\",\"ptQplt-0\",\"ptQs-14: 6456.799999999814\",\"s 25 6\",\"ptQe-13: 6463.0999999996275\",\"ptQplt-0\",\"ptQs-13: 6463.0999999996275\",\"ptQe-12: 6463.200000000186\",\"ptQplt-0\",\"ptQs-12: 6463.200000000186\",\"s 27 1\",\"ptQe-11: 6464\",\"ptQplt-0\",\"ptQs-11: 6464\",\"ptQe-10: 6464\",\"ptQplt-0\",\"ptQs-10: 6464\",\"ptQe-9: 6464.0999999996275\",\"ptQplt-0\",\"ptQs-9: 6464.0999999996275\",\"ptQe-8: 6464.0999999996275\",\"ptQplt-0\",\"ptQs-8: 6464.0999999996275\",\"ptQe-7: 6464.200000000186\",\"ptQplt-0\",\"ptQs-7: 6464.200000000186\",\"s 32 7\",\"ptQe-6: 6470.799999999814\",\"ptQplt-0.09999999962747097\",\"ptQs-6: 6470.899999999441\",\"ptQe-5: 6470.899999999441\",\"ptQplt-0\",\"ptQs-5: 6470.899999999441\",\"s 34 6\",\"ptQe-4: 6476.399999999441\",\"ptQplt-0\",\"ptQs-4: 6476.399999999441\",\"s 35 21\",\"ptQe-3: 6497.299999999814\",\"ptQplt-0.40000000037252903\",\"ptQs-3: 6497.700000000186\",\"s 36 5\",\"ptQe-2: 6503\",\"ptQplt-0.09999999962747097\",\"ptQs-2: 6503.0999999996275\",\"ptQe-1: 6503.0999999996275\",\"ptQplt-0.10000000055879354\",\"ptQs-1: 6503.200000000186\",\"ptQe-0: 6503.200000000186\",\"aii 17 0.09999999962747097\",\"aii 25 0\",\"aii 25 0\",\"aii 25 0\",\"aii 25 0\"],[]]",
     "values": [
         "",
         "",
@@ -17,7 +17,7 @@
         [
             "webgl2",
             null,
-            4,
+            3,
             0,
             2,
             ""
@@ -28,28 +28,28 @@
             0
         ],
         [
-            1781667398737,
+            1781752401120,
             -2,
-            8999.382,
+            6394.402,
             15
         ],
         [
-            1781667398.765,
+            1781752401.144,
             "unknown",
-            1781667398.819,
-            1781667398.822,
+            1781752401.195,
+            1781752401.2,
             0,
-            1781667398.911,
+            1781752401.228,
             "Other",
             "",
-            1781667398.737,
-            1781667398.737,
+            1781752401.12,
+            1781752401.12,
             false,
             false,
             false
         ],
         "-2",
-        "Infinity",
+        "10000",
         "0",
         "TypeError",
         "0",
@@ -59,25 +59,25 @@
             "b80180b9486cf917fd655fd5bc64be5d"
         ],
         [
-            767610154,
-            138366985,
-            -37541694,
-            1304817168,
-            892902886,
-            1189721904,
-            1572607885,
-            -2030102919,
-            -1146346734
+            -83272704,
+            -1903060747,
+            613067742,
+            1532063332,
+            1804740746,
+            -1267260322,
+            1708620605,
+            1397438097,
+            -1480419356
         ],
         [
             2,
-            2,
-            2,
-            8295,
-            8295,
-            8295,
-            18,
-            6
+            3,
+            3,
+            8304,
+            8304,
+            8304,
+            21,
+            9
         ],
         "",
         "1970/1/1 上午8:00:00",
@@ -136,15 +136,15 @@
             "navigate",
             1162,
             "",
-            6.400000000372529,
-            6.400000000372529,
-            6.400000000372529,
-            6.400000000372529,
+            5.7000000001862645,
+            5.7000000001862645,
+            5.7000000001862645,
+            5.7000000001862645,
             "",
-            6.400000000372529,
-            27.5,
-            27.5,
-            6.400000000372529,
+            5.7000000001862645,
+            23.799999999813735,
+            23.799999999813735,
+            5.7000000001862645,
             "text/html",
             "navigation",
             "",
@@ -313,29 +313,29 @@
         "",
         "",
         "",
-        "1781667406695",
+        "1781752406497",
         "-480",
         "",
         "4g",
         "",
-        "1.65",
-        "200",
+        "1.4",
+        "100",
         "0",
         "",
         "",
         "",
-        "1781667398737",
+        "1781752401120",
         "0",
         "0",
-        "1781667398744",
-        "1781667398744",
-        "1781667398744",
-        "1781667398744",
-        "1781667398744",
+        "1781752401126",
+        "1781752401126",
+        "1781752401126",
+        "1781752401126",
+        "1781752401126",
         "0",
-        "1781667398744",
-        "1781667398765",
-        "1781667398765",
+        "1781752401126",
+        "1781752401144",
+        "1781752401144",
         "undefined",
         "undefined",
         "number",
@@ -386,11 +386,11 @@
         "1",
         "1",
         [
-            0.6599555694183141,
-            0.7413752996514944,
-            0.3868973507838793,
-            0.9371550304171958,
-            0.595429787692665
+            0.3819688872707755,
+            0.010333023301196897,
+            0.514316335760804,
+            0.6995025659815558,
+            0.9558777498238971
         ],
         [
             0,
@@ -422,7 +422,7 @@
                 ]
             ]
         ],
-        "8zI0LvxFOgeSgjo0a2osoKisT0a07oes",
+        "DqzbmIezWGkDKJjOLMveVa0HibAiEqFk",
         [
             "0",
             "0",
@@ -439,7 +439,7 @@
             "WebKit WebGL",
             "ANGLE (Intel, Intel(R) UHD Graphics 770 (0x0000A780) Direct3D11 vs_5_0 ps_5_0, D3D11)",
             "Google Inc. (Intel)",
-            34
+            36
         ],
         [
             "ae8b6d4f",
@@ -629,19 +629,18 @@
                     false
                 ]
             ],
-            1129
+            1108.0999999996275
         ],
         [
-            7965,
-            8987.9,
-            9089.9,
-            9106.9,
-            9123.9,
-            9140.9,
-            9157.9,
-            9174.9,
-            9191.9,
-            9208.9
+            5378.6,
+            6384.9,
+            6487.4,
+            6504.4,
+            6521.4,
+            6538.4,
+            6555.4,
+            6572.4,
+            6589.5
         ],
         [
             [
@@ -801,258 +800,257 @@
             ]
         ],
         [
-            "candidate:3122141894 1 udp 2113937151 e334ab47-b6cc-4aaa-8b0f-bd5a05950a98.local 64900 typ host generation 0 ufrag VD7u network-cost 999"
+            "candidate:532264583 1 udp 2113937151 fcc03ed7-8fcc-4071-a607-4b7d92e789bd.local 59182 typ host generation 0 ufrag hIsX network-cost 999"
         ],
         [
-            "candidate:2784216207 1 udp 2113937151 e334ab47-b6cc-4aaa-8b0f-bd5a05950a98.local 64920 typ host generation 0 ufrag ABua network-cost 999"
+            "candidate:4288101715 1 udp 2113937151 fcc03ed7-8fcc-4071-a607-4b7d92e789bd.local 59202 typ host generation 0 ufrag RzJ9 network-cost 999"
         ],
-        "1255.300000000745",
+        "1229.7999999998137",
         [],
         [
             "qH:scheduler",
-            "hdr 0.30000000074505806",
-            "ptQs-73: 7958.0999999996275",
-            "ptQe-72: 7958.0999999996275",
+            "hdr 0.5",
+            "ptQs-73: 5377.299999999814",
+            "ptQe-72: 5377.299999999814",
             "ptQplt-0.5",
-            "ptQs-72: 7958.5999999996275",
-            "ptQe-71: 7958.5999999996275",
+            "ptQs-72: 5377.799999999814",
+            "ptQe-71: 5377.799999999814",
             "ptQplt-0",
-            "ptQs-71: 7958.5999999996275",
-            "ai 0 18",
-            "ptQe-70: 7976.199999999255",
+            "ptQs-71: 5377.799999999814",
+            "ai 0 16",
+            "ptQe-70: 5394",
             "ptQplt-0.09999999962747097",
-            "ptQs-70: 7976.299999998882",
-            "ptQe-69: 7976.4000000003725",
+            "ptQs-70: 5394.0999999996275",
+            "ptQe-69: 5394.0999999996275",
             "ptQplt-0",
-            "ptQs-69: 7976.4000000003725",
-            "ptQe-68: 7976.5",
+            "ptQs-69: 5394.0999999996275",
+            "ptQe-68: 5394.200000000186",
             "ptQplt-0",
-            "ptQs-68: 7976.5",
-            "ptQe-67: 7976.5999999996275",
-            "ptQplt-0",
-            "ptQs-67: 7976.5999999996275",
-            "ptQe-66: 7976.699999999255",
-            "ptQplt-0.40000000037252903",
-            "ptQs-66: 7977.0999999996275",
-            "ptQe-65: 7977.0999999996275",
-            "ptQplt-0.40000000037252903",
-            "ptQs-65: 7977.5",
-            "ptQe-64: 7977.5999999996275",
-            "ptQplt-0",
-            "ptQs-64: 7977.5999999996275",
-            "ptQe-63: 7977.699999999255",
-            "ptQplt-0",
-            "ptQs-63: 7977.699999999255",
-            "ptQe-62: 7977.699999999255",
+            "ptQs-68: 5394.200000000186",
+            "ptQe-67: 5394.299999999814",
             "ptQplt-0.09999999962747097",
-            "ptQs-62: 7977.799999998882",
-            "ptQe-61: 7977.799999998882",
+            "ptQs-67: 5394.399999999441",
+            "ptQe-66: 5394.399999999441",
+            "ptQplt-0.8000000007450581",
+            "ptQs-66: 5395.200000000186",
+            "ptQe-65: 5395.399999999441",
+            "ptQplt-0.30000000074505806",
+            "ptQs-65: 5395.700000000186",
+            "ptQe-64: 5395.899999999441",
+            "ptQplt-0.10000000055879354",
+            "ptQs-64: 5396",
+            "ptQe-63: 5396",
             "ptQplt-0",
-            "ptQs-61: 7977.799999998882",
-            "ptQe-60: 7977.799999998882",
+            "ptQs-63: 5396",
+            "ptQe-62: 5396.0999999996275",
             "ptQplt-0",
-            "ptQs-60: 7977.799999998882",
-            "ptQe-59: 7977.799999998882",
-            "ptQplt-0.10000000149011612",
-            "ptQs-59: 7977.9000000003725",
-            "ptQe-58: 7977.9000000003725",
+            "ptQs-62: 5396.0999999996275",
+            "ptQe-61: 5396.0999999996275",
             "ptQplt-0",
-            "ptQs-58: 7977.9000000003725",
-            "ptQe-57: 7977.9000000003725",
+            "ptQs-61: 5396.0999999996275",
+            "ptQe-60: 5396.0999999996275",
             "ptQplt-0",
-            "ptQs-57: 7977.9000000003725",
-            "ptQe-56: 7977.9000000003725",
+            "ptQs-60: 5396.0999999996275",
+            "ptQe-59: 5396.200000000186",
             "ptQplt-0",
-            "ptQs-56: 7977.9000000003725",
-            "ptQe-55: 7977.9000000003725",
-            "ptQplt-0.09999999962747097",
-            "ptQs-55: 7978",
-            "ptQe-54: 7978",
+            "ptQs-59: 5396.200000000186",
+            "ptQe-58: 5396.200000000186",
             "ptQplt-0",
-            "ptQs-54: 7978",
-            "ptQe-53: 7978",
+            "ptQs-58: 5396.200000000186",
+            "ptQe-57: 5396.200000000186",
             "ptQplt-0",
-            "ptQs-53: 7978",
-            "ptQe-52: 7978.0999999996275",
+            "ptQs-57: 5396.200000000186",
+            "ptQe-56: 5396.200000000186",
             "ptQplt-0",
-            "ptQs-52: 7978.0999999996275",
-            "ptQe-51: 7978.0999999996275",
+            "ptQs-56: 5396.200000000186",
+            "ptQe-55: 5396.299999999814",
             "ptQplt-0",
-            "ptQs-51: 7978.0999999996275",
-            "ptQe-50: 7978.0999999996275",
-            "ptQplt-0.09999999962747097",
-            "ptQs-50: 7978.199999999255",
-            "ptQe-49: 7978.199999999255",
+            "ptQs-55: 5396.299999999814",
+            "ptQe-54: 5396.299999999814",
             "ptQplt-0",
-            "ptQs-49: 7978.199999999255",
-            "ptQe-48: 7978.199999999255",
+            "ptQs-54: 5396.299999999814",
+            "ptQe-53: 5396.399999999441",
             "ptQplt-0",
-            "ptQs-48: 7978.199999999255",
-            "ptQe-47: 7978.299999998882",
+            "ptQs-53: 5396.399999999441",
+            "ptQe-52: 5396.399999999441",
             "ptQplt-0",
-            "ptQs-47: 7978.299999998882",
-            "ptQe-46: 7978.299999998882",
+            "ptQs-52: 5396.399999999441",
+            "ptQe-51: 5396.399999999441",
             "ptQplt-0",
-            "ptQs-46: 7978.299999998882",
+            "ptQs-51: 5396.399999999441",
+            "ptQe-50: 5396.5",
+            "ptQplt-0",
+            "ptQs-50: 5396.5",
+            "ptQe-49: 5396.5",
+            "ptQplt-0",
+            "ptQs-49: 5396.5",
+            "ptQe-48: 5396.5",
+            "ptQplt-0",
+            "ptQs-48: 5396.5",
+            "ptQe-47: 5396.5",
+            "ptQplt-0",
+            "ptQs-47: 5396.5",
+            "ptQe-46: 5396.5999999996275",
+            "ptQplt-0",
+            "ptQs-46: 5396.5999999996275",
             "aii 25 0",
-            "ptQe-45: 7978.4000000003725",
+            "ptQe-45: 5396.700000000186",
             "ptQplt-0",
-            "ptQs-45: 7978.4000000003725",
-            "ptQe-44: 7978.4000000003725",
+            "ptQs-45: 5396.700000000186",
+            "ptQe-44: 5396.799999999814",
             "ptQplt-0",
-            "ptQs-44: 7978.4000000003725",
-            "ptQe-43: 7978.4000000003725",
+            "ptQs-44: 5396.799999999814",
+            "ptQe-43: 5396.799999999814",
             "ptQplt-0",
-            "ptQs-43: 7978.4000000003725",
-            "ptQe-42: 7978.5",
+            "ptQs-43: 5396.799999999814",
+            "ptQe-42: 5396.799999999814",
             "ptQplt-0",
-            "ptQs-42: 7978.5",
-            "ai 29 1013",
-            "ptQe-41: 8991.099999999627",
-            "ptQplt-0.40000000037252903",
-            "ptQs-41: 8991.5",
+            "ptQs-42: 5396.799999999814",
+            "ai 29 990",
+            "ptQe-41: 6387.200000000186",
+            "ptQplt-0.2999999998137355",
+            "ptQs-41: 6387.5",
             "ai 30 1",
-            "ptQe-40: 8992.199999999255",
+            "ptQe-40: 6388.200000000186",
             "ptQplt-0",
-            "ptQs-40: 8992.199999999255",
+            "ptQs-40: 6388.200000000186",
             "canvas 0",
-            "context 4",
+            "context 3",
             "webgl 6",
-            "ptQe-39: 8998.400000000373",
+            "ptQe-39: 6393.899999999441",
             "ptQplt-0",
-            "ptQs-39: 8998.400000000373",
-            "ptQe-38: 8998.5",
+            "ptQs-39: 6393.899999999441",
+            "ptQe-38: 6393.899999999441",
+            "ptQplt-0.10000000055879354",
+            "ptQs-38: 6394",
+            "ptQe-37: 6394",
             "ptQplt-0",
-            "ptQs-38: 8998.5",
-            "ptQe-37: 8998.5",
+            "ptQs-37: 6394",
+            "ptQe-36: 6394",
             "ptQplt-0",
-            "ptQs-37: 8998.5",
-            "ptQe-36: 8998.599999999627",
+            "ptQs-36: 6394",
+            "ptQe-35: 6394.299999999814",
             "ptQplt-0",
-            "ptQs-36: 8998.599999999627",
-            "ptQe-35: 8998.900000000373",
+            "ptQs-35: 6394.299999999814",
+            "ptQe-34: 6394.299999999814",
             "ptQplt-0",
-            "ptQs-35: 8998.900000000373",
-            "ptQe-34: 8998.900000000373",
+            "ptQs-34: 6394.299999999814",
+            "ptQe-33: 6394.5",
             "ptQplt-0",
-            "ptQs-34: 8998.900000000373",
-            "ptQe-33: 8999",
+            "ptQs-33: 6394.5",
+            "ptQe-32: 6394.5",
             "ptQplt-0",
-            "ptQs-33: 8999",
-            "ptQe-32: 8999.099999999627",
+            "ptQs-32: 6394.5",
+            "ptQe-31: 6394.5999999996275",
             "ptQplt-0",
-            "ptQs-32: 8999.099999999627",
-            "ptQe-31: 8999.099999999627",
+            "ptQs-31: 6394.5999999996275",
+            "ptQe-30: 6394.799999999814",
             "ptQplt-0",
-            "ptQs-31: 8999.099999999627",
-            "ptQe-30: 8999.299999998882",
+            "ptQs-30: 6394.799999999814",
+            "ptQe-29: 6394.799999999814",
             "ptQplt-0",
-            "ptQs-30: 8999.299999998882",
-            "ptQe-29: 8999.299999998882",
-            "ptQplt-0",
-            "ptQs-29: 8999.299999998882",
+            "ptQs-29: 6394.799999999814",
             "s 10 2",
-            "ptQe-28: 9001.199999999255",
+            "ptQe-28: 6396.399999999441",
             "ptQplt-0",
-            "ptQs-28: 9001.199999999255",
-            "s 11 23",
-            "ptQe-27: 9024.299999998882",
-            "ptQplt-0.10000000149011612",
-            "ptQs-27: 9024.400000000373",
-            "s 12 18",
-            "ptQe-26: 9042.5",
+            "ptQs-28: 6396.399999999441",
+            "s 11 24",
+            "ptQe-27: 6420.799999999814",
+            "ptQplt-0.09999999962747097",
+            "ptQs-27: 6420.899999999441",
+            "s 12 22",
+            "ptQe-26: 6442.5",
+            "ptQplt-0.09999999962747097",
+            "ptQs-26: 6442.5999999996275",
+            "ptQe-25: 6442.700000000186",
             "ptQplt-0",
-            "ptQs-26: 9042.5",
-            "ptQe-25: 9042.599999999627",
-            "ptQplt-0",
-            "ptQs-25: 9042.599999999627",
+            "ptQs-25: 6442.700000000186",
             "s 14 6",
-            "ptQe-24: 9048.299999998882",
+            "ptQe-24: 6448.5999999996275",
             "ptQplt-0",
-            "ptQs-24: 9048.400000000373",
+            "ptQs-24: 6448.5999999996275",
             "s 15 7",
-            "ptQe-23: 9055.299999998882",
-            "ptQplt-0.2000000011175871",
-            "ptQs-23: 9055.5",
-            "ptQe-22: 9055.599999999627",
+            "ptQe-23: 6455.299999999814",
+            "ptQplt-0.09999999962747097",
+            "ptQs-23: 6455.399999999441",
+            "ptQe-22: 6455.5",
+            "ptQplt-0.09999999962747097",
+            "ptQs-22: 6455.5999999996275",
+            "ptQe-21: 6455.799999999814",
             "ptQplt-0",
-            "ptQs-22: 9055.599999999627",
-            "ptQe-21: 9055.900000000373",
+            "ptQs-21: 6455.799999999814",
+            "ptQe-20: 6456.0999999996275",
             "ptQplt-0",
-            "ptQs-21: 9055.900000000373",
-            "ptQe-20: 9056.099999999627",
+            "ptQs-20: 6456.0999999996275",
+            "ptQe-19: 6456.5",
             "ptQplt-0",
-            "ptQs-20: 9056.099999999627",
-            "s 19 1",
-            "ptQe-19: 9056.599999999627",
+            "ptQs-19: 6456.5",
+            "ptQe-18: 6456.5999999996275",
             "ptQplt-0",
-            "ptQs-19: 9056.599999999627",
-            "ptQe-18: 9056.599999999627",
+            "ptQs-18: 6456.5999999996275",
+            "ptQe-17: 6456.5999999996275",
             "ptQplt-0",
-            "ptQs-18: 9056.599999999627",
-            "ptQe-17: 9056.699999999255",
+            "ptQs-17: 6456.5999999996275",
+            "ptQe-16: 6456.700000000186",
             "ptQplt-0",
-            "ptQs-17: 9056.699999999255",
-            "ptQe-16: 9056.699999999255",
+            "ptQs-16: 6456.700000000186",
+            "ptQe-15: 6456.799999999814",
             "ptQplt-0",
-            "ptQs-16: 9056.699999999255",
-            "ptQe-15: 9056.799999998882",
+            "ptQs-15: 6456.799999999814",
+            "ptQe-14: 6456.799999999814",
             "ptQplt-0",
-            "ptQs-15: 9056.799999998882",
-            "ptQe-14: 9056.799999998882",
-            "ptQplt-0",
-            "ptQs-14: 9056.799999998882",
+            "ptQs-14: 6456.799999999814",
             "s 25 6",
-            "ptQe-13: 9063.199999999255",
-            "ptQplt-0.09999999962747097",
-            "ptQs-13: 9063.299999998882",
-            "ptQe-12: 9063.299999998882",
+            "ptQe-13: 6463.0999999996275",
             "ptQplt-0",
-            "ptQs-12: 9063.299999998882",
+            "ptQs-13: 6463.0999999996275",
+            "ptQe-12: 6463.200000000186",
+            "ptQplt-0",
+            "ptQs-12: 6463.200000000186",
             "s 27 1",
-            "ptQe-11: 9064.199999999255",
+            "ptQe-11: 6464",
             "ptQplt-0",
-            "ptQs-11: 9064.199999999255",
-            "ptQe-10: 9064.199999999255",
+            "ptQs-11: 6464",
+            "ptQe-10: 6464",
             "ptQplt-0",
-            "ptQs-10: 9064.199999999255",
-            "ptQe-9: 9064.299999998882",
+            "ptQs-10: 6464",
+            "ptQe-9: 6464.0999999996275",
             "ptQplt-0",
-            "ptQs-9: 9064.299999998882",
-            "ptQe-8: 9064.299999998882",
+            "ptQs-9: 6464.0999999996275",
+            "ptQe-8: 6464.0999999996275",
             "ptQplt-0",
-            "ptQs-8: 9064.299999998882",
-            "ptQe-7: 9064.299999998882",
+            "ptQs-8: 6464.0999999996275",
+            "ptQe-7: 6464.200000000186",
             "ptQplt-0",
-            "ptQs-7: 9064.299999998882",
+            "ptQs-7: 6464.200000000186",
             "s 32 7",
-            "ptQe-6: 9071.699999999255",
+            "ptQe-6: 6470.799999999814",
             "ptQplt-0.09999999962747097",
-            "ptQs-6: 9071.799999998882",
-            "ptQe-5: 9071.900000000373",
+            "ptQs-6: 6470.899999999441",
+            "ptQe-5: 6470.899999999441",
             "ptQplt-0",
-            "ptQs-5: 9071.900000000373",
+            "ptQs-5: 6470.899999999441",
             "s 34 6",
-            "ptQe-4: 9077.400000000373",
+            "ptQe-4: 6476.399999999441",
             "ptQplt-0",
-            "ptQs-4: 9077.400000000373",
-            "s 35 22",
-            "ptQe-3: 9099.400000000373",
-            "ptQplt-0.19999999925494194",
-            "ptQs-3: 9099.599999999627",
-            "s 36 6",
-            "ptQe-2: 9105.5",
+            "ptQs-4: 6476.399999999441",
+            "s 35 21",
+            "ptQe-3: 6497.299999999814",
+            "ptQplt-0.40000000037252903",
+            "ptQs-3: 6497.700000000186",
+            "s 36 5",
+            "ptQe-2: 6503",
             "ptQplt-0.09999999962747097",
-            "ptQs-2: 9105.599999999627",
-            "ptQe-1: 9105.699999999255",
-            "ptQplt-0",
-            "ptQs-1: 9105.699999999255",
-            "ptQe-0: 9105.699999999255",
-            "aii 17 0",
+            "ptQs-2: 6503.0999999996275",
+            "ptQe-1: 6503.0999999996275",
+            "ptQplt-0.10000000055879354",
+            "ptQs-1: 6503.200000000186",
+            "ptQe-0: 6503.200000000186",
+            "aii 17 0.09999999962747097",
             "aii 25 0",
-            "aii 25 0.09999999962747097",
             "aii 25 0",
-            "aii 25 0.09999999962747097"
+            "aii 25 0",
+            "aii 25 0"
         ],
         []
     ],
@@ -1103,15 +1101,15 @@
                 "githubUsername": "memade",
                 "githubUrl": "https://github.com/memade"
             },
-            "collectedAt": "2026-06-17T03:36:47.951Z",
+            "collectedAt": "2026-06-18T03:13:27.727Z",
             "count": 253,
             "valueIndexMapVersion": "martell-values-v1",
-            "payloadHash": "fnv1a32:8edbf546",
+            "payloadHash": "fnv1a32:6d4bba70",
             "asyncProfile": {
                 "enabled": true,
                 "timeoutMs": 3500,
                 "completed": true,
-                "durationMs": 206
+                "durationMs": 171
             }
         },
         "page": {
@@ -2355,14 +2353,14 @@
         "webgl": {
             "context": "webgl2",
             "contextConstructor": "function WebGL2RenderingContext() { [native code] }",
-            "contextCreationMs": 4,
+            "contextCreationMs": 3,
             "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
-            "shadingLanguageVersion": "#20",
+            "shadingLanguageVersion": "WebGL GLSL ES 3.00 (OpenGL ES GLSL ES 3.0 Chromium)",
             "vendor": "WebKit",
             "renderer": "WebKit WebGL",
             "unmaskedRenderer": "ANGLE (Intel, Intel(R) UHD Graphics 770 (0x0000A780) Direct3D11 vs_5_0 ps_5_0, D3D11)",
             "unmaskedVendor": "Google Inc. (Intel)",
-            "extensionCount": 34,
+            "extensionCount": 32,
             "canvasHashes": {
                 "twoD": [
                     "ae8b6d4f",
@@ -2880,7 +2878,9 @@
                         "clearPixelsHash": "fnv1a32:c4647dc5"
                     }
                 ]
-            }
+            },
+            "rawSummaryExtensionCount": 32,
+            "extensionCountSource": "extended.contexts.webgl2.supportedExtensions.length"
         },
         "audio": {
             "baseLatency": 0.01,
@@ -3427,20 +3427,20 @@
             "connectionType": "",
             "effectiveType": "4g",
             "downlinkMax": 0,
-            "downlink": 1.65,
-            "rtt": 200,
+            "downlink": 1.4,
+            "rtt": 100,
             "saveData": false,
             "webrtcCandidates": [
-                "candidate:3122141894 1 udp 2113937151 e334ab47-b6cc-4aaa-8b0f-bd5a05950a98.local 64900 typ host generation 0 ufrag VD7u network-cost 999",
-                "candidate:2784216207 1 udp 2113937151 e334ab47-b6cc-4aaa-8b0f-bd5a05950a98.local 64920 typ host generation 0 ufrag ABua network-cost 999"
+                "candidate:532264583 1 udp 2113937151 fcc03ed7-8fcc-4071-a607-4b7d92e789bd.local 59182 typ host generation 0 ufrag hIsX network-cost 999",
+                "candidate:4288101715 1 udp 2113937151 fcc03ed7-8fcc-4071-a607-4b7d92e789bd.local 59202 typ host generation 0 ufrag RzJ9 network-cost 999"
             ],
             "direct": {
                 "online": true,
                 "connection": {
                     "type": "",
                     "effectiveType": "4g",
-                    "downlink": 1.65,
-                    "rtt": 200,
+                    "downlink": 1.4,
+                    "rtt": 100,
                     "saveData": false
                 }
             }
@@ -3538,7 +3538,7 @@
                         false
                     ]
                 ],
-                1129
+                1108.0999999996275
             ],
             "permissionSurface": {
                 "permissionsApi": true,
@@ -3548,6 +3548,7 @@
             "webAuthn": {
                 "available": true,
                 "conditionalMediationAvailable": true,
+                "userVerifyingPlatformAuthenticatorAvailable": false,
                 "clientCapabilities": {
                     "conditionalCreate": true,
                     "conditionalGet": true,
@@ -3571,14 +3572,13 @@
                     "signalCurrentUserDetails": true,
                     "signalUnknownCredential": true,
                     "userVerifyingPlatformAuthenticator": false
-                },
-                "userVerifyingPlatformAuthenticatorAvailable": false
+                }
             }
         },
         "quality": {
             "valid": true,
             "warnings": [],
-            "payloadLength": 11593,
+            "payloadLength": 11482,
             "asyncWarnings": []
         },
         "apiSurface": {
@@ -3657,14 +3657,14 @@
             }
         },
         "performance": {
-            "timeOrigin": 1781667398737.9,
-            "now": 9223.099999999627,
+            "timeOrigin": 1781752401120.4,
+            "now": 6612.299999999814,
             "navigation": {
                 "type": "navigate",
                 "redirectCount": 0,
                 "startTime": 0,
-                "domContentLoadedEventEnd": 81.40000000037253,
-                "loadEventEnd": 84.79999999888241,
+                "domContentLoadedEventEnd": 75.5,
+                "loadEventEnd": 80.09999999962747,
                 "transferSize": 1162,
                 "encodedBodySize": 862,
                 "decodedBodySize": 862,
@@ -3689,11 +3689,11 @@
                 ],
                 [
                     "mouseleave",
-                    1
+                    2
                 ],
                 [
                     "mouseenter",
-                    1
+                    2
                 ],
                 [
                     "drop",
@@ -3705,7 +3705,7 @@
                 ],
                 [
                     "pointerenter",
-                    41
+                    16
                 ],
                 [
                     "dragend",
@@ -3737,7 +3737,7 @@
                 ],
                 [
                     "pointerover",
-                    12
+                    6
                 ],
                 [
                     "lostpointercapture",
@@ -3745,7 +3745,7 @@
                 ],
                 [
                     "mouseover",
-                    11
+                    6
                 ],
                 [
                     "gotpointercapture",
@@ -3789,7 +3789,7 @@
                 ],
                 [
                     "pointerout",
-                    12
+                    6
                 ],
                 [
                     "dragenter",
@@ -3809,11 +3809,11 @@
                 ],
                 [
                     "mouseout",
-                    12
+                    5
                 ],
                 [
                     "pointerleave",
-                    41
+                    16
                 ]
             ]
         },
@@ -4483,7 +4483,7 @@
         },
         "webgpu": {
             "available": true,
-            "requestMs": 41,
+            "requestMs": 29,
             "features": [
                 "depth32float-stencil8",
                 "rg11b10ufloat-renderable",
@@ -4497,10 +4497,10 @@
                 "float32-blendable",
                 "depth-clip-control",
                 "texture-compression-bc-sliced-3d",
-                "texture-formats-tier2",
-                "shader-f16",
                 "timestamp-query",
+                "texture-formats-tier2",
                 "clip-distances",
+                "shader-f16",
                 "primitive-index",
                 "texture-component-swizzle",
                 "subgroups"
@@ -5016,13 +5016,13 @@
                         "suggestedProfile": "windows_intel_uhd_770_d3d11",
                         "observed": {
                             "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
-                            "shadingLanguageVersion": "#20",
+                            "shadingLanguageVersion": "WebGL GLSL ES 3.00 (OpenGL ES GLSL ES 3.0 Chromium)",
                             "vendor": "WebKit",
                             "renderer": "WebKit WebGL",
                             "unmaskedRenderer": "ANGLE (Intel, Intel(R) UHD Graphics 770 (0x0000A780) Direct3D11 vs_5_0 ps_5_0, D3D11)",
                             "unmaskedVendor": "Google Inc. (Intel)",
                             "extensionCount": 32,
-                            "rawSummaryExtensionCount": 34,
+                            "rawSummaryExtensionCount": 32,
                             "extensionCountSource": "contexts.webgl2.supportedExtensions.length",
                             "canvasHashes": {
                                 "twoD": [
@@ -6119,7 +6119,7 @@
                 "webgpu": {
                     "values": {
                         "available": true,
-                        "requestMs": 41,
+                        "requestMs": 29,
                         "features": [
                             "depth32float-stencil8",
                             "rg11b10ufloat-renderable",
@@ -6133,10 +6133,10 @@
                             "float32-blendable",
                             "depth-clip-control",
                             "texture-compression-bc-sliced-3d",
-                            "texture-formats-tier2",
-                            "shader-f16",
                             "timestamp-query",
+                            "texture-formats-tier2",
                             "clip-distances",
+                            "shader-f16",
                             "primitive-index",
                             "texture-component-swizzle",
                             "subgroups"
@@ -6677,14 +6677,14 @@
                         "type": "",
                         "effectiveType": "4g",
                         "downlinkMax": 0,
-                        "downlink": 1.65,
-                        "rtt": 200,
+                        "downlink": 1.4,
+                        "rtt": 100,
                         "saveData": false
                     },
                     "webrtc": {
                         "candidates": [
-                            "candidate:3122141894 1 udp 2113937151 e334ab47-b6cc-4aaa-8b0f-bd5a05950a98.local 64900 typ host generation 0 ufrag VD7u network-cost 999",
-                            "candidate:2784216207 1 udp 2113937151 e334ab47-b6cc-4aaa-8b0f-bd5a05950a98.local 64920 typ host generation 0 ufrag ABua network-cost 999"
+                            "candidate:532264583 1 udp 2113937151 fcc03ed7-8fcc-4071-a607-4b7d92e789bd.local 59182 typ host generation 0 ufrag hIsX network-cost 999",
+                            "candidate:4288101715 1 udp 2113937151 fcc03ed7-8fcc-4071-a607-4b7d92e789bd.local 59202 typ host generation 0 ufrag RzJ9 network-cost 999"
                         ],
                         "candidatePolicy": "profile-local-candidate-or-policy",
                         "recommendedIpHandlingPolicy": "disable_non_proxied_udp"
@@ -6751,6 +6751,7 @@
                     "webAuthn": {
                         "available": true,
                         "conditionalMediationAvailable": true,
+                        "userVerifyingPlatformAuthenticatorAvailable": false,
                         "clientCapabilities": {
                             "conditionalCreate": true,
                             "conditionalGet": true,
@@ -6774,8 +6775,7 @@
                             "signalCurrentUserDetails": true,
                             "signalUnknownCredential": true,
                             "userVerifyingPlatformAuthenticator": false
-                        },
-                        "userVerifyingPlatformAuthenticatorAvailable": false
+                        }
                     },
                     "publicKeyCredentialCapabilities": [
                         [
@@ -6868,7 +6868,7 @@
                                 false
                             ]
                         ],
-                        1129
+                        1108.0999999996275
                     ]
                 },
                 "implementation": {
@@ -6996,6 +6996,1554 @@
             }
         }
     },
+    "broium": {
+        "schema": "broium.launch-config.v1",
+        "browser": {
+            "engine": "chromium",
+            "family": "chromium",
+            "product": "Google Chrome",
+            "brand": "Google Chrome",
+            "version": "149.0.7827.114",
+            "major": "149",
+            "role": "observed-browser",
+            "platform": "Windows",
+            "platformVersion": "10.0.0",
+            "architecture": "x86",
+            "bitness": "64",
+            "profileHash": "fnv1a32:5caced9e"
+        },
+        "warnings": [
+            "docked-tool-or-remote-panel-window-geometry-normalized",
+            "remote-or-displayless-pointer-media-query-normalized"
+        ],
+        "switches": {
+            "brofp-brand": "Google Chrome",
+            "brofp-brand-version": "149.0.7827.114",
+            "brofp-platform": "Win32",
+            "brofp-ua-platform": "Windows",
+            "brofp-platform-version": "10.0.0",
+            "brofp-architecture": "x86",
+            "brofp-bitness": "64",
+            "brofp-wow64": 0,
+            "brofp-form-factors": [
+                "Desktop"
+            ],
+            "brofp-tz": "Asia/Shanghai",
+            "brofp-locale": "zh-TW",
+            "brofp-languages": [
+                "zh-TW",
+                "zh",
+                "en-US",
+                "en"
+            ],
+            "brofp-cpu": 28,
+            "brofp-mem": 32,
+            "brofp-storage-quota": 10737418240,
+            "brofp-speech-voices": "W3sidm9pY2VVUkkiOiJNaWNyb3NvZnQgSHVpaHVpIC0gQ2hpbmVzZSAoU2ltcGxpZmllZCwgUFJDKSIsIm5hbWUiOiJNaWNyb3NvZnQgSHVpaHVpIC0gQ2hpbmVzZSAoU2ltcGxpZmllZCwgUFJDKSIsImxhbmciOiJ6aC1DTiIsImxvY2FsU2VydmljZSI6dHJ1ZSwiZGVmYXVsdCI6dHJ1ZX0seyJ2b2ljZVVSSSI6Ik1pY3Jvc29mdCBLYW5na2FuZyAtIENoaW5lc2UgKFNpbXBsaWZpZWQsIFBSQykiLCJuYW1lIjoiTWljcm9zb2Z0IEthbmdrYW5nIC0gQ2hpbmVzZSAoU2ltcGxpZmllZCwgUFJDKSIsImxhbmciOiJ6aC1DTiIsImxvY2FsU2VydmljZSI6dHJ1ZSwiZGVmYXVsdCI6ZmFsc2V9LHsidm9pY2VVUkkiOiJNaWNyb3NvZnQgWWFveWFvIC0gQ2hpbmVzZSAoU2ltcGxpZmllZCwgUFJDKSIsIm5hbWUiOiJNaWNyb3NvZnQgWWFveWFvIC0gQ2hpbmVzZSAoU2ltcGxpZmllZCwgUFJDKSIsImxhbmciOiJ6aC1DTiIsImxvY2FsU2VydmljZSI6dHJ1ZSwiZGVmYXVsdCI6ZmFsc2V9LHsidm9pY2VVUkkiOiJHb29nbGUgRGV1dHNjaCIsIm5hbWUiOiJHb29nbGUgRGV1dHNjaCIsImxhbmciOiJkZS1ERSIsImxvY2FsU2VydmljZSI6ZmFsc2UsImRlZmF1bHQiOmZhbHNlfSx7InZvaWNlVVJJIjoiR29vZ2xlIFVTIEVuZ2xpc2giLCJuYW1lIjoiR29vZ2xlIFVTIEVuZ2xpc2giLCJsYW5nIjoiZW4tVVMiLCJsb2NhbFNlcnZpY2UiOmZhbHNlLCJkZWZhdWx0IjpmYWxzZX0seyJ2b2ljZVVSSSI6Ikdvb2dsZSBVSyBFbmdsaXNoIEZlbWFsZSIsIm5hbWUiOiJHb29nbGUgVUsgRW5nbGlzaCBGZW1hbGUiLCJsYW5nIjoiZW4tR0IiLCJsb2NhbFNlcnZpY2UiOmZhbHNlLCJkZWZhdWx0IjpmYWxzZX0seyJ2b2ljZVVSSSI6Ikdvb2dsZSBVSyBFbmdsaXNoIE1hbGUiLCJuYW1lIjoiR29vZ2xlIFVLIEVuZ2xpc2ggTWFsZSIsImxhbmciOiJlbi1HQiIsImxvY2FsU2VydmljZSI6ZmFsc2UsImRlZmF1bHQiOmZhbHNlfSx7InZvaWNlVVJJIjoiR29vZ2xlIGVzcGHDsW9sIiwibmFtZSI6Ikdvb2dsZSBlc3Bhw7FvbCIsImxhbmciOiJlcy1FUyIsImxvY2FsU2VydmljZSI6ZmFsc2UsImRlZmF1bHQiOmZhbHNlfSx7InZvaWNlVVJJIjoiR29vZ2xlIGVzcGHDsW9sIGRlIEVzdGFkb3MgVW5pZG9zIiwibmFtZSI6Ikdvb2dsZSBlc3Bhw7FvbCBkZSBFc3RhZG9zIFVuaWRvcyIsImxhbmciOiJlcy1VUyIsImxvY2FsU2VydmljZSI6ZmFsc2UsImRlZmF1bHQiOmZhbHNlfSx7InZvaWNlVVJJIjoiR29vZ2xlIGZyYW7Dp2FpcyIsIm5hbWUiOiJHb29nbGUgZnJhbsOnYWlzIiwibGFuZyI6ImZyLUZSIiwibG9jYWxTZXJ2aWNlIjpmYWxzZSwiZGVmYXVsdCI6ZmFsc2V9LHsidm9pY2VVUkkiOiJHb29nbGUg4KS54KS/4KSo4KWN4KSm4KWAIiwibmFtZSI6Ikdvb2dsZSDgpLngpL/gpKjgpY3gpKbgpYAiLCJsYW5nIjoiaGktSU4iLCJsb2NhbFNlcnZpY2UiOmZhbHNlLCJkZWZhdWx0IjpmYWxzZX0seyJ2b2ljZVVSSSI6Ikdvb2dsZSBCYWhhc2EgSW5kb25lc2lhIiwibmFtZSI6Ikdvb2dsZSBCYWhhc2EgSW5kb25lc2lhIiwibGFuZyI6ImlkLUlEIiwibG9jYWxTZXJ2aWNlIjpmYWxzZSwiZGVmYXVsdCI6ZmFsc2V9LHsidm9pY2VVUkkiOiJHb29nbGUgaXRhbGlhbm8iLCJuYW1lIjoiR29vZ2xlIGl0YWxpYW5vIiwibGFuZyI6Iml0LUlUIiwibG9jYWxTZXJ2aWNlIjpmYWxzZSwiZGVmYXVsdCI6ZmFsc2V9LHsidm9pY2VVUkkiOiJHb29nbGUg5pel5pys6KqeIiwibmFtZSI6Ikdvb2dsZSDml6XmnKzoqp4iLCJsYW5nIjoiamEtSlAiLCJsb2NhbFNlcnZpY2UiOmZhbHNlLCJkZWZhdWx0IjpmYWxzZX0seyJ2b2ljZVVSSSI6Ikdvb2dsZSDtlZzqta3snZgiLCJuYW1lIjoiR29vZ2xlIO2VnOq1reydmCIsImxhbmciOiJrby1LUiIsImxvY2FsU2VydmljZSI6ZmFsc2UsImRlZmF1bHQiOmZhbHNlfSx7InZvaWNlVVJJIjoiR29vZ2xlIE5lZGVybGFuZHMiLCJuYW1lIjoiR29vZ2xlIE5lZGVybGFuZHMiLCJsYW5nIjoibmwtTkwiLCJsb2NhbFNlcnZpY2UiOmZhbHNlLCJkZWZhdWx0IjpmYWxzZX0seyJ2b2ljZVVSSSI6Ikdvb2dsZSBwb2xza2kiLCJuYW1lIjoiR29vZ2xlIHBvbHNraSIsImxhbmciOiJwbC1QTCIsImxvY2FsU2VydmljZSI6ZmFsc2UsImRlZmF1bHQiOmZhbHNlfSx7InZvaWNlVVJJIjoiR29vZ2xlIHBvcnR1Z3XDqnMgZG8gQnJhc2lsIiwibmFtZSI6Ikdvb2dsZSBwb3J0dWd1w6pzIGRvIEJyYXNpbCIsImxhbmciOiJwdC1CUiIsImxvY2FsU2VydmljZSI6ZmFsc2UsImRlZmF1bHQiOmZhbHNlfSx7InZvaWNlVVJJIjoiR29vZ2xlINGA0YPRgdGB0LrQuNC5IiwibmFtZSI6Ikdvb2dsZSDRgNGD0YHRgdC60LjQuSIsImxhbmciOiJydS1SVSIsImxvY2FsU2VydmljZSI6ZmFsc2UsImRlZmF1bHQiOmZhbHNlfSx7InZvaWNlVVJJIjoiR29vZ2xlwqDmma7pgJror53vvIjkuK3lm73lpKfpmYbvvIkiLCJuYW1lIjoiR29vZ2xlwqDmma7pgJror53vvIjkuK3lm73lpKfpmYbvvIkiLCJsYW5nIjoiemgtQ04iLCJsb2NhbFNlcnZpY2UiOmZhbHNlLCJkZWZhdWx0IjpmYWxzZX0seyJ2b2ljZVVSSSI6Ikdvb2dsZcKg57Kk6Kqe77yI6aaZ5riv77yJIiwibmFtZSI6Ikdvb2dsZcKg57Kk6Kqe77yI6aaZ5riv77yJIiwibGFuZyI6InpoLUhLIiwibG9jYWxTZXJ2aWNlIjpmYWxzZSwiZGVmYXVsdCI6ZmFsc2V9LHsidm9pY2VVUkkiOiJHb29nbGUg5ZyL6Kqe77yI6Ie654Gj77yJIiwibmFtZSI6Ikdvb2dsZSDlnIvoqp7vvIjoh7rngaPvvIkiLCJsYW5nIjoiemgtVFciLCJsb2NhbFNlcnZpY2UiOmZhbHNlLCJkZWZhdWx0IjpmYWxzZX1d",
+            "brofp-net-effective-type": "4g",
+            "brofp-net-downlink-max": 0,
+            "brofp-net-downlink": 1.4,
+            "brofp-net-rtt": 100,
+            "brofp-net-save-data": 0,
+            "brofp-screen": [
+                "1920",
+                "1080",
+                "1"
+            ],
+            "brofp-identify": "fnv1a32:5caced9e",
+            "brofp-native-mode": true,
+            "brofp-native-surfaces": [
+                "identity",
+                "navigator",
+                "screen",
+                "locale",
+                "runtime",
+                "fonts",
+                "webgl",
+                "canvas",
+                "audio",
+                "media",
+                "storage",
+                "network"
+            ],
+            "brofp-webgl-mode": "native",
+            "brofp-font-profile": "windows_zh_cn",
+            "brofp-fonts": [
+                "Arial",
+                "Arial Black",
+                "Calibri",
+                "Cambria",
+                "Candara",
+                "Comic Sans MS",
+                "Consolas",
+                "Constantia",
+                "Courier New",
+                "Georgia",
+                "Impact",
+                "Lucida Console",
+                "Lucida Sans Unicode",
+                "Microsoft Sans Serif",
+                "Segoe UI",
+                "Tahoma",
+                "Times New Roman",
+                "Trebuchet MS",
+                "Verdana",
+                "Microsoft YaHei",
+                "Microsoft JhengHei",
+                "SimSun",
+                "NSimSun",
+                "SimHei",
+                "KaiTi",
+                "FangSong",
+                "DengXian",
+                "Yu Gothic",
+                "Malgun Gothic",
+                "Helvetica",
+                "STKaiti",
+                "Roboto"
+            ]
+        },
+        "args": [
+            "--brofp-brand=Google Chrome",
+            "--brofp-brand-version=149.0.7827.114",
+            "--brofp-platform=Win32",
+            "--brofp-ua-platform=Windows",
+            "--brofp-platform-version=10.0.0",
+            "--brofp-architecture=x86",
+            "--brofp-bitness=64",
+            "--brofp-wow64=0",
+            "--brofp-form-factors=Desktop",
+            "--brofp-tz=Asia/Shanghai",
+            "--brofp-locale=zh-TW",
+            "--brofp-languages=zh-TW,zh,en-US,en",
+            "--lang=zh-TW",
+            "--brofp-cpu=28",
+            "--brofp-mem=32",
+            "--brofp-storage-quota=10737418240",
+            "--brofp-speech-voices=W3sidm9pY2VVUkkiOiJNaWNyb3NvZnQgSHVpaHVpIC0gQ2hpbmVzZSAoU2ltcGxpZmllZCwgUFJDKSIsIm5hbWUiOiJNaWNyb3NvZnQgSHVpaHVpIC0gQ2hpbmVzZSAoU2ltcGxpZmllZCwgUFJDKSIsImxhbmciOiJ6aC1DTiIsImxvY2FsU2VydmljZSI6dHJ1ZSwiZGVmYXVsdCI6dHJ1ZX0seyJ2b2ljZVVSSSI6Ik1pY3Jvc29mdCBLYW5na2FuZyAtIENoaW5lc2UgKFNpbXBsaWZpZWQsIFBSQykiLCJuYW1lIjoiTWljcm9zb2Z0IEthbmdrYW5nIC0gQ2hpbmVzZSAoU2ltcGxpZmllZCwgUFJDKSIsImxhbmciOiJ6aC1DTiIsImxvY2FsU2VydmljZSI6dHJ1ZSwiZGVmYXVsdCI6ZmFsc2V9LHsidm9pY2VVUkkiOiJNaWNyb3NvZnQgWWFveWFvIC0gQ2hpbmVzZSAoU2ltcGxpZmllZCwgUFJDKSIsIm5hbWUiOiJNaWNyb3NvZnQgWWFveWFvIC0gQ2hpbmVzZSAoU2ltcGxpZmllZCwgUFJDKSIsImxhbmciOiJ6aC1DTiIsImxvY2FsU2VydmljZSI6dHJ1ZSwiZGVmYXVsdCI6ZmFsc2V9LHsidm9pY2VVUkkiOiJHb29nbGUgRGV1dHNjaCIsIm5hbWUiOiJHb29nbGUgRGV1dHNjaCIsImxhbmciOiJkZS1ERSIsImxvY2FsU2VydmljZSI6ZmFsc2UsImRlZmF1bHQiOmZhbHNlfSx7InZvaWNlVVJJIjoiR29vZ2xlIFVTIEVuZ2xpc2giLCJuYW1lIjoiR29vZ2xlIFVTIEVuZ2xpc2giLCJsYW5nIjoiZW4tVVMiLCJsb2NhbFNlcnZpY2UiOmZhbHNlLCJkZWZhdWx0IjpmYWxzZX0seyJ2b2ljZVVSSSI6Ikdvb2dsZSBVSyBFbmdsaXNoIEZlbWFsZSIsIm5hbWUiOiJHb29nbGUgVUsgRW5nbGlzaCBGZW1hbGUiLCJsYW5nIjoiZW4tR0IiLCJsb2NhbFNlcnZpY2UiOmZhbHNlLCJkZWZhdWx0IjpmYWxzZX0seyJ2b2ljZVVSSSI6Ikdvb2dsZSBVSyBFbmdsaXNoIE1hbGUiLCJuYW1lIjoiR29vZ2xlIFVLIEVuZ2xpc2ggTWFsZSIsImxhbmciOiJlbi1HQiIsImxvY2FsU2VydmljZSI6ZmFsc2UsImRlZmF1bHQiOmZhbHNlfSx7InZvaWNlVVJJIjoiR29vZ2xlIGVzcGHDsW9sIiwibmFtZSI6Ikdvb2dsZSBlc3Bhw7FvbCIsImxhbmciOiJlcy1FUyIsImxvY2FsU2VydmljZSI6ZmFsc2UsImRlZmF1bHQiOmZhbHNlfSx7InZvaWNlVVJJIjoiR29vZ2xlIGVzcGHDsW9sIGRlIEVzdGFkb3MgVW5pZG9zIiwibmFtZSI6Ikdvb2dsZSBlc3Bhw7FvbCBkZSBFc3RhZG9zIFVuaWRvcyIsImxhbmciOiJlcy1VUyIsImxvY2FsU2VydmljZSI6ZmFsc2UsImRlZmF1bHQiOmZhbHNlfSx7InZvaWNlVVJJIjoiR29vZ2xlIGZyYW7Dp2FpcyIsIm5hbWUiOiJHb29nbGUgZnJhbsOnYWlzIiwibGFuZyI6ImZyLUZSIiwibG9jYWxTZXJ2aWNlIjpmYWxzZSwiZGVmYXVsdCI6ZmFsc2V9LHsidm9pY2VVUkkiOiJHb29nbGUg4KS54KS/4KSo4KWN4KSm4KWAIiwibmFtZSI6Ikdvb2dsZSDgpLngpL/gpKjgpY3gpKbgpYAiLCJsYW5nIjoiaGktSU4iLCJsb2NhbFNlcnZpY2UiOmZhbHNlLCJkZWZhdWx0IjpmYWxzZX0seyJ2b2ljZVVSSSI6Ikdvb2dsZSBCYWhhc2EgSW5kb25lc2lhIiwibmFtZSI6Ikdvb2dsZSBCYWhhc2EgSW5kb25lc2lhIiwibGFuZyI6ImlkLUlEIiwibG9jYWxTZXJ2aWNlIjpmYWxzZSwiZGVmYXVsdCI6ZmFsc2V9LHsidm9pY2VVUkkiOiJHb29nbGUgaXRhbGlhbm8iLCJuYW1lIjoiR29vZ2xlIGl0YWxpYW5vIiwibGFuZyI6Iml0LUlUIiwibG9jYWxTZXJ2aWNlIjpmYWxzZSwiZGVmYXVsdCI6ZmFsc2V9LHsidm9pY2VVUkkiOiJHb29nbGUg5pel5pys6KqeIiwibmFtZSI6Ikdvb2dsZSDml6XmnKzoqp4iLCJsYW5nIjoiamEtSlAiLCJsb2NhbFNlcnZpY2UiOmZhbHNlLCJkZWZhdWx0IjpmYWxzZX0seyJ2b2ljZVVSSSI6Ikdvb2dsZSDtlZzqta3snZgiLCJuYW1lIjoiR29vZ2xlIO2VnOq1reydmCIsImxhbmciOiJrby1LUiIsImxvY2FsU2VydmljZSI6ZmFsc2UsImRlZmF1bHQiOmZhbHNlfSx7InZvaWNlVVJJIjoiR29vZ2xlIE5lZGVybGFuZHMiLCJuYW1lIjoiR29vZ2xlIE5lZGVybGFuZHMiLCJsYW5nIjoibmwtTkwiLCJsb2NhbFNlcnZpY2UiOmZhbHNlLCJkZWZhdWx0IjpmYWxzZX0seyJ2b2ljZVVSSSI6Ikdvb2dsZSBwb2xza2kiLCJuYW1lIjoiR29vZ2xlIHBvbHNraSIsImxhbmciOiJwbC1QTCIsImxvY2FsU2VydmljZSI6ZmFsc2UsImRlZmF1bHQiOmZhbHNlfSx7InZvaWNlVVJJIjoiR29vZ2xlIHBvcnR1Z3XDqnMgZG8gQnJhc2lsIiwibmFtZSI6Ikdvb2dsZSBwb3J0dWd1w6pzIGRvIEJyYXNpbCIsImxhbmciOiJwdC1CUiIsImxvY2FsU2VydmljZSI6ZmFsc2UsImRlZmF1bHQiOmZhbHNlfSx7InZvaWNlVVJJIjoiR29vZ2xlINGA0YPRgdGB0LrQuNC5IiwibmFtZSI6Ikdvb2dsZSDRgNGD0YHRgdC60LjQuSIsImxhbmciOiJydS1SVSIsImxvY2FsU2VydmljZSI6ZmFsc2UsImRlZmF1bHQiOmZhbHNlfSx7InZvaWNlVVJJIjoiR29vZ2xlwqDmma7pgJror53vvIjkuK3lm73lpKfpmYbvvIkiLCJuYW1lIjoiR29vZ2xlwqDmma7pgJror53vvIjkuK3lm73lpKfpmYbvvIkiLCJsYW5nIjoiemgtQ04iLCJsb2NhbFNlcnZpY2UiOmZhbHNlLCJkZWZhdWx0IjpmYWxzZX0seyJ2b2ljZVVSSSI6Ikdvb2dsZcKg57Kk6Kqe77yI6aaZ5riv77yJIiwibmFtZSI6Ikdvb2dsZcKg57Kk6Kqe77yI6aaZ5riv77yJIiwibGFuZyI6InpoLUhLIiwibG9jYWxTZXJ2aWNlIjpmYWxzZSwiZGVmYXVsdCI6ZmFsc2V9LHsidm9pY2VVUkkiOiJHb29nbGUg5ZyL6Kqe77yI6Ie654Gj77yJIiwibmFtZSI6Ikdvb2dsZSDlnIvoqp7vvIjoh7rngaPvvIkiLCJsYW5nIjoiemgtVFciLCJsb2NhbFNlcnZpY2UiOmZhbHNlLCJkZWZhdWx0IjpmYWxzZX1d",
+            "--brofp-net-effective-type=4g",
+            "--brofp-net-downlink-max=0",
+            "--brofp-net-downlink=1.4",
+            "--brofp-net-rtt=100",
+            "--brofp-net-save-data=0",
+            "--brofp-screen=1920,1080,1",
+            "--brofp-identify=fnv1a32:5caced9e",
+            "--brofp-native-mode",
+            "--brofp-native-surfaces=identity,navigator,screen,locale,runtime,fonts,webgl,canvas,audio,media,storage,network",
+            "--brofp-webgl-mode=native",
+            "--brofp-font-profile=windows_zh_cn",
+            "--brofp-fonts=Arial,Arial Black,Calibri,Cambria,Candara,Comic Sans MS,Consolas,Constantia,Courier New,Georgia,Impact,Lucida Console,Lucida Sans Unicode,Microsoft Sans Serif,Segoe UI,Tahoma,Times New Roman,Trebuchet MS,Verdana,Microsoft YaHei,Microsoft JhengHei,SimSun,NSimSun,SimHei,KaiTi,FangSong,DengXian,Yu Gothic,Malgun Gothic,Helvetica,STKaiti,Roboto",
+            "--window-size=1920,1040",
+            "--window-position=0,0",
+            "--start-maximized",
+            "--disable-features=ReduceAcceptLanguage,ReduceAcceptLanguageHTTP,ReduceAcceptLanguageCount",
+            "--force-prefers-no-reduced-motion",
+            "--no-first-run",
+            "--no-default-browser-check",
+            "--webrtc-ip-handling-policy=disable_non_proxied_udp"
+        ],
+        "cfg": {
+            "identify": "fnv1a32:5caced9e",
+            "switches": {
+                "brofp-brand": "Google Chrome",
+                "brofp-brand-version": "149.0.7827.114",
+                "brofp-platform": "Win32",
+                "brofp-ua-platform": "Windows",
+                "brofp-platform-version": "10.0.0",
+                "brofp-architecture": "x86",
+                "brofp-bitness": "64",
+                "brofp-wow64": 0,
+                "brofp-form-factors": [
+                    "Desktop"
+                ],
+                "brofp-tz": "Asia/Shanghai",
+                "brofp-locale": "zh-TW",
+                "brofp-languages": [
+                    "zh-TW",
+                    "zh",
+                    "en-US",
+                    "en"
+                ],
+                "brofp-cpu": 28,
+                "brofp-mem": 32,
+                "brofp-storage-quota": 10737418240,
+                "brofp-speech-voices": "W3sidm9pY2VVUkkiOiJNaWNyb3NvZnQgSHVpaHVpIC0gQ2hpbmVzZSAoU2ltcGxpZmllZCwgUFJDKSIsIm5hbWUiOiJNaWNyb3NvZnQgSHVpaHVpIC0gQ2hpbmVzZSAoU2ltcGxpZmllZCwgUFJDKSIsImxhbmciOiJ6aC1DTiIsImxvY2FsU2VydmljZSI6dHJ1ZSwiZGVmYXVsdCI6dHJ1ZX0seyJ2b2ljZVVSSSI6Ik1pY3Jvc29mdCBLYW5na2FuZyAtIENoaW5lc2UgKFNpbXBsaWZpZWQsIFBSQykiLCJuYW1lIjoiTWljcm9zb2Z0IEthbmdrYW5nIC0gQ2hpbmVzZSAoU2ltcGxpZmllZCwgUFJDKSIsImxhbmciOiJ6aC1DTiIsImxvY2FsU2VydmljZSI6dHJ1ZSwiZGVmYXVsdCI6ZmFsc2V9LHsidm9pY2VVUkkiOiJNaWNyb3NvZnQgWWFveWFvIC0gQ2hpbmVzZSAoU2ltcGxpZmllZCwgUFJDKSIsIm5hbWUiOiJNaWNyb3NvZnQgWWFveWFvIC0gQ2hpbmVzZSAoU2ltcGxpZmllZCwgUFJDKSIsImxhbmciOiJ6aC1DTiIsImxvY2FsU2VydmljZSI6dHJ1ZSwiZGVmYXVsdCI6ZmFsc2V9LHsidm9pY2VVUkkiOiJHb29nbGUgRGV1dHNjaCIsIm5hbWUiOiJHb29nbGUgRGV1dHNjaCIsImxhbmciOiJkZS1ERSIsImxvY2FsU2VydmljZSI6ZmFsc2UsImRlZmF1bHQiOmZhbHNlfSx7InZvaWNlVVJJIjoiR29vZ2xlIFVTIEVuZ2xpc2giLCJuYW1lIjoiR29vZ2xlIFVTIEVuZ2xpc2giLCJsYW5nIjoiZW4tVVMiLCJsb2NhbFNlcnZpY2UiOmZhbHNlLCJkZWZhdWx0IjpmYWxzZX0seyJ2b2ljZVVSSSI6Ikdvb2dsZSBVSyBFbmdsaXNoIEZlbWFsZSIsIm5hbWUiOiJHb29nbGUgVUsgRW5nbGlzaCBGZW1hbGUiLCJsYW5nIjoiZW4tR0IiLCJsb2NhbFNlcnZpY2UiOmZhbHNlLCJkZWZhdWx0IjpmYWxzZX0seyJ2b2ljZVVSSSI6Ikdvb2dsZSBVSyBFbmdsaXNoIE1hbGUiLCJuYW1lIjoiR29vZ2xlIFVLIEVuZ2xpc2ggTWFsZSIsImxhbmciOiJlbi1HQiIsImxvY2FsU2VydmljZSI6ZmFsc2UsImRlZmF1bHQiOmZhbHNlfSx7InZvaWNlVVJJIjoiR29vZ2xlIGVzcGHDsW9sIiwibmFtZSI6Ikdvb2dsZSBlc3Bhw7FvbCIsImxhbmciOiJlcy1FUyIsImxvY2FsU2VydmljZSI6ZmFsc2UsImRlZmF1bHQiOmZhbHNlfSx7InZvaWNlVVJJIjoiR29vZ2xlIGVzcGHDsW9sIGRlIEVzdGFkb3MgVW5pZG9zIiwibmFtZSI6Ikdvb2dsZSBlc3Bhw7FvbCBkZSBFc3RhZG9zIFVuaWRvcyIsImxhbmciOiJlcy1VUyIsImxvY2FsU2VydmljZSI6ZmFsc2UsImRlZmF1bHQiOmZhbHNlfSx7InZvaWNlVVJJIjoiR29vZ2xlIGZyYW7Dp2FpcyIsIm5hbWUiOiJHb29nbGUgZnJhbsOnYWlzIiwibGFuZyI6ImZyLUZSIiwibG9jYWxTZXJ2aWNlIjpmYWxzZSwiZGVmYXVsdCI6ZmFsc2V9LHsidm9pY2VVUkkiOiJHb29nbGUg4KS54KS/4KSo4KWN4KSm4KWAIiwibmFtZSI6Ikdvb2dsZSDgpLngpL/gpKjgpY3gpKbgpYAiLCJsYW5nIjoiaGktSU4iLCJsb2NhbFNlcnZpY2UiOmZhbHNlLCJkZWZhdWx0IjpmYWxzZX0seyJ2b2ljZVVSSSI6Ikdvb2dsZSBCYWhhc2EgSW5kb25lc2lhIiwibmFtZSI6Ikdvb2dsZSBCYWhhc2EgSW5kb25lc2lhIiwibGFuZyI6ImlkLUlEIiwibG9jYWxTZXJ2aWNlIjpmYWxzZSwiZGVmYXVsdCI6ZmFsc2V9LHsidm9pY2VVUkkiOiJHb29nbGUgaXRhbGlhbm8iLCJuYW1lIjoiR29vZ2xlIGl0YWxpYW5vIiwibGFuZyI6Iml0LUlUIiwibG9jYWxTZXJ2aWNlIjpmYWxzZSwiZGVmYXVsdCI6ZmFsc2V9LHsidm9pY2VVUkkiOiJHb29nbGUg5pel5pys6KqeIiwibmFtZSI6Ikdvb2dsZSDml6XmnKzoqp4iLCJsYW5nIjoiamEtSlAiLCJsb2NhbFNlcnZpY2UiOmZhbHNlLCJkZWZhdWx0IjpmYWxzZX0seyJ2b2ljZVVSSSI6Ikdvb2dsZSDtlZzqta3snZgiLCJuYW1lIjoiR29vZ2xlIO2VnOq1reydmCIsImxhbmciOiJrby1LUiIsImxvY2FsU2VydmljZSI6ZmFsc2UsImRlZmF1bHQiOmZhbHNlfSx7InZvaWNlVVJJIjoiR29vZ2xlIE5lZGVybGFuZHMiLCJuYW1lIjoiR29vZ2xlIE5lZGVybGFuZHMiLCJsYW5nIjoibmwtTkwiLCJsb2NhbFNlcnZpY2UiOmZhbHNlLCJkZWZhdWx0IjpmYWxzZX0seyJ2b2ljZVVSSSI6Ikdvb2dsZSBwb2xza2kiLCJuYW1lIjoiR29vZ2xlIHBvbHNraSIsImxhbmciOiJwbC1QTCIsImxvY2FsU2VydmljZSI6ZmFsc2UsImRlZmF1bHQiOmZhbHNlfSx7InZvaWNlVVJJIjoiR29vZ2xlIHBvcnR1Z3XDqnMgZG8gQnJhc2lsIiwibmFtZSI6Ikdvb2dsZSBwb3J0dWd1w6pzIGRvIEJyYXNpbCIsImxhbmciOiJwdC1CUiIsImxvY2FsU2VydmljZSI6ZmFsc2UsImRlZmF1bHQiOmZhbHNlfSx7InZvaWNlVVJJIjoiR29vZ2xlINGA0YPRgdGB0LrQuNC5IiwibmFtZSI6Ikdvb2dsZSDRgNGD0YHRgdC60LjQuSIsImxhbmciOiJydS1SVSIsImxvY2FsU2VydmljZSI6ZmFsc2UsImRlZmF1bHQiOmZhbHNlfSx7InZvaWNlVVJJIjoiR29vZ2xlwqDmma7pgJror53vvIjkuK3lm73lpKfpmYbvvIkiLCJuYW1lIjoiR29vZ2xlwqDmma7pgJror53vvIjkuK3lm73lpKfpmYbvvIkiLCJsYW5nIjoiemgtQ04iLCJsb2NhbFNlcnZpY2UiOmZhbHNlLCJkZWZhdWx0IjpmYWxzZX0seyJ2b2ljZVVSSSI6Ikdvb2dsZcKg57Kk6Kqe77yI6aaZ5riv77yJIiwibmFtZSI6Ikdvb2dsZcKg57Kk6Kqe77yI6aaZ5riv77yJIiwibGFuZyI6InpoLUhLIiwibG9jYWxTZXJ2aWNlIjpmYWxzZSwiZGVmYXVsdCI6ZmFsc2V9LHsidm9pY2VVUkkiOiJHb29nbGUg5ZyL6Kqe77yI6Ie654Gj77yJIiwibmFtZSI6Ikdvb2dsZSDlnIvoqp7vvIjoh7rngaPvvIkiLCJsYW5nIjoiemgtVFciLCJsb2NhbFNlcnZpY2UiOmZhbHNlLCJkZWZhdWx0IjpmYWxzZX1d",
+                "brofp-net-effective-type": "4g",
+                "brofp-net-downlink-max": 0,
+                "brofp-net-downlink": 1.4,
+                "brofp-net-rtt": 100,
+                "brofp-net-save-data": 0,
+                "brofp-screen": [
+                    "1920",
+                    "1080",
+                    "1"
+                ],
+                "brofp-identify": "fnv1a32:5caced9e",
+                "brofp-native-mode": true,
+                "brofp-native-surfaces": [
+                    "identity",
+                    "navigator",
+                    "screen",
+                    "locale",
+                    "runtime",
+                    "fonts",
+                    "webgl",
+                    "canvas",
+                    "audio",
+                    "media",
+                    "storage",
+                    "network"
+                ],
+                "brofp-webgl-mode": "native",
+                "brofp-font-profile": "windows_zh_cn",
+                "brofp-fonts": [
+                    "Arial",
+                    "Arial Black",
+                    "Calibri",
+                    "Cambria",
+                    "Candara",
+                    "Comic Sans MS",
+                    "Consolas",
+                    "Constantia",
+                    "Courier New",
+                    "Georgia",
+                    "Impact",
+                    "Lucida Console",
+                    "Lucida Sans Unicode",
+                    "Microsoft Sans Serif",
+                    "Segoe UI",
+                    "Tahoma",
+                    "Times New Roman",
+                    "Trebuchet MS",
+                    "Verdana",
+                    "Microsoft YaHei",
+                    "Microsoft JhengHei",
+                    "SimSun",
+                    "NSimSun",
+                    "SimHei",
+                    "KaiTi",
+                    "FangSong",
+                    "DengXian",
+                    "Yu Gothic",
+                    "Malgun Gothic",
+                    "Helvetica",
+                    "STKaiti",
+                    "Roboto"
+                ]
+            },
+            "v8Keys": {
+                "enable": true,
+                "mode": "hash-seed",
+                "seedMaterialHash": "fnv1a32:5caced9e"
+            },
+            "nativeSurfaces": {
+                "active": [
+                    "identity",
+                    "navigator",
+                    "screen",
+                    "locale",
+                    "runtime",
+                    "fonts",
+                    "webgl",
+                    "canvas",
+                    "audio",
+                    "media",
+                    "storage",
+                    "network"
+                ],
+                "planned": [
+                    "security",
+                    "apiSurface",
+                    "webgpu"
+                ]
+            },
+            "webgl": {
+                "enable": true,
+                "profile": "windows_intel_uhd_770_d3d11",
+                "dataURL": {
+                    "enable": false,
+                    "mode": "off",
+                    "observed": {
+                        "canvas2dDataUrlHash": "fnv1a32:4dd40892",
+                        "canvas2dImageDataHash": "fnv1a32:c6de2c9a",
+                        "webglCanvasHashes": {
+                            "twoD": [
+                                "ae8b6d4f",
+                                "953237eb41d70fcc8d010c53ab943662",
+                                "510f85225149d7d71202af5b8b7ca6fe"
+                            ],
+                            "webgl": [
+                                "f1db0a06a624adb62b0774ad9e67cc41",
+                                "91eed477ca8ee447d7cac73a1fbad80f"
+                            ]
+                        }
+                    }
+                },
+                "readPixels": {
+                    "enable": false,
+                    "mode": "off",
+                    "observed": {
+                        "canvasHashes": {
+                            "twoD": [
+                                "ae8b6d4f",
+                                "953237eb41d70fcc8d010c53ab943662",
+                                "510f85225149d7d71202af5b8b7ca6fe"
+                            ],
+                            "webgl": [
+                                "f1db0a06a624adb62b0774ad9e67cc41",
+                                "91eed477ca8ee447d7cac73a1fbad80f"
+                            ]
+                        }
+                    }
+                },
+                "contextCreation": {
+                    "allowSoftwareWhenMajorPerformanceCaveat": false
+                },
+                "contexts": {
+                    "webgl2": {
+                        "getParameter": {
+                            "3379": {
+                                "type": "int",
+                                "value": 16384
+                            },
+                            "3386": {
+                                "type": "int32Array",
+                                "value": [
+                                    32767,
+                                    32767
+                                ]
+                            },
+                            "3410": {
+                                "type": "int",
+                                "value": 8
+                            },
+                            "3411": {
+                                "type": "int",
+                                "value": 8
+                            },
+                            "3412": {
+                                "type": "int",
+                                "value": 8
+                            },
+                            "3413": {
+                                "type": "int",
+                                "value": 8
+                            },
+                            "3414": {
+                                "type": "int",
+                                "value": 24
+                            },
+                            "3415": {
+                                "type": "int",
+                                "value": 8
+                            },
+                            "7936": {
+                                "type": "string",
+                                "value": "WebKit"
+                            },
+                            "7937": {
+                                "type": "string",
+                                "value": "WebKit WebGL"
+                            },
+                            "7938": {
+                                "type": "string",
+                                "value": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+                            },
+                            "32883": {
+                                "type": "int",
+                                "value": 2048
+                            },
+                            "33000": {
+                                "type": "int",
+                                "value": 2147483647
+                            },
+                            "33001": {
+                                "type": "int",
+                                "value": 2147483647
+                            },
+                            "33901": {
+                                "type": "float32Array",
+                                "value": [
+                                    1,
+                                    1024
+                                ]
+                            },
+                            "33902": {
+                                "type": "float32Array",
+                                "value": [
+                                    1,
+                                    1
+                                ]
+                            },
+                            "34024": {
+                                "type": "int",
+                                "value": 16384
+                            },
+                            "34045": {
+                                "type": "int",
+                                "value": 2
+                            },
+                            "34047": {
+                                "type": "int",
+                                "value": 16
+                            },
+                            "34076": {
+                                "type": "int",
+                                "value": 16384
+                            },
+                            "34852": {
+                                "type": "int",
+                                "value": 8
+                            },
+                            "34921": {
+                                "type": "int",
+                                "value": 16
+                            },
+                            "34930": {
+                                "type": "int",
+                                "value": 16
+                            },
+                            "35071": {
+                                "type": "int",
+                                "value": 2048
+                            },
+                            "35076": {
+                                "type": "int",
+                                "value": -8
+                            },
+                            "35077": {
+                                "type": "int",
+                                "value": 7
+                            },
+                            "35371": {
+                                "type": "int",
+                                "value": 12
+                            },
+                            "35373": {
+                                "type": "int",
+                                "value": 12
+                            },
+                            "35374": {
+                                "type": "int",
+                                "value": 24
+                            },
+                            "35375": {
+                                "type": "int",
+                                "value": 24
+                            },
+                            "35376": {
+                                "type": "int",
+                                "value": 65536
+                            },
+                            "35377": {
+                                "type": "int",
+                                "value": 212992
+                            },
+                            "35379": {
+                                "type": "int",
+                                "value": 200704
+                            },
+                            "35657": {
+                                "type": "int",
+                                "value": 4096
+                            },
+                            "35658": {
+                                "type": "int",
+                                "value": 16384
+                            },
+                            "35659": {
+                                "type": "int",
+                                "value": 120
+                            },
+                            "35660": {
+                                "type": "int",
+                                "value": 16
+                            },
+                            "35661": {
+                                "type": "int",
+                                "value": 32
+                            },
+                            "35724": {
+                                "type": "string",
+                                "value": "WebGL GLSL ES 3.00 (OpenGL ES GLSL ES 3.0 Chromium)"
+                            },
+                            "35968": {
+                                "type": "int",
+                                "value": 4
+                            },
+                            "35978": {
+                                "type": "int",
+                                "value": 120
+                            },
+                            "35979": {
+                                "type": "int",
+                                "value": 4
+                            },
+                            "36063": {
+                                "type": "int",
+                                "value": 8
+                            },
+                            "36183": {
+                                "type": "int",
+                                "value": 8
+                            },
+                            "36203": {
+                                "type": "uint",
+                                "value": 4294967294
+                            },
+                            "36347": {
+                                "type": "int",
+                                "value": 4096
+                            },
+                            "36348": {
+                                "type": "int",
+                                "value": 30
+                            },
+                            "36349": {
+                                "type": "int",
+                                "value": 1024
+                            },
+                            "37137": {
+                                "type": "int",
+                                "value": 0
+                            },
+                            "37154": {
+                                "type": "int",
+                                "value": 120
+                            },
+                            "37157": {
+                                "type": "int",
+                                "value": 120
+                            },
+                            "37445": {
+                                "type": "string",
+                                "value": "Google Inc. (Intel)"
+                            },
+                            "37446": {
+                                "type": "string",
+                                "value": "ANGLE (Intel, Intel(R) UHD Graphics 770 (0x0000A780) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+                            },
+                            "37447": {
+                                "type": "int",
+                                "value": 0
+                            }
+                        },
+                        "extensions": {
+                            "list": [
+                                "EXT_clip_control",
+                                "EXT_color_buffer_float",
+                                "EXT_color_buffer_half_float",
+                                "EXT_conservative_depth",
+                                "EXT_depth_clamp",
+                                "EXT_disjoint_timer_query_webgl2",
+                                "EXT_float_blend",
+                                "EXT_polygon_offset_clamp",
+                                "EXT_render_snorm",
+                                "EXT_texture_compression_bptc",
+                                "EXT_texture_compression_rgtc",
+                                "EXT_texture_filter_anisotropic",
+                                "EXT_texture_mirror_clamp_to_edge",
+                                "EXT_texture_norm16",
+                                "KHR_parallel_shader_compile",
+                                "NV_shader_noperspective_interpolation",
+                                "OES_draw_buffers_indexed",
+                                "OES_sample_variables",
+                                "OES_shader_multisample_interpolation",
+                                "OES_texture_float_linear",
+                                "OVR_multiview2",
+                                "WEBGL_blend_func_extended",
+                                "WEBGL_clip_cull_distance",
+                                "WEBGL_compressed_texture_s3tc",
+                                "WEBGL_compressed_texture_s3tc_srgb",
+                                "WEBGL_debug_renderer_info",
+                                "WEBGL_debug_shaders",
+                                "WEBGL_lose_context",
+                                "WEBGL_multi_draw",
+                                "WEBGL_polygon_mode",
+                                "WEBGL_provoking_vertex",
+                                "WEBGL_stencil_texturing"
+                            ]
+                        },
+                        "contextAttributes": {
+                            "alpha": true,
+                            "antialias": true,
+                            "depth": true,
+                            "desynchronized": false,
+                            "failIfMajorPerformanceCaveat": false,
+                            "powerPreference": "default",
+                            "premultipliedAlpha": true,
+                            "preserveDrawingBuffer": true,
+                            "stencil": true,
+                            "xrCompatible": false
+                        },
+                        "shaderPrecisionFormat": {
+                            "35632": {
+                                "36336": {
+                                    "rangeMin": 127,
+                                    "rangeMax": 127,
+                                    "precision": 23
+                                },
+                                "36337": {
+                                    "rangeMin": 127,
+                                    "rangeMax": 127,
+                                    "precision": 23
+                                },
+                                "36338": {
+                                    "rangeMin": 127,
+                                    "rangeMax": 127,
+                                    "precision": 23
+                                },
+                                "36339": {
+                                    "rangeMin": 31,
+                                    "rangeMax": 30,
+                                    "precision": 0
+                                },
+                                "36340": {
+                                    "rangeMin": 31,
+                                    "rangeMax": 30,
+                                    "precision": 0
+                                },
+                                "36341": {
+                                    "rangeMin": 31,
+                                    "rangeMax": 30,
+                                    "precision": 0
+                                }
+                            },
+                            "35633": {
+                                "36336": {
+                                    "rangeMin": 127,
+                                    "rangeMax": 127,
+                                    "precision": 23
+                                },
+                                "36337": {
+                                    "rangeMin": 127,
+                                    "rangeMax": 127,
+                                    "precision": 23
+                                },
+                                "36338": {
+                                    "rangeMin": 127,
+                                    "rangeMax": 127,
+                                    "precision": 23
+                                },
+                                "36339": {
+                                    "rangeMin": 31,
+                                    "rangeMax": 30,
+                                    "precision": 0
+                                },
+                                "36340": {
+                                    "rangeMin": 31,
+                                    "rangeMax": 30,
+                                    "precision": 0
+                                },
+                                "36341": {
+                                    "rangeMin": 31,
+                                    "rangeMax": 30,
+                                    "precision": 0
+                                }
+                            }
+                        }
+                    },
+                    "webgl": {
+                        "getParameter": {
+                            "3379": {
+                                "type": "int",
+                                "value": 16384
+                            },
+                            "3386": {
+                                "type": "int32Array",
+                                "value": [
+                                    32767,
+                                    32767
+                                ]
+                            },
+                            "3410": {
+                                "type": "int",
+                                "value": 8
+                            },
+                            "3411": {
+                                "type": "int",
+                                "value": 8
+                            },
+                            "3412": {
+                                "type": "int",
+                                "value": 8
+                            },
+                            "3413": {
+                                "type": "int",
+                                "value": 8
+                            },
+                            "3414": {
+                                "type": "int",
+                                "value": 24
+                            },
+                            "3415": {
+                                "type": "int",
+                                "value": 8
+                            },
+                            "7936": {
+                                "type": "string",
+                                "value": "WebKit"
+                            },
+                            "7937": {
+                                "type": "string",
+                                "value": "WebKit WebGL"
+                            },
+                            "7938": {
+                                "type": "string",
+                                "value": "WebGL 1.0 (OpenGL ES 2.0 Chromium)"
+                            },
+                            "33901": {
+                                "type": "float32Array",
+                                "value": [
+                                    1,
+                                    1024
+                                ]
+                            },
+                            "33902": {
+                                "type": "float32Array",
+                                "value": [
+                                    1,
+                                    1
+                                ]
+                            },
+                            "34024": {
+                                "type": "int",
+                                "value": 16384
+                            },
+                            "34047": {
+                                "type": "int",
+                                "value": 16
+                            },
+                            "34076": {
+                                "type": "int",
+                                "value": 16384
+                            },
+                            "34921": {
+                                "type": "int",
+                                "value": 16
+                            },
+                            "34930": {
+                                "type": "int",
+                                "value": 16
+                            },
+                            "35660": {
+                                "type": "int",
+                                "value": 16
+                            },
+                            "35661": {
+                                "type": "int",
+                                "value": 32
+                            },
+                            "35724": {
+                                "type": "string",
+                                "value": "WebGL GLSL ES 1.0 (OpenGL ES GLSL ES 1.0 Chromium)"
+                            },
+                            "36347": {
+                                "type": "int",
+                                "value": 4096
+                            },
+                            "36348": {
+                                "type": "int",
+                                "value": 30
+                            },
+                            "36349": {
+                                "type": "int",
+                                "value": 1024
+                            },
+                            "37445": {
+                                "type": "string",
+                                "value": "Google Inc. (Intel)"
+                            },
+                            "37446": {
+                                "type": "string",
+                                "value": "ANGLE (Intel, Intel(R) UHD Graphics 770 (0x0000A780) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+                            }
+                        },
+                        "extensions": {
+                            "list": [
+                                "ANGLE_instanced_arrays",
+                                "EXT_blend_minmax",
+                                "EXT_clip_control",
+                                "EXT_color_buffer_half_float",
+                                "EXT_depth_clamp",
+                                "EXT_disjoint_timer_query",
+                                "EXT_float_blend",
+                                "EXT_frag_depth",
+                                "EXT_polygon_offset_clamp",
+                                "EXT_shader_texture_lod",
+                                "EXT_texture_compression_bptc",
+                                "EXT_texture_compression_rgtc",
+                                "EXT_texture_filter_anisotropic",
+                                "EXT_texture_mirror_clamp_to_edge",
+                                "EXT_sRGB",
+                                "KHR_parallel_shader_compile",
+                                "OES_element_index_uint",
+                                "OES_fbo_render_mipmap",
+                                "OES_standard_derivatives",
+                                "OES_texture_float",
+                                "OES_texture_float_linear",
+                                "OES_texture_half_float",
+                                "OES_texture_half_float_linear",
+                                "OES_vertex_array_object",
+                                "WEBGL_blend_func_extended",
+                                "WEBGL_color_buffer_float",
+                                "WEBGL_compressed_texture_s3tc",
+                                "WEBGL_compressed_texture_s3tc_srgb",
+                                "WEBGL_debug_renderer_info",
+                                "WEBGL_debug_shaders",
+                                "WEBGL_depth_texture",
+                                "WEBGL_draw_buffers",
+                                "WEBGL_lose_context",
+                                "WEBGL_multi_draw",
+                                "WEBGL_polygon_mode"
+                            ]
+                        },
+                        "contextAttributes": {
+                            "alpha": true,
+                            "antialias": true,
+                            "depth": true,
+                            "desynchronized": false,
+                            "failIfMajorPerformanceCaveat": false,
+                            "powerPreference": "default",
+                            "premultipliedAlpha": true,
+                            "preserveDrawingBuffer": true,
+                            "stencil": true,
+                            "xrCompatible": false
+                        },
+                        "shaderPrecisionFormat": {
+                            "35632": {
+                                "36336": {
+                                    "rangeMin": 127,
+                                    "rangeMax": 127,
+                                    "precision": 23
+                                },
+                                "36337": {
+                                    "rangeMin": 127,
+                                    "rangeMax": 127,
+                                    "precision": 23
+                                },
+                                "36338": {
+                                    "rangeMin": 127,
+                                    "rangeMax": 127,
+                                    "precision": 23
+                                },
+                                "36339": {
+                                    "rangeMin": 31,
+                                    "rangeMax": 30,
+                                    "precision": 0
+                                },
+                                "36340": {
+                                    "rangeMin": 31,
+                                    "rangeMax": 30,
+                                    "precision": 0
+                                },
+                                "36341": {
+                                    "rangeMin": 31,
+                                    "rangeMax": 30,
+                                    "precision": 0
+                                }
+                            },
+                            "35633": {
+                                "36336": {
+                                    "rangeMin": 127,
+                                    "rangeMax": 127,
+                                    "precision": 23
+                                },
+                                "36337": {
+                                    "rangeMin": 127,
+                                    "rangeMax": 127,
+                                    "precision": 23
+                                },
+                                "36338": {
+                                    "rangeMin": 127,
+                                    "rangeMax": 127,
+                                    "precision": 23
+                                },
+                                "36339": {
+                                    "rangeMin": 31,
+                                    "rangeMax": 30,
+                                    "precision": 0
+                                },
+                                "36340": {
+                                    "rangeMin": 31,
+                                    "rangeMax": 30,
+                                    "precision": 0
+                                },
+                                "36341": {
+                                    "rangeMin": 31,
+                                    "rangeMax": 30,
+                                    "precision": 0
+                                }
+                            }
+                        }
+                    },
+                    "experimental-webgl": {
+                        "getParameter": {
+                            "3379": {
+                                "type": "int",
+                                "value": 16384
+                            },
+                            "3386": {
+                                "type": "int32Array",
+                                "value": [
+                                    32767,
+                                    32767
+                                ]
+                            },
+                            "3410": {
+                                "type": "int",
+                                "value": 8
+                            },
+                            "3411": {
+                                "type": "int",
+                                "value": 8
+                            },
+                            "3412": {
+                                "type": "int",
+                                "value": 8
+                            },
+                            "3413": {
+                                "type": "int",
+                                "value": 8
+                            },
+                            "3414": {
+                                "type": "int",
+                                "value": 24
+                            },
+                            "3415": {
+                                "type": "int",
+                                "value": 8
+                            },
+                            "7936": {
+                                "type": "string",
+                                "value": "WebKit"
+                            },
+                            "7937": {
+                                "type": "string",
+                                "value": "WebKit WebGL"
+                            },
+                            "7938": {
+                                "type": "string",
+                                "value": "WebGL 1.0 (OpenGL ES 2.0 Chromium)"
+                            },
+                            "33901": {
+                                "type": "float32Array",
+                                "value": [
+                                    1,
+                                    1024
+                                ]
+                            },
+                            "33902": {
+                                "type": "float32Array",
+                                "value": [
+                                    1,
+                                    1
+                                ]
+                            },
+                            "34024": {
+                                "type": "int",
+                                "value": 16384
+                            },
+                            "34047": {
+                                "type": "int",
+                                "value": 16
+                            },
+                            "34076": {
+                                "type": "int",
+                                "value": 16384
+                            },
+                            "34921": {
+                                "type": "int",
+                                "value": 16
+                            },
+                            "34930": {
+                                "type": "int",
+                                "value": 16
+                            },
+                            "35660": {
+                                "type": "int",
+                                "value": 16
+                            },
+                            "35661": {
+                                "type": "int",
+                                "value": 32
+                            },
+                            "35724": {
+                                "type": "string",
+                                "value": "WebGL GLSL ES 1.0 (OpenGL ES GLSL ES 1.0 Chromium)"
+                            },
+                            "36347": {
+                                "type": "int",
+                                "value": 4096
+                            },
+                            "36348": {
+                                "type": "int",
+                                "value": 30
+                            },
+                            "36349": {
+                                "type": "int",
+                                "value": 1024
+                            },
+                            "37445": {
+                                "type": "string",
+                                "value": "Google Inc. (Intel)"
+                            },
+                            "37446": {
+                                "type": "string",
+                                "value": "ANGLE (Intel, Intel(R) UHD Graphics 770 (0x0000A780) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+                            }
+                        },
+                        "extensions": {
+                            "list": [
+                                "ANGLE_instanced_arrays",
+                                "EXT_blend_minmax",
+                                "EXT_clip_control",
+                                "EXT_color_buffer_half_float",
+                                "EXT_depth_clamp",
+                                "EXT_disjoint_timer_query",
+                                "EXT_float_blend",
+                                "EXT_frag_depth",
+                                "EXT_polygon_offset_clamp",
+                                "EXT_shader_texture_lod",
+                                "EXT_texture_compression_bptc",
+                                "EXT_texture_compression_rgtc",
+                                "EXT_texture_filter_anisotropic",
+                                "EXT_texture_mirror_clamp_to_edge",
+                                "EXT_sRGB",
+                                "KHR_parallel_shader_compile",
+                                "OES_element_index_uint",
+                                "OES_fbo_render_mipmap",
+                                "OES_standard_derivatives",
+                                "OES_texture_float",
+                                "OES_texture_float_linear",
+                                "OES_texture_half_float",
+                                "OES_texture_half_float_linear",
+                                "OES_vertex_array_object",
+                                "WEBGL_blend_func_extended",
+                                "WEBGL_color_buffer_float",
+                                "WEBGL_compressed_texture_s3tc",
+                                "WEBGL_compressed_texture_s3tc_srgb",
+                                "WEBGL_debug_renderer_info",
+                                "WEBGL_debug_shaders",
+                                "WEBGL_depth_texture",
+                                "WEBGL_draw_buffers",
+                                "WEBGL_lose_context",
+                                "WEBGL_multi_draw",
+                                "WEBGL_polygon_mode"
+                            ]
+                        },
+                        "contextAttributes": {
+                            "alpha": true,
+                            "antialias": true,
+                            "depth": true,
+                            "desynchronized": false,
+                            "failIfMajorPerformanceCaveat": false,
+                            "powerPreference": "default",
+                            "premultipliedAlpha": true,
+                            "preserveDrawingBuffer": true,
+                            "stencil": true,
+                            "xrCompatible": false
+                        },
+                        "shaderPrecisionFormat": {
+                            "35632": {
+                                "36336": {
+                                    "rangeMin": 127,
+                                    "rangeMax": 127,
+                                    "precision": 23
+                                },
+                                "36337": {
+                                    "rangeMin": 127,
+                                    "rangeMax": 127,
+                                    "precision": 23
+                                },
+                                "36338": {
+                                    "rangeMin": 127,
+                                    "rangeMax": 127,
+                                    "precision": 23
+                                },
+                                "36339": {
+                                    "rangeMin": 31,
+                                    "rangeMax": 30,
+                                    "precision": 0
+                                },
+                                "36340": {
+                                    "rangeMin": 31,
+                                    "rangeMax": 30,
+                                    "precision": 0
+                                },
+                                "36341": {
+                                    "rangeMin": 31,
+                                    "rangeMax": 30,
+                                    "precision": 0
+                                }
+                            },
+                            "35633": {
+                                "36336": {
+                                    "rangeMin": 127,
+                                    "rangeMax": 127,
+                                    "precision": 23
+                                },
+                                "36337": {
+                                    "rangeMin": 127,
+                                    "rangeMax": 127,
+                                    "precision": 23
+                                },
+                                "36338": {
+                                    "rangeMin": 127,
+                                    "rangeMax": 127,
+                                    "precision": 23
+                                },
+                                "36339": {
+                                    "rangeMin": 31,
+                                    "rangeMax": 30,
+                                    "precision": 0
+                                },
+                                "36340": {
+                                    "rangeMin": 31,
+                                    "rangeMax": 30,
+                                    "precision": 0
+                                },
+                                "36341": {
+                                    "rangeMin": 31,
+                                    "rangeMax": 30,
+                                    "precision": 0
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "canvas2d": {
+                "enable": true,
+                "mode": "stable-profile",
+                "observed": {
+                    "dataUrlHash": "fnv1a32:4dd40892",
+                    "imageDataHash": "fnv1a32:c6de2c9a",
+                    "dataUrlLength": 10386,
+                    "textMetrics": {
+                        "width": 183.955078125,
+                        "actualBoundingBoxLeft": 1,
+                        "actualBoundingBoxRight": 182.955078125,
+                        "actualBoundingBoxAscent": -0.734375,
+                        "actualBoundingBoxDescent": 17.734375,
+                        "fontBoundingBoxAscent": 2.265625,
+                        "fontBoundingBoxDescent": 17.734375
+                    }
+                }
+            },
+            "audio": {
+                "enable": true,
+                "mode": "sample-stable-lowbit",
+                "scope": "all",
+                "analyser": true,
+                "stride": 97,
+                "strength": 1,
+                "protectHeadSamples": 64,
+                "protectTailSamples": 512,
+                "observed": {
+                    "context": {
+                        "sampleRate": 48000,
+                        "baseLatency": 0.01,
+                        "outputLatency": 0,
+                        "state": "running"
+                    },
+                    "offline": {
+                        "hash": "fnv1a32:1740705d",
+                        "sampleRate": 44100,
+                        "length": 44100,
+                        "numberOfChannels": 1
+                    }
+                }
+            },
+            "capabilities": [
+                {
+                    "surface": "identity",
+                    "status": "native-supported",
+                    "source": "config.identity.values"
+                },
+                {
+                    "surface": "navigator",
+                    "status": "native-supported",
+                    "source": "config.navigator.values"
+                },
+                {
+                    "surface": "screen",
+                    "status": "native-supported",
+                    "source": "config.screen.values"
+                },
+                {
+                    "surface": "locale",
+                    "status": "native-supported",
+                    "source": "config.locale.values"
+                },
+                {
+                    "surface": "runtime",
+                    "status": "partial-native",
+                    "source": "config.runtime.values",
+                    "notes": [
+                        "v8Keys hash-seed config is emitted; API surface gating still needs native work"
+                    ]
+                },
+                {
+                    "surface": "fonts",
+                    "status": "partial-native",
+                    "source": "config.fonts.values",
+                    "notes": [
+                        "font profile and explicit family allow-list are emitted"
+                    ]
+                },
+                {
+                    "surface": "graphics.webgl",
+                    "status": "partial-native",
+                    "source": "config.graphics.webgl.values",
+                    "notes": [
+                        "numeric getParameter, shaderPrecisionFormat, contextAttributes, and extensions are emitted; observed readPixels/dataURL hashes are preserved for future exact replay"
+                    ]
+                },
+                {
+                    "surface": "graphics.canvas2d",
+                    "status": "partial-native",
+                    "source": "config.graphics.canvas2d.values",
+                    "notes": [
+                        "observed hashes are preserved; exact 2D text/layout replay remains native follow-up"
+                    ]
+                },
+                {
+                    "surface": "audio",
+                    "status": "partial-native",
+                    "source": "config.audio.values",
+                    "notes": [
+                        "stable sample shaping config is emitted; exact offline hash replay remains native follow-up"
+                    ]
+                },
+                {
+                    "surface": "media",
+                    "status": "partial-native",
+                    "source": "config.media.values",
+                    "notes": [
+                        "speechSynthesis voice inventory is emitted as a native getVoices override; plugins/devices/codecs remain follow-up"
+                    ]
+                },
+                {
+                    "surface": "network",
+                    "status": "partial-native",
+                    "source": "config.network.values",
+                    "notes": [
+                        "NetworkInformation effectiveType, downlink, rtt, saveData, and downlinkMax are emitted as native reported-value overrides; WebRTC remains launch-policy"
+                    ]
+                },
+                {
+                    "surface": "storage",
+                    "status": "partial-native",
+                    "source": "config.storage.values",
+                    "notes": [
+                        "navigator.storage.estimate().quota is emitted as a native reported-value override"
+                    ]
+                },
+                {
+                    "surface": "security",
+                    "status": "partial-native",
+                    "source": "config.security.values"
+                },
+                {
+                    "surface": "apiSurface",
+                    "status": "planned",
+                    "source": "config.apiSurface.values"
+                },
+                {
+                    "surface": "graphics.webgpu",
+                    "status": "planned",
+                    "source": "config.graphics.webgpu.values"
+                }
+            ],
+            "args": [
+                "--lang=zh-TW",
+                "--window-size=1920,1040",
+                "--window-position=0,0",
+                "--start-maximized",
+                "--disable-features=ReduceAcceptLanguage,ReduceAcceptLanguageHTTP,ReduceAcceptLanguageCount",
+                "--force-prefers-no-reduced-motion",
+                "--no-first-run",
+                "--no-default-browser-check",
+                "--webrtc-ip-handling-policy=disable_non_proxied_udp"
+            ]
+        },
+        "nativeSurfaces": {
+            "active": [
+                "identity",
+                "navigator",
+                "screen",
+                "locale",
+                "runtime",
+                "fonts",
+                "webgl",
+                "canvas",
+                "audio",
+                "media",
+                "storage",
+                "network"
+            ],
+            "planned": [
+                "security",
+                "apiSurface",
+                "webgpu"
+            ]
+        },
+        "capabilities": [
+            {
+                "surface": "identity",
+                "status": "native-supported",
+                "source": "config.identity.values"
+            },
+            {
+                "surface": "navigator",
+                "status": "native-supported",
+                "source": "config.navigator.values"
+            },
+            {
+                "surface": "screen",
+                "status": "native-supported",
+                "source": "config.screen.values"
+            },
+            {
+                "surface": "locale",
+                "status": "native-supported",
+                "source": "config.locale.values"
+            },
+            {
+                "surface": "runtime",
+                "status": "partial-native",
+                "source": "config.runtime.values",
+                "notes": [
+                    "v8Keys hash-seed config is emitted; API surface gating still needs native work"
+                ]
+            },
+            {
+                "surface": "fonts",
+                "status": "partial-native",
+                "source": "config.fonts.values",
+                "notes": [
+                    "font profile and explicit family allow-list are emitted"
+                ]
+            },
+            {
+                "surface": "graphics.webgl",
+                "status": "partial-native",
+                "source": "config.graphics.webgl.values",
+                "notes": [
+                    "numeric getParameter, shaderPrecisionFormat, contextAttributes, and extensions are emitted; observed readPixels/dataURL hashes are preserved for future exact replay"
+                ]
+            },
+            {
+                "surface": "graphics.canvas2d",
+                "status": "partial-native",
+                "source": "config.graphics.canvas2d.values",
+                "notes": [
+                    "observed hashes are preserved; exact 2D text/layout replay remains native follow-up"
+                ]
+            },
+            {
+                "surface": "audio",
+                "status": "partial-native",
+                "source": "config.audio.values",
+                "notes": [
+                    "stable sample shaping config is emitted; exact offline hash replay remains native follow-up"
+                ]
+            },
+            {
+                "surface": "media",
+                "status": "partial-native",
+                "source": "config.media.values",
+                "notes": [
+                    "speechSynthesis voice inventory is emitted as a native getVoices override; plugins/devices/codecs remain follow-up"
+                ]
+            },
+            {
+                "surface": "network",
+                "status": "partial-native",
+                "source": "config.network.values",
+                "notes": [
+                    "NetworkInformation effectiveType, downlink, rtt, saveData, and downlinkMax are emitted as native reported-value overrides; WebRTC remains launch-policy"
+                ]
+            },
+            {
+                "surface": "storage",
+                "status": "partial-native",
+                "source": "config.storage.values",
+                "notes": [
+                    "navigator.storage.estimate().quota is emitted as a native reported-value override"
+                ]
+            },
+            {
+                "surface": "security",
+                "status": "partial-native",
+                "source": "config.security.values"
+            },
+            {
+                "surface": "apiSurface",
+                "status": "planned",
+                "source": "config.apiSurface.values"
+            },
+            {
+                "surface": "graphics.webgpu",
+                "status": "planned",
+                "source": "config.graphics.webgpu.values"
+            }
+        ],
+        "coverage": [
+            {
+                "switch": "brofp-brand",
+                "source": "identity.browser.brand"
+            },
+            {
+                "switch": "brofp-brand-version",
+                "source": "identity.browser.version"
+            },
+            {
+                "switch": "brofp-platform",
+                "source": "identity.platform"
+            },
+            {
+                "switch": "brofp-ua-platform",
+                "source": "identity.userAgentData.platform"
+            },
+            {
+                "switch": "brofp-platform-version",
+                "source": "identity.userAgentData.platformVersion"
+            },
+            {
+                "switch": "brofp-architecture",
+                "source": "identity.userAgentData.architecture"
+            },
+            {
+                "switch": "brofp-bitness",
+                "source": "identity.userAgentData.bitness"
+            },
+            {
+                "switch": "brofp-wow64",
+                "source": "identity.userAgentData.wow64"
+            },
+            {
+                "switch": "brofp-form-factors",
+                "source": "identity.userAgentData.formFactors"
+            },
+            {
+                "switch": "brofp-tz",
+                "source": "locale.timeZone"
+            },
+            {
+                "switch": "brofp-locale",
+                "source": "locale.locale"
+            },
+            {
+                "switch": "brofp-languages",
+                "source": "locale.languages"
+            },
+            {
+                "arg": "lang",
+                "source": "locale.locale"
+            },
+            {
+                "switch": "brofp-cpu",
+                "source": "navigator.hardwareConcurrency"
+            },
+            {
+                "switch": "brofp-mem",
+                "source": "navigator.deviceMemory"
+            },
+            {
+                "switch": "brofp-storage-quota",
+                "source": "storage.quota"
+            },
+            {
+                "switch": "brofp-speech-voices",
+                "source": "media.speechVoices"
+            },
+            {
+                "switch": "brofp-net-effective-type",
+                "source": "network.connection.effectiveType"
+            },
+            {
+                "switch": "brofp-net-downlink-max",
+                "source": "network.connection.downlinkMax"
+            },
+            {
+                "switch": "brofp-net-downlink",
+                "source": "network.connection.downlink"
+            },
+            {
+                "switch": "brofp-net-rtt",
+                "source": "network.connection.rtt"
+            },
+            {
+                "switch": "brofp-net-save-data",
+                "source": "network.connection.saveData"
+            },
+            {
+                "switch": "brofp-screen",
+                "source": "screen.width,height,devicePixelRatio"
+            },
+            {
+                "switch": "brofp-identify",
+                "source": "browser.profileHash"
+            },
+            {
+                "switch": "brofp-native-mode",
+                "source": "broium.default.nativeMode"
+            },
+            {
+                "switch": "brofp-native-surfaces",
+                "source": "broium.nativeSurfaces.active"
+            },
+            {
+                "switch": "brofp-webgl-mode",
+                "source": "graphics.webgl.enabled"
+            },
+            {
+                "switch": "brofp-font-profile",
+                "source": "fonts.profile"
+            },
+            {
+                "switch": "brofp-fonts",
+                "source": "fonts.detected"
+            },
+            {
+                "arg": "window-size",
+                "source": "screen.window.outerWidth,outerHeight"
+            },
+            {
+                "arg": "window-position",
+                "source": "screen.window.screenX,screenY"
+            },
+            {
+                "config": "v8Keys",
+                "source": "runtime.v8"
+            },
+            {
+                "config": "webgl",
+                "source": "graphics.webgl.values"
+            },
+            {
+                "config": "canvas2d",
+                "source": "graphics.canvas2d.values"
+            },
+            {
+                "config": "audio",
+                "source": "audio.values"
+            }
+        ],
+        "implementation": {
+            "status": "partial",
+            "priority": "p0",
+            "current": [
+                "compiled native-supported identity, UA brand/version, platform, locale/languages/Accept-Language, screen, CPU, memory, DNT, storage quota, NetworkInformation, speech voices, fonts, V8 hash seed, WebGL getParameter/extension config with observe-only readback/dataURL hashes, canvas observations, and audio stable-shaping config"
+            ],
+            "required": [
+                "compile remaining UA OS-token cross-platform variants into native code",
+                "add exact canvas 2D text/layout replay, exact offline audio hash replay, media plugin/device/codec inventory, WebRTC candidate profile, permissions, WebAuthn, WebGPU, and API-surface gates as native hooks land"
+            ]
+        }
+    },
     "training": {
         "schema": "martell.llm-fingerprint-training.v1",
         "source": {
@@ -7018,7 +8566,7 @@
                 "name": "martell-cdp-fingerprint",
                 "version": 1,
                 "valueIndexMapVersion": "martell-values-v1",
-                "payloadHash": "fnv1a32:8edbf546"
+                "payloadHash": "fnv1a32:6d4bba70"
             }
         },
         "privacy": {
@@ -7040,12 +8588,12 @@
                             "version": 1,
                             "count": 253,
                             "valueIndexMapVersion": "martell-values-v1",
-                            "payloadHash": "fnv1a32:8edbf546",
+                            "payloadHash": "fnv1a32:6d4bba70",
                             "asyncProfile": {
                                 "enabled": true,
                                 "timeoutMs": 3500,
                                 "completed": true,
-                                "durationMs": 206
+                                "durationMs": 171
                             }
                         },
                         "navigator": {
@@ -7364,14 +8912,14 @@
                         "webgl": {
                             "context": "webgl2",
                             "contextConstructor": "function WebGL2RenderingContext() { [native code] }",
-                            "contextCreationMs": 4,
+                            "contextCreationMs": 3,
                             "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
-                            "shadingLanguageVersion": "#20",
+                            "shadingLanguageVersion": "WebGL GLSL ES 3.00 (OpenGL ES GLSL ES 3.0 Chromium)",
                             "vendor": "WebKit",
                             "renderer": "WebKit WebGL",
                             "unmaskedRenderer": "ANGLE (Intel, Intel(R) UHD Graphics 770 (0x0000A780) Direct3D11 vs_5_0 ps_5_0, D3D11)",
                             "unmaskedVendor": "Google Inc. (Intel)",
-                            "extensionCount": 34,
+                            "extensionCount": 32,
                             "canvasHashes": {
                                 "twoD": [
                                     "ae8b6d4f",
@@ -7889,11 +9437,13 @@
                                         "clearPixelsHash": "fnv1a32:c4647dc5"
                                     }
                                 ]
-                            }
+                            },
+                            "rawSummaryExtensionCount": 32,
+                            "extensionCountSource": "extended.contexts.webgl2.supportedExtensions.length"
                         },
                         "webgpu": {
                             "available": true,
-                            "requestMs": 41,
+                            "requestMs": 29,
                             "features": [
                                 "depth32float-stencil8",
                                 "rg11b10ufloat-renderable",
@@ -7907,10 +9457,10 @@
                                 "float32-blendable",
                                 "depth-clip-control",
                                 "texture-compression-bc-sliced-3d",
-                                "texture-formats-tier2",
-                                "shader-f16",
                                 "timestamp-query",
+                                "texture-formats-tier2",
                                 "clip-distances",
+                                "shader-f16",
                                 "primitive-index",
                                 "texture-component-swizzle",
                                 "subgroups"
@@ -8283,16 +9833,16 @@
                             "connectionType": "",
                             "effectiveType": "4g",
                             "downlinkMax": 0,
-                            "downlink": 1.65,
-                            "rtt": 200,
+                            "downlink": 1.4,
+                            "rtt": 100,
                             "saveData": false,
                             "direct": {
                                 "online": true,
                                 "connection": {
                                     "type": "",
                                     "effectiveType": "4g",
-                                    "downlink": 1.65,
-                                    "rtt": 200,
+                                    "downlink": 1.4,
+                                    "rtt": 100,
                                     "saveData": false
                                 }
                             },
@@ -8392,7 +9942,7 @@
                                         false
                                     ]
                                 ],
-                                1129
+                                1108.0999999996275
                             ],
                             "permissionSurface": {
                                 "permissionsApi": true,
@@ -8402,6 +9952,7 @@
                             "webAuthn": {
                                 "available": true,
                                 "conditionalMediationAvailable": true,
+                                "userVerifyingPlatformAuthenticatorAvailable": false,
                                 "clientCapabilities": {
                                     "conditionalCreate": true,
                                     "conditionalGet": true,
@@ -8425,8 +9976,7 @@
                                     "signalCurrentUserDetails": true,
                                     "signalUnknownCredential": true,
                                     "userVerifyingPlatformAuthenticator": false
-                                },
-                                "userVerifyingPlatformAuthenticatorAvailable": false
+                                }
                             }
                         },
                         "apiSurface": {
@@ -8507,7 +10057,7 @@
                         "quality": {
                             "valid": true,
                             "warnings": [],
-                            "payloadLength": 11593,
+                            "payloadLength": 11482,
                             "asyncWarnings": []
                         }
                     }
@@ -8900,13 +10450,13 @@
                                     "suggestedProfile": "windows_intel_uhd_770_d3d11",
                                     "observed": {
                                         "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
-                                        "shadingLanguageVersion": "#20",
+                                        "shadingLanguageVersion": "WebGL GLSL ES 3.00 (OpenGL ES GLSL ES 3.0 Chromium)",
                                         "vendor": "WebKit",
                                         "renderer": "WebKit WebGL",
                                         "unmaskedRenderer": "ANGLE (Intel, Intel(R) UHD Graphics 770 (0x0000A780) Direct3D11 vs_5_0 ps_5_0, D3D11)",
                                         "unmaskedVendor": "Google Inc. (Intel)",
                                         "extensionCount": 32,
-                                        "rawSummaryExtensionCount": 34,
+                                        "rawSummaryExtensionCount": 32,
                                         "extensionCountSource": "contexts.webgl2.supportedExtensions.length",
                                         "canvasHashes": {
                                             "twoD": [
@@ -9990,7 +11540,7 @@
                                 },
                                 "webgpu": {
                                     "available": true,
-                                    "requestMs": 41,
+                                    "requestMs": 29,
                                     "features": [
                                         "depth32float-stencil8",
                                         "rg11b10ufloat-renderable",
@@ -10004,10 +11554,10 @@
                                         "float32-blendable",
                                         "depth-clip-control",
                                         "texture-compression-bc-sliced-3d",
-                                        "texture-formats-tier2",
-                                        "shader-f16",
                                         "timestamp-query",
+                                        "texture-formats-tier2",
                                         "clip-distances",
+                                        "shader-f16",
                                         "primitive-index",
                                         "texture-component-swizzle",
                                         "subgroups"
@@ -10498,8 +12048,8 @@
                                     "type": "",
                                     "effectiveType": "4g",
                                     "downlinkMax": 0,
-                                    "downlink": 1.65,
-                                    "rtt": 200,
+                                    "downlink": 1.4,
+                                    "rtt": 100,
                                     "saveData": false
                                 },
                                 "webrtc": {
@@ -10547,6 +12097,7 @@
                                 "webAuthn": {
                                     "available": true,
                                     "conditionalMediationAvailable": true,
+                                    "userVerifyingPlatformAuthenticatorAvailable": false,
                                     "clientCapabilities": {
                                         "conditionalCreate": true,
                                         "conditionalGet": true,
@@ -10570,8 +12121,7 @@
                                         "signalCurrentUserDetails": true,
                                         "signalUnknownCredential": true,
                                         "userVerifyingPlatformAuthenticator": false
-                                    },
-                                    "userVerifyingPlatformAuthenticatorAvailable": false
+                                    }
                                 },
                                 "publicKeyCredentialCapabilities": [
                                     [
@@ -10664,7 +12214,7 @@
                                             false
                                         ]
                                     ],
-                                    1129
+                                    1108.0999999996275
                                 ]
                             },
                             "apiSurface": {
@@ -10914,13 +12464,13 @@
                         "suggestedProfile": "windows_intel_uhd_770_d3d11",
                         "observed": {
                             "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
-                            "shadingLanguageVersion": "#20",
+                            "shadingLanguageVersion": "WebGL GLSL ES 3.00 (OpenGL ES GLSL ES 3.0 Chromium)",
                             "vendor": "WebKit",
                             "renderer": "WebKit WebGL",
                             "unmaskedRenderer": "ANGLE (Intel, Intel(R) UHD Graphics 770 (0x0000A780) Direct3D11 vs_5_0 ps_5_0, D3D11)",
                             "unmaskedVendor": "Google Inc. (Intel)",
                             "extensionCount": 32,
-                            "rawSummaryExtensionCount": 34,
+                            "rawSummaryExtensionCount": 32,
                             "extensionCountSource": "contexts.webgl2.supportedExtensions.length",
                             "canvasHashes": {
                                 "twoD": [
@@ -11028,18 +12578,6 @@
                                 "anyPointerFine": true
                             },
                             "reason": "remote-or-displayless-desktop-pointer-media-query"
-                        }
-                    },
-                    {
-                        "severity": "p2",
-                        "category": "consistency",
-                        "field": "graphics.webgl.observed.extensionCount",
-                        "finding": "raw WebGL summary extension count differed from preferred context supportedExtensions length",
-                        "recommendation": "trust the preferred context list length and preserve the raw summary count separately",
-                        "evidence": {
-                            "extensionCount": 32,
-                            "rawSummaryExtensionCount": 34,
-                            "extensionCountSource": "contexts.webgl2.supportedExtensions.length"
                         }
                     },
                     {
@@ -11494,8 +13032,8 @@
                     "type": "",
                     "effectiveType": "4g",
                     "downlinkMax": 0,
-                    "downlink": 1.65,
-                    "rtt": 200,
+                    "downlink": 1.4,
+                    "rtt": 100,
                     "saveData": false
                 },
                 "webrtcCandidateCount": 2,
@@ -11529,7 +13067,7 @@
                 "name": "martell-cdp-fingerprint",
                 "version": 1,
                 "valueIndexMapVersion": "martell-values-v1",
-                "payloadHash": "fnv1a32:8edbf546"
+                "payloadHash": "fnv1a32:6d4bba70"
             }
         },
         "privacy": {
@@ -11552,12 +13090,12 @@
                             "version": 1,
                             "count": 253,
                             "valueIndexMapVersion": "martell-values-v1",
-                            "payloadHash": "fnv1a32:8edbf546",
+                            "payloadHash": "fnv1a32:6d4bba70",
                             "asyncProfile": {
                                 "enabled": true,
                                 "timeoutMs": 3500,
                                 "completed": true,
-                                "durationMs": 206
+                                "durationMs": 171
                             }
                         },
                         "navigator": {
@@ -11876,14 +13414,14 @@
                         "webgl": {
                             "context": "webgl2",
                             "contextConstructor": "function WebGL2RenderingContext() { [native code] }",
-                            "contextCreationMs": 4,
+                            "contextCreationMs": 3,
                             "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
-                            "shadingLanguageVersion": "#20",
+                            "shadingLanguageVersion": "WebGL GLSL ES 3.00 (OpenGL ES GLSL ES 3.0 Chromium)",
                             "vendor": "WebKit",
                             "renderer": "WebKit WebGL",
                             "unmaskedRenderer": "ANGLE (Intel, Intel(R) UHD Graphics 770 (0x0000A780) Direct3D11 vs_5_0 ps_5_0, D3D11)",
                             "unmaskedVendor": "Google Inc. (Intel)",
-                            "extensionCount": 34,
+                            "extensionCount": 32,
                             "canvasHashes": {
                                 "twoD": [
                                     "ae8b6d4f",
@@ -12401,11 +13939,13 @@
                                         "clearPixelsHash": "fnv1a32:c4647dc5"
                                     }
                                 ]
-                            }
+                            },
+                            "rawSummaryExtensionCount": 32,
+                            "extensionCountSource": "extended.contexts.webgl2.supportedExtensions.length"
                         },
                         "webgpu": {
                             "available": true,
-                            "requestMs": 41,
+                            "requestMs": 29,
                             "features": [
                                 "depth32float-stencil8",
                                 "rg11b10ufloat-renderable",
@@ -12419,10 +13959,10 @@
                                 "float32-blendable",
                                 "depth-clip-control",
                                 "texture-compression-bc-sliced-3d",
-                                "texture-formats-tier2",
-                                "shader-f16",
                                 "timestamp-query",
+                                "texture-formats-tier2",
                                 "clip-distances",
+                                "shader-f16",
                                 "primitive-index",
                                 "texture-component-swizzle",
                                 "subgroups"
@@ -12795,16 +14335,16 @@
                             "connectionType": "",
                             "effectiveType": "4g",
                             "downlinkMax": 0,
-                            "downlink": 1.65,
-                            "rtt": 200,
+                            "downlink": 1.4,
+                            "rtt": 100,
                             "saveData": false,
                             "direct": {
                                 "online": true,
                                 "connection": {
                                     "type": "",
                                     "effectiveType": "4g",
-                                    "downlink": 1.65,
-                                    "rtt": 200,
+                                    "downlink": 1.4,
+                                    "rtt": 100,
                                     "saveData": false
                                 }
                             },
@@ -12904,7 +14444,7 @@
                                         false
                                     ]
                                 ],
-                                1129
+                                1108.0999999996275
                             ],
                             "permissionSurface": {
                                 "permissionsApi": true,
@@ -12914,6 +14454,7 @@
                             "webAuthn": {
                                 "available": true,
                                 "conditionalMediationAvailable": true,
+                                "userVerifyingPlatformAuthenticatorAvailable": false,
                                 "clientCapabilities": {
                                     "conditionalCreate": true,
                                     "conditionalGet": true,
@@ -12937,8 +14478,7 @@
                                     "signalCurrentUserDetails": true,
                                     "signalUnknownCredential": true,
                                     "userVerifyingPlatformAuthenticator": false
-                                },
-                                "userVerifyingPlatformAuthenticatorAvailable": false
+                                }
                             }
                         },
                         "apiSurface": {
@@ -13019,7 +14559,7 @@
                         "quality": {
                             "valid": true,
                             "warnings": [],
-                            "payloadLength": 11593,
+                            "payloadLength": 11482,
                             "asyncWarnings": []
                         }
                     }
@@ -13412,13 +14952,13 @@
                                     "suggestedProfile": "windows_intel_uhd_770_d3d11",
                                     "observed": {
                                         "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
-                                        "shadingLanguageVersion": "#20",
+                                        "shadingLanguageVersion": "WebGL GLSL ES 3.00 (OpenGL ES GLSL ES 3.0 Chromium)",
                                         "vendor": "WebKit",
                                         "renderer": "WebKit WebGL",
                                         "unmaskedRenderer": "ANGLE (Intel, Intel(R) UHD Graphics 770 (0x0000A780) Direct3D11 vs_5_0 ps_5_0, D3D11)",
                                         "unmaskedVendor": "Google Inc. (Intel)",
                                         "extensionCount": 32,
-                                        "rawSummaryExtensionCount": 34,
+                                        "rawSummaryExtensionCount": 32,
                                         "extensionCountSource": "contexts.webgl2.supportedExtensions.length",
                                         "canvasHashes": {
                                             "twoD": [
@@ -14502,7 +16042,7 @@
                                 },
                                 "webgpu": {
                                     "available": true,
-                                    "requestMs": 41,
+                                    "requestMs": 29,
                                     "features": [
                                         "depth32float-stencil8",
                                         "rg11b10ufloat-renderable",
@@ -14516,10 +16056,10 @@
                                         "float32-blendable",
                                         "depth-clip-control",
                                         "texture-compression-bc-sliced-3d",
-                                        "texture-formats-tier2",
-                                        "shader-f16",
                                         "timestamp-query",
+                                        "texture-formats-tier2",
                                         "clip-distances",
+                                        "shader-f16",
                                         "primitive-index",
                                         "texture-component-swizzle",
                                         "subgroups"
@@ -15010,8 +16550,8 @@
                                     "type": "",
                                     "effectiveType": "4g",
                                     "downlinkMax": 0,
-                                    "downlink": 1.65,
-                                    "rtt": 200,
+                                    "downlink": 1.4,
+                                    "rtt": 100,
                                     "saveData": false
                                 },
                                 "webrtc": {
@@ -15059,6 +16599,7 @@
                                 "webAuthn": {
                                     "available": true,
                                     "conditionalMediationAvailable": true,
+                                    "userVerifyingPlatformAuthenticatorAvailable": false,
                                     "clientCapabilities": {
                                         "conditionalCreate": true,
                                         "conditionalGet": true,
@@ -15082,8 +16623,7 @@
                                         "signalCurrentUserDetails": true,
                                         "signalUnknownCredential": true,
                                         "userVerifyingPlatformAuthenticator": false
-                                    },
-                                    "userVerifyingPlatformAuthenticatorAvailable": false
+                                    }
                                 },
                                 "publicKeyCredentialCapabilities": [
                                     [
@@ -15176,7 +16716,7 @@
                                             false
                                         ]
                                     ],
-                                    1129
+                                    1108.0999999996275
                                 ]
                             },
                             "apiSurface": {
@@ -15427,13 +16967,13 @@
                         "suggestedProfile": "windows_intel_uhd_770_d3d11",
                         "observed": {
                             "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
-                            "shadingLanguageVersion": "#20",
+                            "shadingLanguageVersion": "WebGL GLSL ES 3.00 (OpenGL ES GLSL ES 3.0 Chromium)",
                             "vendor": "WebKit",
                             "renderer": "WebKit WebGL",
                             "unmaskedRenderer": "ANGLE (Intel, Intel(R) UHD Graphics 770 (0x0000A780) Direct3D11 vs_5_0 ps_5_0, D3D11)",
                             "unmaskedVendor": "Google Inc. (Intel)",
                             "extensionCount": 32,
-                            "rawSummaryExtensionCount": 34,
+                            "rawSummaryExtensionCount": 32,
                             "extensionCountSource": "contexts.webgl2.supportedExtensions.length",
                             "canvasHashes": {
                                 "twoD": [
@@ -15541,18 +17081,6 @@
                                 "anyPointerFine": true
                             },
                             "reason": "remote-or-displayless-desktop-pointer-media-query"
-                        }
-                    },
-                    {
-                        "severity": "p2",
-                        "category": "consistency",
-                        "field": "graphics.webgl.observed.extensionCount",
-                        "finding": "raw WebGL summary extension count differed from preferred context supportedExtensions length",
-                        "recommendation": "trust the preferred context list length and preserve the raw summary count separately",
-                        "evidence": {
-                            "extensionCount": 32,
-                            "rawSummaryExtensionCount": 34,
-                            "extensionCountSource": "contexts.webgl2.supportedExtensions.length"
                         }
                     },
                     {
@@ -16008,8 +17536,8 @@
                     "type": "",
                     "effectiveType": "4g",
                     "downlinkMax": 0,
-                    "downlink": 1.65,
-                    "rtt": 200,
+                    "downlink": 1.4,
+                    "rtt": 100,
                     "saveData": false
                 },
                 "webrtcCandidateCount": 2,

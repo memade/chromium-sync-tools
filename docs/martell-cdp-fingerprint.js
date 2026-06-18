@@ -48,7 +48,7 @@
         enableWorkerScheduler: false,
         enableEvalProbe: false,
         enableAsyncProfile: true,
-        profileExtraTimeout: 3500,
+        profileExtraTimeout: 10000,
         enableFontProfile: true,
         enableOfflineAudioProfile: true,
         enableWebglProfile: true,
@@ -190,6 +190,50 @@
         if (/SwiftShader/i.test(renderer))
             return "swiftshader";
         return "";
+    }
+
+    function martellPreferredWebglExtendedContext(profile) {
+        var preferred = profile && profile.webgl && profile.webgl.context || "";
+        var contexts = profile && profile.webgl && profile.webgl.extended && profile.webgl.extended.contexts || [];
+        if (!Array.isArray(contexts))
+            return null;
+        for (var index = 0; index < contexts.length; index++) {
+            if (contexts[index] && contexts[index].context === preferred)
+                return contexts[index];
+        }
+        for (var fallback = 0; fallback < contexts.length; fallback++) {
+            if (contexts[fallback] && contexts[fallback].supported)
+                return contexts[fallback];
+        }
+        return null;
+    }
+
+    function martellNormalizeWebglSummaryFromExtended(profile) {
+        var context = martellPreferredWebglExtendedContext(profile);
+        if (!context || !context.parameters)
+            return profile;
+        var webgl = profile.webgl || {};
+        var parameters = context.parameters || {};
+        if (martellIsTypedProfileValue(parameters.VERSION))
+            webgl.version = martellString(parameters.VERSION);
+        if (martellIsTypedProfileValue(parameters.SHADING_LANGUAGE_VERSION))
+            webgl.shadingLanguageVersion = martellString(parameters.SHADING_LANGUAGE_VERSION);
+        if (martellIsTypedProfileValue(parameters.VENDOR))
+            webgl.vendor = martellString(parameters.VENDOR);
+        if (martellIsTypedProfileValue(parameters.RENDERER))
+            webgl.renderer = martellString(parameters.RENDERER);
+        if (martellIsTypedProfileValue(parameters.UNMASKED_RENDERER_WEBGL))
+            webgl.unmaskedRenderer = martellString(parameters.UNMASKED_RENDERER_WEBGL);
+        if (martellIsTypedProfileValue(parameters.UNMASKED_VENDOR_WEBGL))
+            webgl.unmaskedVendor = martellString(parameters.UNMASKED_VENDOR_WEBGL);
+        if (Array.isArray(context.supportedExtensions)) {
+            webgl.rawSummaryExtensionCount = webgl.extensionCount;
+            webgl.extensionCount = context.supportedExtensions.length;
+            webgl.extensionCountSource = "extended.contexts." + martellString(context.context) + ".supportedExtensions.length";
+        }
+        webgl.suggestedProfile = martellDetectWebglProfile(webgl);
+        profile.webgl = webgl;
+        return profile;
     }
 
     function martellClonePlain(value) {
@@ -405,6 +449,69 @@
             brand: "Chromium",
             version: ""
         };
+    }
+
+    function martellNormalizeClientHintBrandList(value) {
+        if (!Array.isArray(value))
+            return [];
+        return value.map(function(item) {
+            if (Array.isArray(item))
+                return [martellString(item[0]), martellString(item[1])];
+            if (item && "object" === typeof item)
+                return [martellString(item.brand), martellString(item.version)];
+            return null;
+        }).filter(function(item) {
+            return !!(item && item[0]);
+        });
+    }
+
+    function martellIsMissingClientHintScalar(value) {
+        return "" === value || null === value || "undefined" === typeof value;
+    }
+
+    function martellNormalizeClientHintsFromDirect(profile) {
+        if (!profile || !profile.clientHints || !profile.clientHints.direct)
+            return false;
+        var hints = profile.clientHints;
+        var direct = hints.direct;
+        var changed = false;
+        var brands = martellNormalizeClientHintBrandList(direct.brands);
+        var fullVersionList = martellNormalizeClientHintBrandList(direct.fullVersionList);
+        if ((!Array.isArray(hints.brands) || !hints.brands.length) && brands.length) {
+            hints.brands = brands;
+            changed = true;
+        }
+        if ((!Array.isArray(hints.fullVersionList) || !hints.fullVersionList.length) && fullVersionList.length) {
+            hints.fullVersionList = fullVersionList;
+            changed = true;
+        }
+        ["architecture", "bitness", "model", "platform", "platformVersion"].forEach(function(key) {
+            if (martellIsMissingClientHintScalar(hints[key]) && !martellIsMissingClientHintScalar(direct[key])) {
+                hints[key] = martellString(direct[key]);
+                changed = true;
+            }
+        });
+        if ("boolean" !== typeof hints.mobile && "boolean" === typeof direct.mobile) {
+            hints.mobile = direct.mobile;
+            changed = true;
+        }
+        if ("boolean" !== typeof hints.wow64 && "boolean" === typeof direct.wow64) {
+            hints.wow64 = direct.wow64;
+            changed = true;
+        }
+        if ((!Array.isArray(hints.formFactors) || !hints.formFactors.length) && Array.isArray(direct.formFactors) && direct.formFactors.length) {
+            hints.formFactors = direct.formFactors.slice();
+            changed = true;
+        }
+        if (changed) {
+            hints.fallbackSource = "clientHints.direct";
+            if (profile.quality) {
+                profile.quality.asyncWarnings = martellUnique((profile.quality.asyncWarnings || []).concat([
+                    "ua-client-hints-direct-fallback"
+                ]));
+            }
+        }
+        return changed;
     }
 
     function martellChromiumProductFromBrand(brand) {
@@ -942,11 +1049,11 @@
             },
             webrtc: {
                 candidates: network.webrtcCandidates,
-                candidatePolicy: "profile-local-candidate-or-policy",
-                recommendedIpHandlingPolicy: "disable_non_proxied_udp"
+                candidatePolicy: Array.isArray(network.webrtcCandidates) && network.webrtcCandidates.length ? "browser-default-mdns-host-candidates" : "browser-default",
+                recommendedIpHandlingPolicy: ""
             }
         }, martellImplementationPlan("partial", "p1", [
-            "WebRTC IP handling policy is already a launch-level control"
+            "WebRTC should keep the browser default mDNS host-candidate behavior for normal desktop profiles"
         ], [
             "NetworkInformation native override for effectiveType/downlink/rtt/saveData",
             "ICE candidate generation profile that preserves mDNS/local-IP policy coherence"
@@ -1283,9 +1390,53 @@
         return Number.isFinite(number) && number > 0 && Math.round(number) === number ? number : null;
     }
 
+    function martellFiniteNumberSwitchValue(value) {
+        var number = martellNumber(value, null);
+        return Number.isFinite(number) && number >= 0 ? number : null;
+    }
+
     function martellVersionSwitchValue(value) {
         value = martellString(value).trim();
         return /^\d+(?:\.\d+)*$/.test(value) ? value : null;
+    }
+
+    function martellUtf8Base64(value) {
+        value = martellString(value);
+        if (!value)
+            return "";
+        if ("undefined" !== typeof Buffer && Buffer && "function" === typeof Buffer.from)
+            return Buffer.from(value, "utf8").toString("base64");
+        if ("function" === typeof TextEncoder && "function" === typeof btoa) {
+            var bytes = (new TextEncoder).encode(value);
+            var binary = "";
+            for (var index = 0; index < bytes.length; index++)
+                binary += String.fromCharCode(bytes[index]);
+            return btoa(binary);
+        }
+        if ("function" === typeof btoa)
+            return btoa(unescape(encodeURIComponent(value)));
+        return "";
+    }
+
+    function martellBuildBroiumSpeechVoiceSwitchValue(mediaValues) {
+        mediaValues = mediaValues || {};
+        var speech = mediaValues.speechVoices || {};
+        var voices = Array.isArray(speech) ? speech : speech.voices;
+        if (!Array.isArray(voices) || !voices.length)
+            return "";
+        voices = voices.map(function(voice) {
+            voice = voice || {};
+            return {
+                voiceURI: martellString(voice.voiceURI || voice.voice_uri || voice.name),
+                name: martellString(voice.name || voice.voiceURI || voice.voice_uri),
+                lang: martellString(voice.lang),
+                localService: !!(voice.localService || voice.is_local_service),
+                "default": !!(voice["default"] || voice.isDefault || voice.is_default)
+            };
+        }).filter(function(voice) {
+            return !!(voice.voiceURI || voice.name || voice.lang);
+        });
+        return voices.length ? martellUtf8Base64(JSON.stringify(voices)) : "";
     }
 
     function martellBroiumShaderPrecisionEnumMap() {
@@ -1387,8 +1538,8 @@
             enable: !!webglValues.enabled,
             profile: webglValues.suggestedProfile || "",
             dataURL: {
-                enable: true,
-                mode: "png-text-chunk",
+                enable: false,
+                mode: "off",
                 observed: {
                     canvas2dDataUrlHash: canvasValues.dataUrlHash,
                     canvas2dImageDataHash: canvasValues.imageDataHash,
@@ -1396,11 +1547,11 @@
                 }
             },
             readPixels: {
-                enable: !!webglValues.enabled,
-                mode: "coordinate-stable-lowbit",
-                strength: 1,
-                stride: 23,
-                samples: 1
+                enable: false,
+                mode: "off",
+                observed: {
+                    canvasHashes: canvasHashes
+                }
             },
             contextCreation: {
                 allowSoftwareWhenMajorPerformanceCaveat: false
@@ -1453,7 +1604,7 @@
     function martellBuildBroiumNativeSurfaces(config) {
         config = config || {};
         var graphics = config.graphics || {};
-        var active = ["identity", "navigator", "screen", "locale"];
+        var active = ["identity", "navigator", "screen", "pointer", "locale"];
         if (config.runtime)
             active.push("runtime");
         if (config.fonts)
@@ -1464,12 +1615,15 @@
             active.push("canvas");
         if (config.audio)
             active.push("audio");
+        if (config.media)
+            active.push("media");
+        if (config.storage)
+            active.push("storage");
+        if (config.network)
+            active.push("network");
         return {
             active: martellUnique(active),
             planned: [
-                "media",
-                "network",
-                "storage",
                 "security",
                 "apiSurface",
                 "webgpu"
@@ -1499,6 +1653,9 @@
             martellBroiumCapability("identity", activeSurface("identity") ? "native-supported" : "disabled", "config.identity.values"),
             martellBroiumCapability("navigator", activeSurface("navigator") ? "native-supported" : "disabled", "config.navigator.values"),
             martellBroiumCapability("screen", activeSurface("screen") ? "native-supported" : "disabled", "config.screen.values"),
+            martellBroiumCapability("pointer", activeSurface("pointer") ? "native-supported" : "disabled", "config.screen.values.viewport.mediaQueries", [
+                "brofp-pointer-profile=desktop normalizes desktop hover/pointer media queries on displayless or no-mouse capture hosts"
+            ]),
             martellBroiumCapability("locale", activeSurface("locale") ? "native-supported" : "disabled", "config.locale.values"),
             martellBroiumCapability("runtime", config.runtime ? "partial-native" : "not-observed", "config.runtime.values", [
                 "v8Keys hash-seed config is emitted; API surface gating still needs native work"
@@ -1507,7 +1664,7 @@
                 "font profile and explicit family allow-list are emitted"
             ]),
             martellBroiumCapability("graphics.webgl", graphics.webgl ? "partial-native" : "not-observed", "config.graphics.webgl.values", [
-                "numeric getParameter, shaderPrecisionFormat, contextAttributes, extensions, readPixels, and dataURL policy are emitted"
+                "numeric getParameter, shaderPrecisionFormat, contextAttributes, and extensions are emitted; observed readPixels/dataURL hashes are preserved for future exact replay"
             ]),
             martellBroiumCapability("graphics.canvas2d", graphics.canvas2d ? "partial-native" : "not-observed", "config.graphics.canvas2d.values", [
                 "observed hashes are preserved; exact 2D text/layout replay remains native follow-up"
@@ -1515,9 +1672,15 @@
             martellBroiumCapability("audio", config.audio ? "partial-native" : "not-observed", "config.audio.values", [
                 "stable sample shaping config is emitted; exact offline hash replay remains native follow-up"
             ]),
-            martellBroiumCapability("media", config.media ? "planned" : "not-observed", "config.media.values"),
-            martellBroiumCapability("network", config.network ? "launch-policy" : "not-observed", "config.network.values"),
-            martellBroiumCapability("storage", config.storage ? "planned" : "not-observed", "config.storage.values"),
+            martellBroiumCapability("media", activeSurface("media") ? "partial-native" : config.media ? "planned" : "not-observed", "config.media.values", [
+                "speechSynthesis voice inventory is emitted as a native getVoices override; plugins/devices/codecs remain follow-up"
+            ]),
+            martellBroiumCapability("network", activeSurface("network") ? "partial-native" : config.network ? "planned" : "not-observed", "config.network.values", [
+                "NetworkInformation effectiveType, downlink, rtt, saveData, and downlinkMax are emitted as native reported-value overrides; WebRTC remains launch-policy"
+            ]),
+            martellBroiumCapability("storage", activeSurface("storage") ? "partial-native" : config.storage ? "planned" : "not-observed", "config.storage.values", [
+                "navigator.storage.estimate().quota is emitted as a native reported-value override"
+            ]),
             martellBroiumCapability("security", config.security ? "partial-native" : "not-observed", "config.security.values"),
             martellBroiumCapability("apiSurface", config.apiSurface ? "planned" : "not-observed", "config.apiSurface.values"),
             martellBroiumCapability("graphics.webgpu", graphics.webgpu ? "planned" : "not-observed", "config.graphics.webgpu.values")
@@ -1546,6 +1709,7 @@
         var width = martellPositiveIntegerSwitchValue(win.outerWidth || screenValues.availWidth || screenValues.width);
         var height = martellPositiveIntegerSwitchValue(win.outerHeight || screenValues.availHeight || screenValues.height);
         if (width && height) {
+            martellAddBroiumSwitch(target, "brofp-screen-window", true, "screen.window.nativeWindowBounds");
             martellAddBroiumGenericSwitchArg(target, "window-size", [width, height], "screen.window.outerWidth,outerHeight");
             martellAddBroiumGenericSwitchArg(target, "window-position", [
                 martellInteger(win.screenX, 0),
@@ -1566,6 +1730,8 @@
         var screenValues = config.screen && config.screen.values || {};
         var runtimeValues = config.runtime && config.runtime.values || {};
         var fontValues = config.fonts && config.fonts.values || {};
+        var mediaValues = config.media && config.media.values || {};
+        var storageValues = config.storage && config.storage.values || {};
         var canvasValues = config.graphics && config.graphics.canvas2d && config.graphics.canvas2d.values || {};
         var webglValues = config.graphics && config.graphics.webgl && config.graphics.webgl.values || {};
         var audioValues = config.audio && config.audio.values || {};
@@ -1596,16 +1762,30 @@
             martellAddBroiumSwitch(target, "brofp-dnt", dnt, "navigator.doNotTrack");
         martellAddBroiumSwitch(target, "brofp-cpu", martellPositiveIntegerSwitchValue(navigatorValues.hardwareConcurrency), "navigator.hardwareConcurrency");
         martellAddBroiumSwitch(target, "brofp-mem", martellPositiveIntegerSwitchValue(navigatorValues.deviceMemory), "navigator.deviceMemory");
+        martellAddBroiumSwitch(target, "brofp-storage-quota", martellPositiveIntegerSwitchValue(storageValues.quota), "storage.quota");
+        martellAddBroiumSwitch(target, "brofp-speech-voices", martellBuildBroiumSpeechVoiceSwitchValue(mediaValues), "media.speechVoices");
+        var networkConnection = networkValues.connection || {};
+        martellAddBroiumSwitch(target, "brofp-net-type", networkConnection.type, "network.connection.type");
+        martellAddBroiumSwitch(target, "brofp-net-effective-type", networkConnection.effectiveType, "network.connection.effectiveType");
+        martellAddBroiumSwitch(target, "brofp-net-downlink-max", martellFiniteNumberSwitchValue(networkConnection.downlinkMax), "network.connection.downlinkMax");
+        martellAddBroiumSwitch(target, "brofp-net-downlink", martellFiniteNumberSwitchValue(networkConnection.downlink), "network.connection.downlink");
+        martellAddBroiumSwitch(target, "brofp-net-rtt", martellPositiveIntegerSwitchValue(networkConnection.rtt), "network.connection.rtt");
+        if ("boolean" === typeof networkConnection.saveData)
+            martellAddBroiumSwitch(target, "brofp-net-save-data", networkConnection.saveData ? 1 : 0, "network.connection.saveData");
         var screenWidth = martellPositiveIntegerSwitchValue(screenValues.width);
         var screenHeight = martellPositiveIntegerSwitchValue(screenValues.height);
         var screenScale = martellNumber(screenValues.devicePixelRatio, null);
         if (screenWidth && screenHeight && Number.isFinite(screenScale) && screenScale > 0)
             martellAddBroiumSwitch(target, "brofp-screen", [screenWidth, screenHeight, screenScale], "screen.width,height,devicePixelRatio");
+        martellAddBroiumSwitch(target, "brofp-pointer-profile", "desktop", "screen.viewport.mediaQueries.normalizedPointerProfile");
+        martellAddBroiumSwitch(target, "brofp-identify", chromium.browser && chromium.browser.profileHash || "", "browser.profileHash");
         martellAddBroiumSwitch(target, "brofp-native-mode", true, "broium.default.nativeMode");
         martellAddBroiumSwitch(target, "brofp-native-surfaces", nativeSurfaces.active, "broium.nativeSurfaces.active");
         martellAddBroiumSwitch(target, "brofp-webgl-mode", webglValues.enabled ? "native" : null, "graphics.webgl.enabled");
         martellBuildBroiumFontSwitches(target, fontValues);
         martellBuildBroiumWindowArgs(target, screenValues);
+        martellAddBroiumGenericArg(target, "--disable-features=ReduceAcceptLanguage,ReduceAcceptLanguageHTTP,ReduceAcceptLanguageCount");
+        martellAddBroiumGenericArg(target, "--force-prefers-no-reduced-motion");
         martellAddBroiumGenericArg(target, "--no-first-run");
         martellAddBroiumGenericArg(target, "--no-default-browser-check");
         if (networkValues.webrtc && networkValues.webrtc.recommendedIpHandlingPolicy)
@@ -1655,10 +1835,10 @@
             capabilities: cfg.capabilities,
             coverage: target.coverage,
             implementation: martellImplementationPlan("partial", "p0", [
-                "compiled native-supported identity, UA brand/version, platform, locale/languages/Accept-Language, screen, CPU, memory, DNT, fonts, V8 hash seed, WebGL getParameter/extension/readback/dataURL config, canvas observations, and audio stable-shaping config"
+                "compiled native-supported identity, UA brand/version, platform, locale/languages/Accept-Language, screen, CPU, memory, DNT, storage quota, NetworkInformation, speech voices, fonts, V8 hash seed, WebGL getParameter/extension config with observe-only readback/dataURL hashes, canvas observations, and audio stable-shaping config"
             ], [
                 "compile remaining UA OS-token cross-platform variants into native code",
-                "add exact canvas 2D text/layout replay, exact offline audio hash replay, media/plugin/speech voice inventory, WebRTC candidate profile, storage quota, permissions, WebAuthn, WebGPU, and API-surface gates as native hooks land"
+                "add exact canvas 2D text/layout replay, exact offline audio hash replay, media plugin/device/codec inventory, WebRTC candidate profile, permissions, WebAuthn, WebGPU, and API-surface gates as native hooks land"
             ])
         });
     }
@@ -3299,10 +3479,12 @@
         var started = martellNowMs();
         try {
             martellCollectSyncProfile(profile, options);
+            martellNormalizeWebglSummaryFromExtended(profile);
         } catch (error) {
             profile.quality.asyncWarnings.push("sync-profile:" + martellErrorText(error));
         }
         if (!options.enableAsyncProfile) {
+            martellNormalizeClientHintsFromDirect(profile);
             result.chromium = martellApplyChromiumWarnings(martellBuildChromiumProfile(profile, options), profile);
             result.broium = martellBuildBroiumLaunchConfig(result.chromium);
             result.training = martellBuildTrainingProfile(profile, result.chromium);
@@ -3335,6 +3517,8 @@
         return martellWaitForProfileTasks(profile, tasks, options.profileExtraTimeout, profile.quality.asyncWarnings).then(function(completed) {
             profile.collector.asyncProfile.completed = completed;
             profile.collector.asyncProfile.durationMs = Math.round(martellNowMs() - started);
+            martellNormalizeWebglSummaryFromExtended(profile);
+            martellNormalizeClientHintsFromDirect(profile);
             result.chromium = martellApplyChromiumWarnings(martellBuildChromiumProfile(profile, options), profile);
             result.broium = martellBuildBroiumLaunchConfig(result.chromium);
             result.training = martellBuildTrainingProfile(profile, result.chromium);
@@ -8783,7 +8967,8 @@
         try {
             if (!result.profile && Array.isArray(result.values))
                 result.profile = martellBuildBrowserProfile(result, options);
-            if (!result.chromium && result.profile)
+            var normalizedClientHints = result.profile ? martellNormalizeClientHintsFromDirect(result.profile) : false;
+            if ((!result.chromium || normalizedClientHints) && result.profile)
                 result.chromium = martellBuildChromiumProfile(result.profile, options);
             if (result.chromium)
                 result.broium = martellBuildBroiumLaunchConfig(result.chromium);
