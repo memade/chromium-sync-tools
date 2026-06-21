@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="88" fill="#07131F"/>
+  <circle cx="256" cy="256" r="176" stroke="#38BDF8" stroke-width="14" fill="none"/>
+  <circle cx="256" cy="256" r="118" stroke="#7DD3FC" stroke-width="8" fill="none" opacity="0.45"/>
+
+  <path d="M176 248 C214 190, 300 188, 336 248" stroke="#F8FAFC" stroke-width="10" fill="none" stroke-linecap="round" opacity="0.9"/>
+  <path d="M176 264 C214 322, 300 324, 336 264" stroke="#F8FAFC" stroke-width="10" fill="none" stroke-linecap="round" opacity="0.9"/>
+
+  <g font-family="Inter, Arial, sans-serif" font-weight="700" letter-spacing="2">
+    <text x="126" y="284" font-size="74" fill="#F8FAFC">S</text>
+    <text x="180" y="284" font-size="74" fill="#38BDF8">K</text>
+    <text x="234" y="284" font-size="74" fill="#F59E0B">S</text>
+    <text x="288" y="284" font-size="74" fill="#F8FAFC">T</text>
+    <text x="338" y="284" font-size="74" fill="#7DD3FC">U</text>
+  </g>
+
+  <path d="M180 208 C216 178, 292 178, 330 208" stroke="#F59E0B" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M180 304 C216 334, 292 334, 330 304" stroke="#38BDF8" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <circle cx="178" cy="208" r="8" fill="#F59E0B"/>
+  <circle cx="332" cy="304" r="8" fill="#38BDF8"/>
+</svg>

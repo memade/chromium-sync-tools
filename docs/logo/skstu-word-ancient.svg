@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 512">
+  <rect width="1024" height="512" rx="84" fill="#18110A"/>
+  <circle cx="256" cy="256" r="164" stroke="#D4A373" stroke-width="10" fill="none" opacity="0.4"/>
+  <path d="M178 182 C214 148, 294 148, 330 182" stroke="#F8FAFC" stroke-width="16" fill="none" stroke-linecap="round"/>
+  <path d="M178 330 C214 364, 294 364, 330 330" stroke="#F8FAFC" stroke-width="16" fill="none" stroke-linecap="round"/>
+  <path d="M206 206 L206 310" stroke="#F59E0B" stroke-width="18" stroke-linecap="round"/>
+  <path d="M206 206 L286 206" stroke="#F59E0B" stroke-width="18" stroke-linecap="round"/>
+  <path d="M206 256 L286 256" stroke="#D4A373" stroke-width="14" stroke-linecap="round"/>
+  <path d="M286 206 L286 310" stroke="#D4A373" stroke-width="14" stroke-linecap="round"/>
+  <path d="M206 310 L286 310" stroke="#D4A373" stroke-width="14" stroke-linecap="round"/>
+
+  <text x="430" y="292" font-family="STSong, SimSun, serif" font-size="128" font-weight="700" fill="#F8FAFC" letter-spacing="8">SKSTU</text>
+  <path d="M430 326 C514 326, 590 326, 672 326" stroke="#D4A373" stroke-width="8" fill="none" stroke-linecap="round"/>
+</svg>

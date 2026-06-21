@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="88" fill="#07131F"/>
+
+  <circle cx="256" cy="256" r="170" stroke="#38BDF8" stroke-width="14" fill="none"/>
+  <circle cx="256" cy="256" r="118" stroke="#7DD3FC" stroke-width="8" fill="none" opacity="0.45"/>
+
+  <path d="M182 230 C216 182, 296 178, 330 230" stroke="#F8FAFC" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <path d="M182 282 C216 330, 296 334, 330 282" stroke="#F8FAFC" stroke-width="10" fill="none" stroke-linecap="round"/>
+
+  <path d="M214 220 C234 208, 276 208, 296 220" stroke="#F59E0B" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M214 292 C234 304, 276 304, 296 292" stroke="#38BDF8" stroke-width="7" fill="none" stroke-linecap="round"/>
+
+  <g font-family="Inter, Arial, sans-serif" font-weight="700">
+    <rect x="142" y="146" width="34" height="34" rx="8" fill="#0F172A" stroke="#38BDF8" stroke-width="2"/>
+    <text x="154" y="171" font-size="24" fill="#F8FAFC">S</text>
+
+    <rect x="342" y="146" width="34" height="34" rx="8" fill="#0F172A" stroke="#7DD3FC" stroke-width="2"/>
+    <text x="354" y="171" font-size="24" fill="#F8FAFC">K</text>
+
+    <rect x="346" y="332" width="34" height="34" rx="8" fill="#0F172A" stroke="#F59E0B" stroke-width="2"/>
+    <text x="358" y="357" font-size="24" fill="#F8FAFC">S</text>
+
+    <rect x="132" y="332" width="34" height="34" rx="8" fill="#0F172A" stroke="#7DD3FC" stroke-width="2"/>
+    <text x="144" y="357" font-size="24" fill="#F8FAFC">U</text>
+  </g>
+
+  <rect x="238" y="336" width="34" height="34" rx="8" fill="#0F172A" stroke="#38BDF8" stroke-width="2"/>
+  <text x="250" y="361" font-size="24" fill="#F8FAFC">T</text>
+
+  <circle cx="256" cy="256" r="12" fill="#F8FAFC"/>
+</svg>

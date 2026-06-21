@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="88" fill="#07131F"/>
+
+  <circle cx="256" cy="256" r="168" stroke="#38BDF8" stroke-width="14" fill="none"/>
+  <circle cx="256" cy="256" r="116" stroke="#7DD3FC" stroke-width="8" fill="none" opacity="0.45"/>
+
+  <path d="M190 214 C220 180, 288 176, 322 206" stroke="#F8FAFC" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <path d="M190 298 C220 332, 288 336, 322 306" stroke="#F8FAFC" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <path d="M212 226 C232 214, 272 214, 292 226" stroke="#F59E0B" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M212 286 C232 298, 272 298, 292 286" stroke="#38BDF8" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+  <g font-family="Inter, Arial, sans-serif" font-weight="700">
+    <circle cx="256" cy="108" r="20" fill="#0F172A" stroke="#38BDF8" stroke-width="2"/>
+    <text x="243" y="115" font-size="24" fill="#F8FAFC">S</text>
+
+    <circle cx="378" cy="172" r="20" fill="#0F172A" stroke="#7DD3FC" stroke-width="2"/>
+    <text x="365" y="179" font-size="24" fill="#F8FAFC">K</text>
+
+    <circle cx="396" cy="300" r="20" fill="#0F172A" stroke="#F59E0B" stroke-width="2"/>
+    <text x="383" y="307" font-size="24" fill="#F8FAFC">S</text>
+
+    <circle cx="332" cy="400" r="20" fill="#0F172A" stroke="#38BDF8" stroke-width="2"/>
+    <text x="321" y="407" font-size="24" fill="#F8FAFC">T</text>
+
+    <circle cx="136" cy="334" r="20" fill="#0F172A" stroke="#7DD3FC" stroke-width="2"/>
+    <text x="124" y="341" font-size="24" fill="#F8FAFC">U</text>
+  </g>
+
+  <circle cx="256" cy="256" r="12" fill="#F8FAFC"/>
+</svg>

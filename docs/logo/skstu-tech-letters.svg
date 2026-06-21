@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="84" fill="#07131F"/>
+  <circle cx="256" cy="256" r="172" stroke="#38BDF8" stroke-width="16" fill="none"/>
+  <circle cx="256" cy="256" r="118" stroke="#7DD3FC" stroke-width="8" fill="none" opacity="0.5"/>
+
+  <path d="M162 252 C202 186, 310 182, 350 252 C372 286, 350 322, 314 336" stroke="#38BDF8" stroke-width="10" fill="none" stroke-linecap="round" opacity="0.45"/>
+
+  <g font-family="Inter, Arial, sans-serif" font-weight="700" letter-spacing="2">
+    <text x="156" y="276" font-size="88" fill="#F8FAFC">S</text>
+    <text x="214" y="276" font-size="88" fill="#38BDF8">K</text>
+    <text x="270" y="276" font-size="88" fill="#F59E0B">S</text>
+    <text x="326" y="276" font-size="88" fill="#F8FAFC">T</text>
+    <text x="370" y="276" font-size="88" fill="#7DD3FC">U</text>
+  </g>
+
+  <path d="M188 208 C218 184, 252 180, 286 196" stroke="#F8FAFC" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.8"/>
+  <path d="M224 314 C256 332, 292 330, 322 304" stroke="#F8FAFC" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.8"/>
+
+  <circle cx="180" cy="208" r="8" fill="#F59E0B"/>
+  <circle cx="322" cy="304" r="8" fill="#38BDF8"/>
+</svg>
