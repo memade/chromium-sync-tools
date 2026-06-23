@@ -8886,15 +8886,81 @@
             }
             ).call(this);
 
-    function collectMartellFingerprint(options) {
-        options = martellNormalizeOptions(options);
+    function martellBuildPartialFingerprintResult(errorText, options, debugState) {
+        var features = debugState && debugState.features || "";
+        var values = [];
+        if (features) {
+            try {
+                values = JSON.parse(features);
+            } catch (error) {
+                values = [];
+            }
+        }
+        values = Array.isArray(values) ? values : [];
+        return {
+            error: 1,
+            errorText: errorText,
+            payload: debugState && debugState.payload || "",
+            features: features,
+            values: values,
+            count: values.length,
+            endpoints: options.endpoints
+        };
+    }
+
+    var martellCollectQueue = Promise.resolve();
+
+    function martellCollectFingerprintNow(options) {
         return new Promise(function(resolve, reject) {
             var done = false;
+            var debugState = {
+                payload: "",
+                features: "",
+                hash: "",
+                hashResult: ""
+            };
+            var previousDebugDescriptor = null;
+            var previousDebugWrite = null;
+            try {
+                previousDebugDescriptor = Object.getOwnPropertyDescriptor(global, "MartellFingerprintDebugWrite");
+                previousDebugWrite = previousDebugDescriptor && "value" in previousDebugDescriptor ? previousDebugDescriptor.value : global.MartellFingerprintDebugWrite;
+            } catch (error) {
+                previousDebugWrite = global.MartellFingerprintDebugWrite;
+            }
+            var hasPreviousDebugWrite = "function" === typeof previousDebugWrite;
+            function restoreDebugWrite() {
+                try {
+                    if (previousDebugDescriptor)
+                        Object.defineProperty(global, "MartellFingerprintDebugWrite", previousDebugDescriptor);
+                    else
+                        delete global.MartellFingerprintDebugWrite;
+                } catch (error) {}
+            }
+            function debugWrite(name, value) {
+                if ("payload" === name || "features" === name || "hash" === name || "hash-result" === name)
+                    debugState["hash-result" === name ? "hashResult" : name] = martellString(value);
+                if (hasPreviousDebugWrite) {
+                    try {
+                        previousDebugWrite(name, value);
+                    } catch (error) {}
+                }
+            }
+            try {
+                Object.defineProperty(global, "MartellFingerprintDebugWrite", {
+                    configurable: true,
+                    writable: true,
+                    enumerable: false,
+                    value: debugWrite
+                });
+            } catch (error) {
+                try {
+                    global.MartellFingerprintDebugWrite = debugWrite;
+                } catch (ignored) {}
+            }
             var timer = global.setTimeout(function() {
                 if (done)
                     return;
-                done = true;
-                reject(new Error("Martell fingerprint collection timed out"));
+                finish(martellBuildPartialFingerprintResult("collection-timeout", options, debugState));
             }, options.timeout + options.settleGraceMs);
 
             function finish(result) {
@@ -8902,6 +8968,7 @@
                     return;
                 done = true;
                 global.clearTimeout(timer);
+                restoreDebugWrite();
                 martellAugmentFingerprintResult(result, options).then(function(finalResult) {
                     try {
                         Object.defineProperty(global, "__MARTELL_FINGERPRINT_LAST_RESULT__", {
@@ -8951,12 +9018,31 @@
                 });
             } catch (error) {
                 if (!done) {
-                    done = true;
-                    global.clearTimeout(timer);
-                    reject(error);
+                    finish(martellBuildPartialFingerprintResult("init:" + martellErrorText(error), options, debugState));
                 }
             }
         });
+    }
+
+    function martellCollectQueueDrainMs(result, options) {
+        if (!result || "collection-timeout" !== result.errorText)
+            return 0;
+        return Math.min(1000, Math.max(10, options.settleGraceMs));
+    }
+
+    function collectMartellFingerprint(options) {
+        options = martellNormalizeOptions(options);
+        var run = function() {
+            return martellCollectFingerprintNow(options);
+        };
+        var task = martellCollectQueue.then(run, run);
+        martellCollectQueue = task.then(function(result) {
+            var drainMs = martellCollectQueueDrainMs(result, options);
+            return drainMs > 0 ? new Promise(function(resolve) {
+                global.setTimeout(resolve, drainMs);
+            }) : null;
+        }, function() {});
+        return task;
     }
 
     function martellCompileFingerprintResult(result, options) {
