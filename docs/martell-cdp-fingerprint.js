@@ -1592,11 +1592,260 @@
         return martellPruneProfile({
             enable: !!canvasValues.supported,
             mode: "stable-profile",
+            strength: 1,
+            stride: 97,
+            samples: 32,
             observed: {
                 dataUrlHash: canvasValues.dataUrlHash,
                 imageDataHash: canvasValues.imageDataHash,
                 dataUrlLength: canvasValues.dataUrlLength,
                 textMetrics: canvasValues.textMetrics
+            }
+        });
+    }
+
+    function martellBuildBroiumScreenConfig(screenValues) {
+        screenValues = screenValues || {};
+        var win = screenValues.window || {};
+        var viewport = screenValues.viewport || {};
+        var viewportScreen = viewport.screen || {};
+        var viewportWindow = viewport.window || {};
+        var doc = viewport.documentElement || {};
+        var visual = viewport.visualViewport || {};
+        var media = viewport.mediaQueries || {};
+        var normalizedWidth = martellPositiveIntegerSwitchValue(screenValues.width || viewportScreen.width);
+        var normalizedHeight = martellPositiveIntegerSwitchValue(screenValues.height || viewportScreen.height);
+        var availWidth = martellPositiveIntegerSwitchValue(screenValues.availWidth || viewportScreen.availWidth || normalizedWidth);
+        var availHeight = martellPositiveIntegerSwitchValue(screenValues.availHeight || viewportScreen.availHeight || normalizedHeight);
+        var colorDepth = martellPositiveIntegerSwitchValue(screenValues.colorDepth || viewportScreen.colorDepth);
+        var pixelDepth = martellPositiveIntegerSwitchValue(screenValues.pixelDepth || viewportScreen.pixelDepth);
+        return martellPruneProfile({
+            enable: !!(normalizedWidth && normalizedHeight),
+            mode: "structured-screen",
+            width: normalizedWidth,
+            height: normalizedHeight,
+            availWidth: availWidth,
+            availHeight: availHeight,
+            colorDepth: colorDepth,
+            pixelDepth: pixelDepth,
+            devicePixelRatio: martellNumber(screenValues.devicePixelRatio || viewportWindow.devicePixelRatio, null),
+            orientationType: screenValues.orientationType,
+            window: {
+                outerWidth: martellPositiveIntegerSwitchValue(win.outerWidth || viewportWindow.outerWidth),
+                outerHeight: martellPositiveIntegerSwitchValue(win.outerHeight || viewportWindow.outerHeight),
+                innerWidth: martellPositiveIntegerSwitchValue(win.innerWidth || viewportWindow.innerWidth || doc.clientWidth),
+                innerHeight: martellPositiveIntegerSwitchValue(win.innerHeight || viewportWindow.innerHeight || doc.clientHeight),
+                screenX: martellInteger(win.screenX || viewportWindow.screenX, 0),
+                screenY: martellInteger(win.screenY || viewportWindow.screenY, 0),
+                pageXOffset: martellInteger(viewportWindow.pageXOffset, 0),
+                pageYOffset: martellInteger(viewportWindow.pageYOffset, 0)
+            },
+            viewport: {
+                documentElement: {
+                    clientWidth: martellPositiveIntegerSwitchValue(doc.clientWidth),
+                    clientHeight: martellPositiveIntegerSwitchValue(doc.clientHeight),
+                    scrollWidth: martellPositiveIntegerSwitchValue(doc.scrollWidth),
+                    scrollHeight: martellPositiveIntegerSwitchValue(doc.scrollHeight)
+                },
+                visualViewport: {
+                    width: martellNumber(visual.width, null),
+                    height: martellNumber(visual.height, null),
+                    scale: martellNumber(visual.scale, null),
+                    offsetLeft: martellNumber(visual.offsetLeft, null),
+                    offsetTop: martellNumber(visual.offsetTop, null),
+                    pageLeft: martellNumber(visual.pageLeft, null),
+                    pageTop: martellNumber(visual.pageTop, null)
+                },
+                mediaQueries: martellClonePlain(media),
+                observedMediaQueries: martellClonePlain(viewport.observedMediaQueries),
+                normalization: martellClonePlain(viewport.normalization)
+            },
+            observed: {
+                window: martellClonePlain(screenValues.observedWindow || viewport.observedWindow),
+                documentElement: martellClonePlain(viewport.observedDocumentElement),
+                visualViewport: martellClonePlain(viewport.observedVisualViewport)
+            }
+        });
+    }
+
+    function martellBuildBroiumWebRtcConfig(networkValues) {
+        networkValues = networkValues || {};
+        var webrtc = networkValues.webrtc || {};
+        var hasWebRtcConfig = !!networkValues.webrtc;
+        var candidates = Array.isArray(webrtc.candidates) ? webrtc.candidates : [];
+        var mdnsCandidates = candidates.filter(function(candidate) {
+            return /\.local(?:\s|$)/i.test(martellString(candidate));
+        });
+        return martellPruneProfile({
+            enable: !!(hasWebRtcConfig || candidates.length),
+            mode: "candidate-policy",
+            candidatePolicy: webrtc.candidatePolicy || (candidates.length ? "browser-default-mdns-host-candidates" : "browser-default"),
+            ipHandlingPolicy: webrtc.recommendedIpHandlingPolicy || "",
+            mdns: !!mdnsCandidates.length,
+            localIpPolicy: mdnsCandidates.length ? "redact" : "browser-default",
+            udpPolicy: webrtc.recommendedIpHandlingPolicy ? "match-reference" : "",
+            tcpPolicy: "match-reference",
+            observed: {
+                candidateCount: candidates.length,
+                mdnsCandidateCount: mdnsCandidates.length,
+                candidates: candidates
+            }
+        });
+    }
+
+    function martellBuildBroiumPermissionsConfig(securityValues) {
+        securityValues = securityValues || {};
+        var permissions = securityValues.permissions || {};
+        var query = {};
+        Object.keys(permissions || {}).sort().forEach(function(name) {
+            var status = martellString(permissions[name]).toLowerCase();
+            if ("granted" === status || "denied" === status || "prompt" === status)
+                query[name] = status;
+        });
+        [
+            "accelerometer",
+            "ambient-light-sensor",
+            "background-sync",
+            "camera",
+            "clipboard-read",
+            "clipboard-write",
+            "geolocation",
+            "gyroscope",
+            "magnetometer",
+            "microphone",
+            "midi",
+            "notifications",
+            "persistent-storage",
+            "push",
+            "speaker-selection"
+        ].forEach(function(name) {
+            if (!query[name])
+                query[name] = "prompt";
+        });
+        return martellPruneProfile({
+            enable: !!(securityValues.permissionSurface && securityValues.permissionSurface.queryFunction),
+            mode: "query-profile",
+            query: query,
+            observed: {
+                permissionSurface: martellClonePlain(securityValues.permissionSurface),
+                permissions: martellClonePlain(permissions)
+            }
+        });
+    }
+
+    function martellBuildBroiumStorageConfig(storageValues) {
+        storageValues = storageValues || {};
+        var estimate = storageValues.async && storageValues.async.estimate || {};
+        var persisted = storageValues.async && "boolean" === typeof storageValues.async.persisted ? storageValues.async.persisted : storageValues.persisted;
+        var quota = martellPositiveIntegerSwitchValue(storageValues.quota || estimate.quota);
+        var usage = martellInteger(storageValues.usage || estimate.usage, 0);
+        return martellPruneProfile({
+            enable: !!(quota || "boolean" === typeof persisted),
+            mode: "structured-storage",
+            quota: quota,
+            usage: usage,
+            persisted: persisted,
+            observed: {
+                direct: martellClonePlain(storageValues.direct),
+                async: martellClonePlain(storageValues.async)
+            }
+        });
+    }
+
+    function martellBroiumMediaCapabilityDecodingQuery(name) {
+        var queries = {
+            h264_1080p: {
+                type: "file",
+                video: {
+                    contentType: 'video/mp4; codecs="avc1.42E01E"',
+                    width: 1920,
+                    height: 1080,
+                    bitrate: 5000000,
+                    framerate: 30
+                }
+            },
+            vp9_1080p: {
+                type: "file",
+                video: {
+                    contentType: 'video/webm; codecs="vp09.00.10.08"',
+                    width: 1920,
+                    height: 1080,
+                    bitrate: 5000000,
+                    framerate: 30
+                }
+            },
+            av1_1080p: {
+                type: "file",
+                video: {
+                    contentType: 'video/mp4; codecs="av01.0.05M.08"',
+                    width: 1920,
+                    height: 1080,
+                    bitrate: 5000000,
+                    framerate: 30
+                }
+            },
+            aac: {
+                type: "file",
+                audio: {
+                    contentType: 'audio/mp4; codecs="mp4a.40.2"',
+                    channels: 2,
+                    bitrate: 132700,
+                    samplerate: 48000
+                }
+            },
+            opus: {
+                type: "file",
+                audio: {
+                    contentType: 'audio/webm; codecs="opus"',
+                    channels: 2,
+                    bitrate: 128000,
+                    samplerate: 48000
+                }
+            }
+        };
+        return queries[name] || null;
+    }
+
+    function martellBuildBroiumMediaCapabilitiesConfig(mediaValues) {
+        mediaValues = mediaValues || {};
+        var capabilities = mediaValues.capabilities || {};
+        var decoding = [];
+        (Array.isArray(capabilities.decoding) ? capabilities.decoding : []).forEach(function(item) {
+            if (!item || !item.name || !item.result)
+                return;
+            var query = martellBroiumMediaCapabilityDecodingQuery(item.name);
+            if (!query)
+                return;
+            var result = {};
+            ["supported", "smooth", "powerEfficient"].forEach(function(name) {
+                if ("boolean" === typeof item.result[name])
+                    result[name] = item.result[name];
+            });
+            if (!Object.keys(result).length)
+                return;
+            decoding.push(martellPruneProfile({
+                name: item.name,
+                type: query.type,
+                audio: martellClonePlain(query.audio),
+                video: martellClonePlain(query.video),
+                result: result
+            }));
+        });
+        return martellPruneProfile({
+            decoding: decoding,
+            observedHash: capabilities.hash
+        });
+    }
+
+    function martellBuildBroiumMediaConfig(mediaValues) {
+        mediaValues = mediaValues || {};
+        var capabilities = martellBuildBroiumMediaCapabilitiesConfig(mediaValues);
+        return martellPruneProfile({
+            enable: !!(capabilities.decoding && capabilities.decoding.length),
+            mode: "structured-media",
+            capabilities: capabilities,
+            observed: {
+                capabilities: martellClonePlain(mediaValues.capabilities)
             }
         });
     }
@@ -1621,22 +1870,205 @@
             active.push("storage");
         if (config.network)
             active.push("network");
+        if (config.security)
+            active.push("security", "permissions");
         return {
             active: martellUnique(active),
             planned: [
-                "security",
                 "apiSurface",
                 "webgpu"
             ]
         };
     }
 
+    function martellBroiumCapabilityConsumer(surface) {
+        var consumers = {
+            identity: {
+                runtimeConsumer: "brofp-brand/brofp-brand-version and UA-CH brofp-* switches",
+                consumerFiles: [
+                    "src/chromium/fingerprint_override.h",
+                    "src/chromium/fingerprint_override.cc",
+                    "src/chromium/configure.cc",
+                    "src/chromium/chromium.cc"
+                ]
+            },
+            navigator: {
+                runtimeConsumer: "brofp-platform, brofp-dnt, brofp-cpu, and brofp-mem switches",
+                consumerFiles: [
+                    "src/chromium/fingerprint_override.h",
+                    "src/chromium/fingerprint_override.cc",
+                    "src/chromium/resource_override.h",
+                    "src/chromium/resource_override.cc",
+                    "src/chromium/configure.cc",
+                    "src/chromium/chromium.cc"
+                ]
+            },
+            screen: {
+                runtimeConsumer: "cfg.screen structured parser plus brofp-screen/brofp-screen-window fallback switches and Blink viewport getter shaping",
+                consumerFiles: [
+                    "src/chromium/screen_override.h",
+                    "src/chromium/screen_override.cc",
+                    "src/third_party/blink/renderer/core/frame/local_dom_window.cc",
+                    "src/third_party/blink/renderer/core/frame/dom_visual_viewport.cc",
+                    "src/third_party/blink/renderer/core/dom/element.cc",
+                    "src/chromium/configure.cc",
+                    "src/chromium/chromium.cc"
+                ]
+            },
+            pointer: {
+                runtimeConsumer: "brofp-pointer-profile switch",
+                consumerFiles: [
+                    "src/chromium/fingerprint_override.h",
+                    "src/chromium/fingerprint_override.cc",
+                    "src/chromium/configure.cc",
+                    "src/chromium/chromium.cc"
+                ]
+            },
+            locale: {
+                runtimeConsumer: "brofp-tz, brofp-locale, brofp-languages, and --lang switches",
+                consumerFiles: [
+                    "src/chromium/fingerprint_override.h",
+                    "src/chromium/fingerprint_override.cc",
+                    "src/chromium/configure.cc",
+                    "src/chromium/chromium.cc"
+                ]
+            },
+            runtime: {
+                runtimeConsumer: "cfg.v8Keys structured parser",
+                consumerFiles: [
+                    "src/chromium/v8_override.h",
+                    "src/chromium/v8_override.cc",
+                    "src/chromium/configure.cc"
+                ]
+            },
+            fonts: {
+                runtimeConsumer: "brofp-font-profile and brofp-fonts switches",
+                consumerFiles: [
+                    "src/chromium/font_override.h",
+                    "src/chromium/font_override.cc",
+                    "src/chromium/configure.cc",
+                    "src/chromium/chromium.cc"
+                ]
+            },
+            "graphics.webgl": {
+                runtimeConsumer: "cfg.webgl structured parser plus brofp-webgl-mode switch",
+                consumerFiles: [
+                    "src/chromium/webgl_override.h",
+                    "src/chromium/webgl_override.cc",
+                    "src/chromium/configure.cc",
+                    "src/chromium/chromium.cc"
+                ]
+            },
+            "graphics.canvas2d": {
+                runtimeConsumer: "cfg.canvas2d structured parser with native toDataURL/toBlob/getImageData shaping",
+                consumerFiles: [
+                    "src/chromium/canvas_override.h",
+                    "src/chromium/canvas_override.cc",
+                    "src/third_party/blink/renderer/core/html/canvas/html_canvas_element.cc",
+                    "src/third_party/blink/renderer/core/html/canvas/canvas_async_blob_creator.cc",
+                    "src/third_party/blink/renderer/core/offscreencanvas/offscreen_canvas.cc",
+                    "src/third_party/blink/renderer/modules/canvas/canvas2d/base_rendering_context_2d.cc"
+                ]
+            },
+            audio: {
+                runtimeConsumer: "cfg.audio structured parser",
+                consumerFiles: [
+                    "src/chromium/audio_override.h",
+                    "src/chromium/audio_override.cc"
+                ]
+            },
+            media: {
+                runtimeConsumer: "brofp-speech-voices switch plus cfg.media.capabilities structured MediaCapabilities decoding replay",
+                consumerFiles: [
+                    "src/chromium/media_override.h",
+                    "src/chromium/media_override.cc",
+                    "src/third_party/blink/renderer/modules/media_capabilities/media_capabilities.cc",
+                    "src/chromium/fingerprint_override.h",
+                    "src/chromium/fingerprint_override.cc",
+                    "src/chromium/configure.cc",
+                    "src/chromium/chromium.cc"
+                ]
+            },
+            network: {
+                runtimeConsumer: "brofp-net-* switches plus cfg.network.webrtc native ICE candidate policy gate",
+                consumerFiles: [
+                    "src/chromium/resource_override.h",
+                    "src/chromium/resource_override.cc",
+                    "src/third_party/blink/renderer/modules/netinfo/network_information.cc",
+                    "src/chromium/webrtc_override.h",
+                    "src/chromium/webrtc_override.cc",
+                    "src/chromium/configure.cc",
+                    "src/chromium/chromium.cc"
+                ]
+            },
+            "network.webrtc": {
+                runtimeConsumer: "cfg.network.webrtc structured parser plus native ICE candidate policy gate",
+                consumerFiles: [
+                    "src/chromium/webrtc_override.h",
+                    "src/chromium/webrtc_override.cc",
+                    "src/third_party/blink/renderer/modules/peerconnection/rtc_peer_connection_handler.cc"
+                ]
+            },
+            storage: {
+                runtimeConsumer: "cfg.storage structured parser plus brofp-storage-quota fallback switch",
+                consumerFiles: [
+                    "src/chromium/resource_override.h",
+                    "src/chromium/resource_override.cc",
+                    "src/third_party/blink/renderer/modules/quota/storage_manager.cc",
+                    "src/third_party/blink/renderer/modules/quota/deprecated_storage_quota.cc",
+                    "src/chromium/configure.cc",
+                    "src/chromium/chromium.cc"
+                ]
+            },
+            security: {
+                runtimeConsumer: "cfg.permissions structured parser for navigator.permissions.query/request/revoke status shaping",
+                consumerFiles: [
+                    "src/chromium/permission_override.h",
+                    "src/chromium/permission_override.cc",
+                    "src/third_party/blink/renderer/modules/permissions/permissions.cc"
+                ]
+            },
+            "security.permissions": {
+                runtimeConsumer: "cfg.permissions structured parser for navigator.permissions.query/request/revoke status shaping",
+                consumerFiles: [
+                    "src/chromium/permission_override.h",
+                    "src/chromium/permission_override.cc",
+                    "src/third_party/blink/renderer/modules/permissions/permissions.cc"
+                ]
+            },
+            apiSurface: {
+                runtimeConsumer: "none-currently; API surface gating has no Broium native consumer yet",
+                consumerFiles: [],
+                plannedConsumerFiles: [
+                    "src/chromium/api_surface_override.h",
+                    "src/chromium/api_surface_override.cc"
+                ]
+            },
+            "graphics.webgpu": {
+                runtimeConsumer: "none-currently; WebGPU adapter/features/limits have no Broium native consumer yet",
+                consumerFiles: [],
+                plannedConsumerFiles: [
+                    "src/chromium/webgpu_override.h",
+                    "src/chromium/webgpu_override.cc"
+                ]
+            }
+        };
+        return consumers[surface] || {
+            runtimeConsumer: "unknown"
+        };
+    }
+
     function martellBroiumCapability(surface, status, source, notes) {
+        var consumer = martellBroiumCapabilityConsumer(surface);
         var result = {
             surface: surface,
             status: status,
-            source: source
+            source: source,
+            runtimeConsumer: consumer.runtimeConsumer,
+            consumerFiles: consumer.consumerFiles || []
         };
+        if (Array.isArray(consumer.plannedConsumerFiles) && consumer.plannedConsumerFiles.length)
+            result.plannedConsumerFiles = consumer.plannedConsumerFiles.slice();
         if (Array.isArray(notes) && notes.length)
             result.notes = notes.slice();
         return result;
@@ -1651,8 +2083,12 @@
         }
         return [
             martellBroiumCapability("identity", activeSurface("identity") ? "native-supported" : "disabled", "config.identity.values"),
-            martellBroiumCapability("navigator", activeSurface("navigator") ? "native-supported" : "disabled", "config.navigator.values"),
-            martellBroiumCapability("screen", activeSurface("screen") ? "native-supported" : "disabled", "config.screen.values"),
+            martellBroiumCapability("navigator", activeSurface("navigator") ? "partial-native" : "disabled", "config.navigator.values", [
+                "DNT, platform, CPU, and memory are native/launch-consumed; maxTouchPoints, webdriver, onLine, oscpu, and buildID still need descriptor-level audit"
+            ]),
+            martellBroiumCapability("screen", activeSurface("screen") ? "native-supported" : "disabled", "config.screen.values", [
+                "screen rect, work area, window bounds, DPR, documentElement client/scroll size, and visualViewport size are native-consumed; source capture normalization metadata is documentation-only"
+            ]),
             martellBroiumCapability("pointer", activeSurface("pointer") ? "native-supported" : "disabled", "config.screen.values.viewport.mediaQueries", [
                 "brofp-pointer-profile=desktop normalizes desktop hover/pointer media queries on displayless or no-mouse capture hosts"
             ]),
@@ -1661,29 +2097,41 @@
                 "v8Keys hash-seed config is emitted; API surface gating still needs native work"
             ]),
             martellBroiumCapability("fonts", config.fonts ? "partial-native" : "not-observed", "config.fonts.values", [
-                "font profile and explicit family allow-list are emitted"
+                "font profile and explicit family allow-list are emitted; exact host font availability, fallback, and metrics hash replay remains follow-up"
             ]),
             martellBroiumCapability("graphics.webgl", graphics.webgl ? "partial-native" : "not-observed", "config.graphics.webgl.values", [
                 "numeric getParameter, shaderPrecisionFormat, contextAttributes, and extensions are emitted; observed readPixels/dataURL hashes are preserved for future exact replay"
             ]),
             martellBroiumCapability("graphics.canvas2d", graphics.canvas2d ? "partial-native" : "not-observed", "config.graphics.canvas2d.values", [
-                "observed hashes are preserved; exact 2D text/layout replay remains native follow-up"
+                "cfg.canvas2d is consumed by native toDataURL, toBlob/OffscreenCanvas convertToBlob, and getImageData shaping; exact observed hash replay and measureText remain follow-up"
             ]),
             martellBroiumCapability("audio", config.audio ? "partial-native" : "not-observed", "config.audio.values", [
                 "stable sample shaping config is emitted; exact offline hash replay remains native follow-up"
             ]),
             martellBroiumCapability("media", activeSurface("media") ? "partial-native" : config.media ? "planned" : "not-observed", "config.media.values", [
-                "speechSynthesis voice inventory is emitted as a native getVoices override; plugins/devices/codecs remain follow-up"
+                "speechSynthesis voice inventory and MediaCapabilities decodingInfo fixed-query results are native-consumed; plugins, devices, arbitrary codec inventory, and encodingInfo remain follow-up"
             ]),
             martellBroiumCapability("network", activeSurface("network") ? "partial-native" : config.network ? "planned" : "not-observed", "config.network.values", [
-                "NetworkInformation effectiveType, downlink, rtt, saveData, and downlinkMax are emitted as native reported-value overrides; WebRTC remains launch-policy"
+                "NetworkInformation effectiveType, downlink, rtt, saveData, and downlinkMax are emitted as native reported-value overrides; connection.type exact replay is pending when downlinkMax exposes Chromium's runtime enum; WebRTC candidate policy is partial-native"
+            ]),
+            martellBroiumCapability("network.webrtc", config.network && config.network.values && config.network.values.webrtc ? "partial-native" : "not-observed", "config.network.values.webrtc", [
+                "native ICE candidate policy gate can suppress non-reference local/private host candidates; exact candidate count/order/profile replay remains follow-up"
             ]),
             martellBroiumCapability("storage", activeSurface("storage") ? "partial-native" : config.storage ? "planned" : "not-observed", "config.storage.values", [
-                "navigator.storage.estimate().quota is emitted as a native reported-value override"
+                "navigator.storage.estimate() quota/usage, persisted(), and legacy queryUsageAndQuota quota/usage are emitted as native reported-value overrides; legacy storage API presence remains follow-up"
             ]),
-            martellBroiumCapability("security", config.security ? "partial-native" : "not-observed", "config.security.values"),
-            martellBroiumCapability("apiSurface", config.apiSurface ? "planned" : "not-observed", "config.apiSurface.values"),
-            martellBroiumCapability("graphics.webgpu", graphics.webgpu ? "planned" : "not-observed", "config.graphics.webgpu.values")
+            martellBroiumCapability("security", activeSurface("security") ? "partial-native" : config.security ? "planned" : "not-observed", "config.security.values", [
+                "permissions query status shaping is native-consumed; WebAuthn and broader security surface remain follow-up"
+            ]),
+            martellBroiumCapability("security.permissions", config.security && config.security.values && config.security.values.permissionSurface ? "partial-native" : "not-observed", "config.security.values.permissionSurface", [
+                "navigator.permissions.query/request/revoke common descriptors are status-shaped from cfg.permissions; browser permission prompts and media-device coherence still need deeper audit"
+            ]),
+            martellBroiumCapability("apiSurface", config.apiSurface ? "planned" : "not-observed", "config.apiSurface.values", [
+                "API/global constructor, descriptor, Function.prototype.toString, worker/iframe/worklet inheritance, and feature-gating replay are tracked by diff but have no native consumer yet"
+            ]),
+            martellBroiumCapability("graphics.webgpu", graphics.webgpu ? "planned" : "not-observed", "config.graphics.webgpu.values", [
+                "WebGPU adapter info, features, limits, and fallback/software state are tracked by diff but have no native consumer yet"
+            ])
         ];
     }
 
@@ -1736,6 +2184,7 @@
         var webglValues = config.graphics && config.graphics.webgl && config.graphics.webgl.values || {};
         var audioValues = config.audio && config.audio.values || {};
         var networkValues = config.network && config.network.values || {};
+        var securityValues = config.security && config.security.values || {};
         var nativeSurfaces = martellBuildBroiumNativeSurfaces(config);
         var target = {
             switches: {},
@@ -1788,12 +2237,19 @@
         martellAddBroiumGenericArg(target, "--force-prefers-no-reduced-motion");
         martellAddBroiumGenericArg(target, "--no-first-run");
         martellAddBroiumGenericArg(target, "--no-default-browser-check");
+        if (Number.isFinite(martellNumber(networkConnection.downlinkMax, NaN)))
+            martellAddBroiumGenericArg(target, "--enable-network-information-downlink-max");
         if (networkValues.webrtc && networkValues.webrtc.recommendedIpHandlingPolicy)
             martellAddBroiumGenericArg(target, "--webrtc-ip-handling-policy=" + networkValues.webrtc.recommendedIpHandlingPolicy);
         target.coverage.push({
             config: "v8Keys",
             source: "runtime.v8"
         });
+        if (config.screen)
+            target.coverage.push({
+                config: "screen",
+                source: "screen.values"
+            });
         if (config.graphics && config.graphics.webgl)
             target.coverage.push({
                 config: "webgl",
@@ -1809,6 +2265,26 @@
                 config: "audio",
                 source: "audio.values"
             });
+        if (config.media)
+            target.coverage.push({
+                config: "media",
+                source: "media.values"
+            });
+        if (config.storage)
+            target.coverage.push({
+                config: "storage",
+                source: "storage.values"
+            });
+        if (config.network && config.network.values && config.network.values.webrtc)
+            target.coverage.push({
+                config: "network.webrtc",
+                source: "network.values.webrtc"
+            });
+        if (config.security)
+            target.coverage.push({
+                config: "permissions",
+                source: "security.values.permissionSurface"
+            });
         var cfg = {
             identify: chromium.browser && chromium.browser.profileHash || "",
             switches: target.switches,
@@ -1818,6 +2294,13 @@
                 seedMaterialHash: runtimeValues.v8 && runtimeValues.v8.seedMaterialHash || chromium.browser && chromium.browser.profileHash || ""
             },
             nativeSurfaces: nativeSurfaces,
+            screen: martellBuildBroiumScreenConfig(screenValues),
+            network: {
+                webrtc: martellBuildBroiumWebRtcConfig(networkValues)
+            },
+            storage: martellBuildBroiumStorageConfig(storageValues),
+            media: martellBuildBroiumMediaConfig(mediaValues),
+            permissions: martellBuildBroiumPermissionsConfig(securityValues),
             webgl: martellBuildBroiumWebglConfig(webglValues, canvasValues),
             canvas2d: martellBuildBroiumCanvas2dConfig(canvasValues),
             audio: martellBuildBroiumAudioConfig(audioValues),

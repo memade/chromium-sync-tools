@@ -31,9 +31,41 @@ function cloneJson(value) {
 }
 
 function findBrandItem(list, brandName) {
-    return Array.isArray(list)
-        ? list.find((item) => Array.isArray(item) && item[0] === brandName)
-        : null;
+    if (!Array.isArray(list))
+        return null;
+    for (const item of list) {
+        const brand = Array.isArray(item) ? item[0] :
+            item && "object" === typeof item ? item.brand : "";
+        const version = Array.isArray(item) ? item[1] :
+            item && "object" === typeof item ? item.version : "";
+        if (brand === brandName)
+            return [brand, version];
+    }
+    return null;
+}
+
+function productNameFromBrand(brand) {
+    if (/Microsoft Edge/i.test(brand || ""))
+        return "Microsoft Edge";
+    if (/Google Chrome/i.test(brand || ""))
+        return "Google Chrome";
+    if (/Chromium/i.test(brand || ""))
+        return "Chromium";
+    return brand || "Chromium";
+}
+
+function preferredBrandName(profile, browser) {
+    const hints = profile.clientHints || {};
+    const profileBrand =
+        findBrandItem(hints.fullVersionList, "Google Chrome") ||
+        findBrandItem(hints.brands, "Google Chrome") ||
+        findBrandItem(hints.fullVersionList, "Microsoft Edge") ||
+        findBrandItem(hints.brands, "Microsoft Edge");
+    if (profileBrand)
+        return profileBrand[0];
+    if (browser.brand && browser.brand !== "Chromium")
+        return browser.brand;
+    return browser.brand || "Google Chrome";
 }
 
 function chromiumGreaseBrandVersion(major, fullVersion) {
@@ -90,9 +122,7 @@ function patchProfileForRuntimeVersion(input, runtimeVersion) {
     const profile = patched.profile || {};
     const chromium = patched.chromium || {};
     const browser = chromium.browser || {};
-    const brandName = browser.brand ||
-        findBrandItem(profile.clientHints && profile.clientHints.fullVersionList, "Google Chrome")?.[0] ||
-        "Google Chrome";
+    const brandName = preferredBrandName(profile, browser);
     const uaMajor = runtimeMajor || majorVersion(browser.version);
     const uaVersion = runtimeVersion || browser.version;
     const reducedUaVersion = uaMajor ? uaMajor + ".0.0.0" : "";
@@ -125,6 +155,8 @@ function patchProfileForRuntimeVersion(input, runtimeVersion) {
         }
     }
     if (browser.version) {
+        browser.brand = brandName;
+        browser.product = productNameFromBrand(brandName);
         browser.version = uaVersion;
         browser.major = uaMajor;
         browser.profileHash = "fnv1a32:" + fnv1a32(JSON.stringify([
@@ -142,6 +174,8 @@ function patchProfileForRuntimeVersion(input, runtimeVersion) {
         identity.userAgent = patchUa(identity.userAgent);
         identity.appVersion = patchUa(identity.appVersion);
         if (identity.browser) {
+            identity.browser.brand = brandName;
+            identity.browser.product = productNameFromBrand(brandName);
             identity.browser.version = uaVersion;
             identity.browser.major = uaMajor;
         }
@@ -192,6 +226,57 @@ function loadMartellApi(repoRoot) {
     return sandbox.MartellFingerprint;
 }
 
+function sortedKeys(value) {
+    return value && "object" === typeof value && !Array.isArray(value)
+        ? Object.keys(value).sort()
+        : [];
+}
+
+function capabilityKnownGaps(broium) {
+    const gaps = [];
+    const capabilities = broium && broium.capabilities || [];
+    if (!Array.isArray(capabilities))
+        return gaps;
+    for (const capability of capabilities) {
+        if (!capability || "object" !== typeof capability)
+            continue;
+        const status = String(capability.status || "");
+        if (!/^(observed-only|observed\/launch-policy|planned|partial-native)$/.test(status))
+            continue;
+        const consumerFiles = Array.isArray(capability.consumerFiles)
+            ? capability.consumerFiles
+            : [];
+        const plannedConsumerFiles = Array.isArray(capability.plannedConsumerFiles)
+            ? capability.plannedConsumerFiles
+            : [];
+        const isKnownGap = status === "observed-only" ||
+            status === "observed/launch-policy" ||
+            status === "planned" ||
+            !consumerFiles.length ||
+            plannedConsumerFiles.length > 0;
+        if (isKnownGap)
+            gaps.push(String(capability.surface || "unknown") + ":" + status);
+    }
+    return gaps.sort();
+}
+
+function printBroiumSummary(broium) {
+    const cfg = broium && broium.cfg || {};
+    const structuredKeys = sortedKeys(cfg).filter((key) => {
+        const value = cfg[key];
+        return value && "object" === typeof value && !Array.isArray(value) &&
+            key !== "switches" && key !== "nativeSurfaces" &&
+            key !== "capabilities";
+    });
+    console.log("summary.schema=" + (broium && broium.schema || ""));
+    console.log("summary.cfgKeys=" + sortedKeys(cfg).join(","));
+    console.log("summary.switchKeys=" + sortedKeys(cfg.switches || broium.switches).join(","));
+    console.log("summary.structuredKeys=" + structuredKeys.join(","));
+    console.log("summary.nativeActive=" + ((cfg.nativeSurfaces && cfg.nativeSurfaces.active || []).slice().sort().join(",")));
+    console.log("summary.nativePlanned=" + ((cfg.nativeSurfaces && cfg.nativeSurfaces.planned || []).slice().sort().join(",")));
+    console.log("summary.knownGaps=" + capabilityKnownGaps(broium).join(","));
+}
+
 async function main() {
     const repoRoot = path.resolve(__dirname, "..", "..");
     const inputPath = path.resolve(repoRoot, process.argv[2] || path.join("sync", "docs", "windows-amd64.json"));
@@ -220,6 +305,7 @@ async function main() {
     });
     fs.writeFileSync(outputPath, JSON.stringify(broium, null, 2) + "\n");
     console.log("wrote " + path.relative(repoRoot, outputPath) + " from " + inputMode);
+    printBroiumSummary(broium);
 }
 
 main().catch((error) => {
