@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="SKSTU Hetu Luoshu AI logo">
+  <defs>
+    <style>
+      .bg { fill: #f8f6ef; }
+      .ink { fill: #1b1b1b; }
+      .line { fill: none; stroke: #1b1b1b; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
+      .thin { fill: none; stroke: #1b1b1b; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+      .hollow { fill: #f8f6ef; stroke: #1b1b1b; stroke-width: 4; }
+      .solid { fill: #1b1b1b; }
+      .brand { font-family: "Times New Roman", serif; fill: #1b1b1b; letter-spacing: 6px; }
+      .tag { font-family: "Courier New", monospace; fill: #1b1b1b; letter-spacing: 2px; }
+    </style>
+    <path id="topArc" d="M 96 256 A 160 160 0 0 1 416 256" />
+    <path id="bottomArc" d="M 416 256 A 160 160 0 0 1 96 256" />
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="512" height="512" rx="28" />
+
+  <!-- Outer seal -->
+  <circle class="line" cx="256" cy="256" r="190" />
+  <circle class="thin" cx="256" cy="256" r="168" />
+
+  <!-- Corner markers inspired by 456.svg -->
+  <polygon class="thin" points="78,94 106,66 128,88 100,116" />
+  <polygon class="thin" points="434,94 406,66 384,88 412,116" />
+  <polygon class="thin" points="78,418 106,446 128,424 100,396" />
+  <polygon class="thin" points="434,418 406,446 384,424 412,396" />
+
+  <!-- Domain-first branding -->
+  <text class="brand" font-size="42" font-weight="700">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">SKSTU</textPath>
+  </text>
+  <text class="tag" font-size="16">
+    <textPath href="#bottomArc" startOffset="50%" text-anchor="middle">HE TU · LUO SHU · AI MODEL · SKSTU.COM</textPath>
+  </text>
+
+  <!-- Fusion core -->
+  <g transform="translate(256 256)">
+    <circle class="line" cx="0" cy="0" r="102" />
+    <path class="line" d="M 0 -102 C -54 -102 -54 0 0 0 C 54 0 54 102 0 102" />
+
+    <!-- Left: He Tu dot language -->
+    <g transform="translate(-36 0)">
+      <circle class="hollow" cx="-30" cy="-42" r="7" />
+
+      <circle class="solid" cx="-40" cy="20" r="6" />
+      <circle class="solid" cx="-26" cy="20" r="6" />
+      <circle class="solid" cx="-12" cy="20" r="6" />
+      <circle class="solid" cx="-33" cy="34" r="6" />
+      <circle class="solid" cx="-19" cy="34" r="6" />
+      <circle class="solid" cx="-26" cy="48" r="6" />
+
+      <circle class="hollow" cx="14" cy="-30" r="6" />
+      <circle class="hollow" cx="26" cy="-30" r="6" />
+      <circle class="hollow" cx="38" cy="-30" r="6" />
+      <circle class="hollow" cx="20" cy="-16" r="6" />
+      <circle class="hollow" cx="32" cy="-16" r="6" />
+      <circle class="hollow" cx="26" cy="-2" r="6" />
+    </g>
+
+    <!-- Right: Luo Shu 3x3 matrix -->
+    <g transform="translate(30 0)">
+      <rect class="thin" x="-48" y="-48" width="96" height="96" rx="6" />
+      <line class="thin" x1="-16" y1="-48" x2="-16" y2="48" />
+      <line class="thin" x1="16" y1="-48" x2="16" y2="48" />
+      <line class="thin" x1="-48" y1="-16" x2="48" y2="-16" />
+      <line class="thin" x1="-48" y1="16" x2="48" y2="16" />
+
+      <circle class="solid" cx="-32" cy="-32" r="3.8" />
+      <circle class="solid" cx="0" cy="-32" r="3.8" />
+      <circle class="solid" cx="32" cy="-32" r="3.8" />
+      <circle class="solid" cx="-32" cy="0" r="3.8" />
+      <circle class="solid" cx="0" cy="0" r="5.2" />
+      <circle class="solid" cx="32" cy="0" r="3.8" />
+      <circle class="solid" cx="-32" cy="32" r="3.8" />
+      <circle class="solid" cx="0" cy="32" r="3.8" />
+      <circle class="solid" cx="32" cy="32" r="3.8" />
+    </g>
+  </g>
+
+  <!-- Direct domain lockup -->
+  <text class="tag" x="256" y="472" font-size="22" text-anchor="middle">skstu.com</text>
+</svg>

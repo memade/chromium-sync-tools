@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="640" viewBox="0 0 640 640" role="img" aria-labelledby="title desc">
+  <title id="title">SKSTU detailed HeLuo mark</title>
+  <desc id="desc">A detailed SKSTU concept mark that keeps Luo Shu numbers, He Tu pair labels, and the S/K model-flow center for large brand presentations.</desc>
+  <defs>
+    <linearGradient id="skstuDetailField" x1="76" y1="44" x2="564" y2="596" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#10231C"/>
+      <stop offset="0.54" stop-color="#071411"/>
+      <stop offset="1" stop-color="#1B1510"/>
+    </linearGradient>
+    <linearGradient id="skstuDetailBronze" x1="90" y1="62" x2="550" y2="578" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F1D18A"/>
+      <stop offset="0.5" stop-color="#B88A33"/>
+      <stop offset="1" stop-color="#E5B967"/>
+    </linearGradient>
+    <linearGradient id="skstuDetailFlow" x1="220" y1="215" x2="420" y2="430" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F1D18A"/>
+      <stop offset="0.48" stop-color="#2BD1A8"/>
+      <stop offset="1" stop-color="#3F6FAE"/>
+    </linearGradient>
+    <filter id="skstuDetailShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="24" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+    <path id="skstuDetailTopArc" d="M 120 320 A 200 200 0 0 1 520 320"/>
+    <path id="skstuDetailBottomArc" d="M 520 320 A 200 200 0 0 1 120 320"/>
+    <style>
+      .line { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .num { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 21px; font-weight: 760; fill: #F7F2E7; opacity: 0.58; text-anchor: middle; dominant-baseline: middle; }
+      .pair { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 16px; font-weight: 820; fill: #F7F2E7; text-anchor: middle; dominant-baseline: middle; }
+      .ringBrand { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #F7F2E7; text-anchor: middle; }
+      .ringTop { font-size: 34px; font-weight: 820; letter-spacing: 10px; }
+      .ringBottom { font-size: 15px; font-weight: 680; letter-spacing: 4px; opacity: 0.82; }
+    </style>
+  </defs>
+
+  <rect x="28" y="28" width="584" height="584" rx="120" fill="url(#skstuDetailField)"/>
+  <rect x="48" y="48" width="544" height="544" rx="96" fill="none" stroke="url(#skstuDetailBronze)" stroke-width="1.8" opacity="0.78"/>
+
+  <g filter="url(#skstuDetailShadow)">
+    <circle cx="320" cy="320" r="245" fill="none" stroke="#F7F2E7" stroke-width="1.4" opacity="0.17"/>
+    <circle cx="320" cy="320" r="198" fill="none" stroke="#2BD1A8" stroke-width="1.2" opacity="0.25"/>
+    <path class="line" d="M320 76 C454 76 564 186 564 320 C564 454 454 564 320 564 C186 564 76 454 76 320 C76 230 126 150 205 110" stroke="url(#skstuDetailBronze)" stroke-width="5"/>
+    <path class="line" d="M218 116 C292 78 386 96 444 156 C502 216 518 306 486 382 C454 458 378 510 296 500 C214 490 148 423 136 342" stroke="#2BD1A8" stroke-width="1.7" opacity="0.48"/>
+  </g>
+
+  <g>
+    <text class="ringBrand ringTop">
+      <textPath href="#skstuDetailTopArc" startOffset="50%" text-anchor="middle">SKSTU</textPath>
+    </text>
+    <text class="ringBrand ringBottom">
+      <textPath href="#skstuDetailBottomArc" startOffset="50%" text-anchor="middle">skstu.com · HE TU LUO SHU AI MODEL</textPath>
+    </text>
+  </g>
+
+  <g>
+    <rect x="176" y="176" width="288" height="288" rx="26" fill="none" stroke="url(#skstuDetailBronze)" stroke-width="2.4"/>
+    <path class="line" d="M272 176 V464 M368 176 V464 M176 272 H464 M176 368 H464" stroke="#F7F2E7" stroke-width="1.2" opacity="0.27"/>
+    <rect x="218" y="218" width="204" height="204" rx="18" transform="rotate(45 320 320)" fill="none" stroke="#2BD1A8" stroke-width="2" opacity="0.54"/>
+    <text class="num" x="224" y="224">4</text>
+    <text class="num" x="320" y="224">9</text>
+    <text class="num" x="416" y="224">2</text>
+    <text class="num" x="224" y="320">3</text>
+    <text class="num" x="416" y="320">7</text>
+    <text class="num" x="224" y="416">8</text>
+    <text class="num" x="320" y="416">1</text>
+    <text class="num" x="416" y="416">6</text>
+  </g>
+
+  <g>
+    <g transform="translate(320 82)">
+      <circle r="28" fill="#10231C" stroke="#2BD1A8" stroke-width="2"/>
+      <text class="pair" y="1">1/6</text>
+    </g>
+    <g transform="translate(558 320)">
+      <circle r="28" fill="#10231C" stroke="#68A6D9" stroke-width="2"/>
+      <text class="pair" y="1">3/8</text>
+    </g>
+    <g transform="translate(320 558)">
+      <circle r="28" fill="#1B1510" stroke="#C95F45" stroke-width="2"/>
+      <text class="pair" y="1">2/7</text>
+    </g>
+    <g transform="translate(82 320)">
+      <circle r="28" fill="#1B1510" stroke="#E5B967" stroke-width="2"/>
+      <text class="pair" y="1">4/9</text>
+    </g>
+  </g>
+
+  <g filter="url(#skstuDetailShadow)">
+    <circle cx="320" cy="320" r="88" fill="#071411" stroke="url(#skstuDetailBronze)" stroke-width="2.4"/>
+    <path class="line" d="M356 244 C330 222 269 224 258 264 C249 299 283 312 322 318 C369 326 391 348 376 382 C359 422 282 421 248 385" stroke="url(#skstuDetailFlow)" stroke-width="36"/>
+    <path class="line" d="M374 246 V394 M374 320 L420 266 M374 320 L422 374" stroke="#F7F2E7" stroke-width="15" opacity="0.96"/>
+    <circle cx="320" cy="320" r="7" fill="#F1D18A"/>
+    <text class="pair" x="320" y="254" fill="#F1D18A" opacity="0.82">5/10</text>
+  </g>
+</svg>

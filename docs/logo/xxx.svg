@@ -1,0 +1,87 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="background-color: white;">
+    <title>SKSTU.COM AI Logo</title>
+    <defs>
+        <path id="circlePath" d="M 100, 100 m -75, 0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0" />
+    </defs>
+
+    <!-- Luo Shu Grid -->
+    <g id="luo-shu-grid" transform="translate(100, 100) scale(0.5)">
+        <!-- Center Point (5) -->
+        <circle cx="0" cy="0" r="4" stroke="black" stroke-width="1.5" fill="none"/>
+        <circle cx="0" cy="0" r="10" stroke="black" stroke-width="1.5" fill="none"/>
+        <circle cx="0" cy="0" r="16" stroke="black" stroke-width="1.5" fill="none"/>
+        <circle cx="0" cy="0" r="22" stroke="black" stroke-width="1.5" fill="none"/>
+        <circle cx="0" cy="0" r="28" stroke="black" stroke-width="1.5" fill="none"/>
+
+        <!-- Top-Left (4) -->
+        <circle cx="-50" cy="-50" r="4" fill="black"/>
+        <circle cx="-40" cy="-50" r="4" fill="black"/>
+        <circle cx="-50" cy="-40" r="4" fill="black"/>
+        <circle cx="-40" cy="-40" r="4" fill="black"/>
+
+        <!-- Top-Center (9) -->
+        <g transform="translate(0, -50)">
+            <circle cx="-5" cy="-5" r="4" stroke="black" stroke-width="1.5" fill="none"/>
+            <circle cx="5" cy="-5" r="4" stroke="black" stroke-width="1.5" fill="none"/>
+            <circle cx="0" cy="0" r="4" stroke="black" stroke-width="1.5" fill="none"/>
+            <circle cx="-5" cy="5" r="4" stroke="black" stroke-width="1.5" fill="none"/>
+            <circle cx="5" cy="5" r="4" stroke="black" stroke-width="1.5" fill="none"/>
+            <circle cx="-15" cy="-5" r="4" stroke="black" stroke-width="1.5" fill="none"/>
+            <circle cx="15" cy="-5" r="4" stroke="black" stroke-width="1.5" fill="none"/>
+            <circle cx="-15" cy="5" r="4" stroke="black" stroke-width="1.5" fill="none"/>
+            <circle cx="15" cy="5" r="4" stroke="black" stroke-width="1.5" fill="none"/>
+        </g>
+
+        <!-- Top-Right (2) -->
+        <circle cx="50" cy="-50" r="4" fill="black"/>
+        <circle cx="40" cy="-50" r="4" fill="black"/>
+
+        <!-- Middle-Left (3) -->
+        <circle cx="-50" cy="0" r="4" stroke="black" stroke-width="1.5" fill="none"/>
+        <circle cx="-40" cy="0" r="4" stroke="black" stroke-width="1.5" fill="none"/>
+        <circle cx="-60" cy="0" r="4" stroke="black" stroke-width="1.5" fill="none"/>
+
+        <!-- Middle-Right (7) -->
+        <g transform="translate(50, 0)">
+            <circle cx="-5" cy="-5" r="4" stroke="black" stroke-width="1.5" fill="none"/>
+            <circle cx="5" cy="-5" r="4" stroke="black" stroke-width="1.5" fill="none"/>
+            <circle cx="0" cy="0" r="4" stroke="black" stroke-width="1.5" fill="none"/>
+            <circle cx="-5" cy="5" r="4" stroke="black" stroke-width="1.5" fill="none"/>
+            <circle cx="5" cy="5" r="4" stroke="black" stroke-width="1.5" fill="none"/>
+            <circle cx="0" cy="-12" r="4" stroke="black" stroke-width="1.5" fill="none"/>
+            <circle cx="0" cy="12" r="4" stroke="black" stroke-width="1.5" fill="none"/>
+        </g>
+
+        <!-- Bottom-Left (8) -->
+        <g transform="translate(-50, 50)">
+            <circle cx="-5" cy="-5" r="4" fill="black"/>
+            <circle cx="5" cy="-5" r="4" fill="black"/>
+            <circle cx="-5" cy="5" r="4" fill="black"/>
+            <circle cx="5" cy="5" r="4" fill="black"/>
+            <circle cx="-15" cy="0" r="4" fill="black"/>
+            <circle cx="15" cy="0" r="4" fill="black"/>
+            <circle cx="0" cy="-12" r="4" fill="black"/>
+            <circle cx="0" cy="12" r="4" fill="black"/>
+        </g>
+
+        <!-- Bottom-Center (1) -->
+        <circle cx="0" cy="50" r="4" stroke="black" stroke-width="1.5" fill="none"/>
+
+        <!-- Bottom-Right (6) -->
+        <g transform="translate(50, 50)">
+            <circle cx="-5" cy="-5" r="4" fill="black"/>
+            <circle cx="5" cy="-5" r="4" fill="black"/>
+            <circle cx="0" cy="0" r="4" fill="black"/>
+            <circle cx="-5" cy="5" r="4" fill="black"/>
+            <circle cx="5" cy="5" r="4" fill="black"/>
+            <circle cx="0" cy="-12" r="4" fill="black"/>
+        </g>
+    </g>
+
+    <!-- Domain Text -->
+    <text font-family="monospace" font-size="18" letter-spacing="4">
+        <textPath href="#circlePath" startOffset="50%" text-anchor="middle">
+            SKSTU.COM
+        </textPath>
+    </text>
+</svg>

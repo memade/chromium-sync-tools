@@ -80,6 +80,10 @@ function replaceBrandList(list, items) {
     list.splice(0, list.length, ...items.map((item) => item.slice()));
 }
 
+function hasChromiumConfig(input) {
+    return !!(input && input.chromium && input.chromium.config);
+}
+
 function patchProfileForRuntimeVersion(input, runtimeVersion) {
     const patched = cloneJson(input);
     const runtimeMajor = majorVersion(runtimeVersion);
@@ -195,21 +199,27 @@ async function main() {
     const runtimeVersion = process.env.BROIUM_TARGET_VERSION || readChromiumVersion(repoRoot);
     const martell = loadMartellApi(repoRoot);
     const input = readJson(inputPath);
-    const source = cloneJson(input);
-    delete source.chromium;
-    delete source.broium;
-    delete source.training;
-    delete source.trainingDataset;
-    const compiled = await martell.compile(source, {
-        enableAsyncProfile: false
-    });
-    const patched = patchProfileForRuntimeVersion(compiled || input, runtimeVersion);
+    let source = input;
+    let inputMode = "chromium";
+    if (!hasChromiumConfig(input)) {
+        inputMode = "martell-raw";
+        source = cloneJson(input);
+        delete source.broium;
+        delete source.training;
+        delete source.trainingDataset;
+        source = await martell.compile(source, {
+            enableAsyncProfile: false
+        }) || input;
+        if (!hasChromiumConfig(source))
+            throw new Error("Input does not contain a usable chromium config: " + inputPath);
+    }
+    const patched = patchProfileForRuntimeVersion(source, runtimeVersion);
     const broium = martell.buildBroiumLaunchConfig(patched && patched.chromium || input.chromium || input);
     fs.mkdirSync(path.dirname(outputPath), {
         recursive: true
     });
     fs.writeFileSync(outputPath, JSON.stringify(broium, null, 2) + "\n");
-    console.log("wrote " + path.relative(repoRoot, outputPath));
+    console.log("wrote " + path.relative(repoRoot, outputPath) + " from " + inputMode);
 }
 
 main().catch((error) => {

@@ -1,132 +1,260 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SKSTU · 河洛归藏 Logo</title>
-<style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SKSTU Logo · 河图洛书模型架构</title>
+  <style>
+    :root {
+      --ink: #111816;
+      --field: #071411;
+      --paper: #f7f2e7;
+      --bronze: #b88a33;
+      --gold: #e5b967;
+      --jade: #2bd1a8;
+      --cinnabar: #c95f45;
+      --lapis: #3f6fae;
+      --muted: #675f50;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-        margin: 0;
-        min-height: 100vh;
-        background: #0a0e27;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Georgia', serif;
+      margin: 0;
+      color: var(--ink);
+      background:
+        linear-gradient(90deg, rgba(17, 24, 22, 0.045) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(17, 24, 22, 0.045) 1px, transparent 1px),
+        var(--paper);
+      background-size: 34px 34px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      letter-spacing: 0;
     }
-    .logo-container {
-        background: radial-gradient(ellipse at center, #111638 0%, #070912 100%);
-        padding: 40px;
-        border-radius: 24px;
-        border: 1px solid rgba(201, 168, 76, 0.3);
-        box-shadow: 0 0 80px rgba(201, 168, 76, 0.08);
+
+    main {
+      width: min(1180px, calc(100vw - 40px));
+      margin: 0 auto;
+      padding: 38px 0 56px;
     }
-    svg {
-        display: block;
-        width: 500px;
-        height: 500px;
-        filter: drop-shadow(0 0 30px rgba(0, 212, 170, 0.15));
+
+    .hero {
+      display: grid;
+      gap: 24px;
+      min-height: 92vh;
+      align-content: center;
     }
-    .logo-text {
-        text-align: center;
-        color: #c9a84c;
-        font-size: 14px;
-        letter-spacing: 8px;
-        margin-top: 20px;
-        opacity: 0.7;
-        text-transform: uppercase;
+
+    .logo-stage {
+      display: grid;
+      align-items: center;
+      min-height: 330px;
+      padding: 38px;
+      border: 1px solid rgba(17, 24, 22, 0.12);
+      background: rgba(247, 242, 231, 0.78);
+      box-shadow: 0 30px 90px rgba(35, 26, 13, 0.08);
     }
-    .sub-text {
-        text-align: center;
-        color: rgba(255,255,255,0.25);
-        font-size: 11px;
-        letter-spacing: 4px;
-        margin-top: 8px;
-        font-style: italic;
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
     }
-</style>
+
+    .brief {
+      display: grid;
+      grid-template-columns: 0.92fr 1.08fr;
+      gap: 28px;
+      align-items: start;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(42px, 7vw, 96px);
+      line-height: 0.92;
+      font-weight: 840;
+      letter-spacing: 0;
+    }
+
+    .tagline {
+      margin: 16px 0 0;
+      color: var(--muted);
+      font-size: clamp(17px, 2.2vw, 25px);
+      line-height: 1.45;
+      font-weight: 620;
+    }
+
+    .concept {
+      margin: 0;
+      color: #2c332f;
+      font-size: 18px;
+      line-height: 1.8;
+      font-weight: 520;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .panel {
+      min-height: 270px;
+      padding: 24px;
+      border: 1px solid rgba(17, 24, 22, 0.12);
+      background: rgba(247, 242, 231, 0.76);
+      display: grid;
+      align-content: space-between;
+      gap: 18px;
+    }
+
+    .panel.dark {
+      background: var(--field);
+      color: var(--paper);
+      border-color: rgba(229, 185, 103, 0.32);
+    }
+
+    .asset {
+      width: min(100%, 220px);
+      margin: 0 auto;
+      align-self: center;
+    }
+
+    .asset.fav {
+      width: min(100%, 136px);
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      color: inherit;
+      font-size: 17px;
+      font-weight: 790;
+      letter-spacing: 0;
+    }
+
+    .panel p {
+      margin: 0;
+      color: inherit;
+      opacity: 0.72;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .swatches {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .swatch {
+      min-height: 70px;
+      padding: 10px;
+      display: flex;
+      align-items: flex-end;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 760;
+    }
+
+    .swatch.paper {
+      color: var(--ink);
+      border: 1px solid rgba(17, 24, 22, 0.14);
+    }
+
+    @media (max-width: 1020px) {
+      .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 760px) {
+      main {
+        width: min(100vw - 28px, 760px);
+        padding-top: 24px;
+      }
+
+      .hero {
+        min-height: auto;
+      }
+
+      .logo-stage {
+        padding: 20px;
+        min-height: 220px;
+      }
+
+      .brief,
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
-<div class="logo-container">
-    <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
-        <!-- 背景九宫格（极淡线条） -->
-        <g opacity="0.15" stroke="#c9a84c" stroke-width="0.8" fill="none">
-            <line x1="166" y1="166" x2="334" y2="166"/>
-            <line x1="166" y1="250" x2="334" y2="250"/>
-            <line x1="166" y1="334" x2="334" y2="334"/>
-            <line x1="166" y1="166" x2="166" y2="334"/>
-            <line x1="250" y1="166" x2="250" y2="334"/>
-            <line x1="334" y1="166" x2="334" y2="334"/>
-            <line x1="166" y1="166" x2="334" y2="334" stroke-dasharray="4 4"/>
-            <line x1="334" y1="166" x2="166" y2="334" stroke-dasharray="4 4"/>
-            <text x="174" y="186" fill="#c9a84c" font-size="10" opacity="0.3">4</text>
-            <text x="242" y="186" fill="#c9a84c" font-size="10" opacity="0.3">9</text>
-            <text x="326" y="186" fill="#c9a84c" font-size="10" opacity="0.3">2</text>
-            <text x="174" y="266" fill="#c9a84c" font-size="10" opacity="0.3">3</text>
-            <text x="326" y="266" fill="#c9a84c" font-size="10" opacity="0.3">7</text>
-            <text x="174" y="346" fill="#c9a84c" font-size="10" opacity="0.3">8</text>
-            <text x="242" y="346" fill="#c9a84c" font-size="10" opacity="0.3">1</text>
-            <text x="326" y="346" fill="#c9a84c" font-size="10" opacity="0.3">6</text>
-        </g>
+  <main>
+    <section class="hero" aria-label="SKSTU logo preview">
+      <div class="logo-stage">
+        <img src="./skstu_logo.svg" alt="SKSTU logo">
+      </div>
+      <div class="brief">
+        <div>
+          <h1>SKSTU</h1>
+          <p class="tagline">主标识减负，河洛结构退入底层，S/K 成为第一识别。</p>
+        </div>
+        <p class="concept">
+          新版本拆成展示版、主图标、极简图标和横版锁定。复杂的洛书数字与河图对子保留在展示版里，产品入口优先使用更干净的 S/K 模型流符号，保证小尺寸和深浅背景下都能被快速识别。
+        </p>
+      </div>
+    </section>
 
-        <g opacity="0.3">
-            <path d="M250,250 C250,180 320,180 320,250 C320,320 180,320 180,250 C180,220 250,220 250,250 C250,270 290,270 290,250"
-                  stroke="url(#spiralGrad)" stroke-width="2" fill="none"/>
-        </g>
+    <section class="grid" aria-label="Logo assets">
+      <article class="panel">
+        <div>
+          <h2>横版锁定</h2>
+          <p>用于官网页眉、README、文档封面和产品介绍。</p>
+        </div>
+        <img src="./skstu_logo.svg" alt="SKSTU full logo">
+      </article>
 
-        <g transform="translate(250, 250)">
-            <circle cx="0" cy="0" r="48" fill="rgba(201,168,76,0.08)" stroke="#c9a84c" stroke-width="1.5"/>
-            <circle cx="0" cy="0" r="40" fill="none" stroke="rgba(201,168,76,0.15)" stroke-width="0.5"/>
-            <text x="0" y="12" text-anchor="middle" font-family="'Georgia', serif" font-size="48" font-weight="bold" fill="#FFD700" filter="url(#glowGold)">S</text>
-        </g>
+      <article class="panel dark">
+        <div>
+          <h2>主图标</h2>
+          <p>用于应用入口、模型节点、头像和产品导航。</p>
+        </div>
+        <img class="asset" src="./skstu_mark.svg" alt="SKSTU brand mark">
+      </article>
 
-        <g transform="translate(320, 180)">
-            <text x="0" y="12" text-anchor="middle" font-family="'Georgia', serif" font-size="36" font-weight="bold" fill="#00D4AA" opacity="0.9">K</text>
-        </g>
+      <article class="panel dark">
+        <div>
+          <h2>极简图标</h2>
+          <p>用于 favicon、托盘图标和 32px 以下的小尺寸场景。</p>
+        </div>
+        <img class="asset fav" src="./skstu_favicon.svg" alt="SKSTU favicon">
+      </article>
 
-        <g transform="translate(320, 320)">
-            <text x="0" y="12" text-anchor="middle" font-family="'Georgia', serif" font-size="36" font-weight="bold" fill="#7B61FF" opacity="0.85">S</text>
-        </g>
+      <article class="panel dark">
+        <div>
+          <h2>展示版</h2>
+          <p>用于品牌说明页、大图海报和河洛概念阐释。</p>
+        </div>
+        <img class="asset" src="./skstu_detail.svg" alt="SKSTU detailed concept mark">
+      </article>
+    </section>
 
-        <g transform="translate(180, 320)">
-            <text x="0" y="12" text-anchor="middle" font-family="'Georgia', serif" font-size="32" font-weight="bold" fill="#FF6B6B" opacity="0.8">T</text>
-        </g>
-
-        <g transform="translate(180, 180)">
-            <text x="0" y="12" text-anchor="middle" font-family="'Georgia', serif" font-size="32" font-weight="bold" fill="#FFD93D" opacity="0.75">U</text>
-        </g>
-
-        <circle cx="250" cy="250" r="3" fill="#FFD700" opacity="0.6"/>
-        <circle cx="320" cy="180" r="2.5" fill="#00D4AA" opacity="0.5"/>
-        <circle cx="320" cy="320" r="2.5" fill="#7B61FF" opacity="0.5"/>
-        <circle cx="180" cy="320" r="2.5" fill="#FF6B6B" opacity="0.5"/>
-        <circle cx="180" cy="180" r="2.5" fill="#FFD93D" opacity="0.5"/>
-
-        <path d="M250,202 C285,202 320,220 320,250" stroke="#c9a84c" stroke-width="1" stroke-dasharray="3 5" opacity="0.3"/>
-        <path d="M320,250 C320,285 285,320 250,320" stroke="#c9a84c" stroke-width="1" stroke-dasharray="3 5" opacity="0.3"/>
-        <path d="M250,320 C215,320 180,302 180,270" stroke="#c9a84c" stroke-width="1" stroke-dasharray="3 5" opacity="0.3"/>
-        <path d="M180,270 C180,235 215,202 250,202" stroke="#c9a84c" stroke-width="1" stroke-dasharray="3 5" opacity="0.2"/>
-
-        <defs>
-            <radialGradient id="glowGold">
-                <stop offset="0%" stop-color="#FFD700" stop-opacity="0.4"/>
-                <stop offset="100%" stop-color="#FFD700" stop-opacity="0"/>
-            </radialGradient>
-            <linearGradient id="spiralGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" style="stop-color:#c9a84c;stop-opacity:0.1"/>
-                <stop offset="100%" style="stop-color:#00D4AA;stop-opacity:0.4"/>
-            </linearGradient>
-            <filter id="glowGold" x="-50%" y="-50%" width="200%" height="200%">
-                <feGaussianBlur stdDeviation="3" result="blur"/>
-                <feMerge>
-                    <feMergeNode in="blur"/>
-                    <feMergeNode in="SourceGraphic"/>
-                </feMerge>
-            </filter>
-        </defs>
-    </svg>
-    <div class="logo-text">SKSTU · 河洛归藏</div>
-    <div class="sub-text">Spiral · Knowledge · Space · Time · Unity</div>
-</div>
+    <section class="panel" style="margin-top:18px" aria-label="Color system">
+      <div>
+        <h2>色彩系统</h2>
+        <p>青铜、玉色、朱砂、青蓝和纸色分别承载秩序、生成、激发、路径和底层文档气质。</p>
+      </div>
+      <div class="swatches" aria-hidden="true">
+        <div class="swatch" style="background:#071411">FIELD</div>
+        <div class="swatch paper" style="background:#F7F2E7">PAPER</div>
+        <div class="swatch" style="background:#B88A33">BRONZE</div>
+        <div class="swatch" style="background:#2BD1A8">JADE</div>
+        <div class="swatch" style="background:#C95F45">FIRE</div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" role="img" aria-labelledby="title-gb desc-gb">
+  <title id="title-gb">SKSTU Genesis Brand Logo</title>
+  <desc id="desc-gb">Logo concept where the SKSTU brand itself is the foundational axiom. The letters are abstracted into geometric symbols that define the rules of the system, creating the energy field and structure.</desc>
+  <defs>
+    <linearGradient id="gb-bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#000000" />
+    </linearGradient>
+    <filter id="gb-symbol-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      .gb-bg { fill: url(#gb-bg-gradient); }
+      .gb-symbol { fill: none; stroke-linecap: round; stroke-linejoin: round; filter: url(#gb-symbol-glow); }
+      .gb-s { stroke: #FBBF24; stroke-width: 12; }
+      .gb-k { stroke: #38BDF8; stroke-width: 12; }
+      .gb-t { stroke: #A78BFA; stroke-width: 12; }
+      .gb-u { stroke: #34D399; stroke-width: 12; }
+      .gb-center-s { stroke: #F472B6; stroke-width: 16; }
+      .gb-field-particle { fill: #E5E7EB; opacity: 0.6; }
+      .gb-brand-text { font-family: 'Exo 2', sans-serif; fill: #D1D5DB; text-anchor: middle; font-weight: 600; letter-spacing: 12px; }
+    </style>
+  </defs>
+
+  <rect class="gb-bg" width="640" height="640" />
+
+  <!-- SKSTU Abstract Symbols -->
+  <g class="gb-symbol">
+    <!-- Outer S -->
+    <path class="gb-s" d="M 120,120 C 120,40 40,40 40,120 S 120,200 120,200" transform="rotate(45 160 160)"/>
+    <!-- K -->
+    <path class="gb-k" d="M 480,120 L 560,40 M 480,120 L 560,200" />
+    <!-- T -->
+    <path class="gb-t" d="M 120,480 L 40,560 M 120,480 L 200,560" transform="rotate(-90 120 480)"/>
+    <!-- U -->
+    <path class="gb-u" d="M 480 560 A 80 80 0 0 1 480 400" />
+    <!-- Center S -->
+    <path class="gb-center-s" d="M 360,280 C 420,280 420,360 360,360 S 300,280 300,280 C 240,280 240,360 300,360" />
+  </g>
+
+  <!-- Generated Field Particles -->
+  <g class="gb-field-particle">
+    <circle cx="320" cy="120" r="3" />
+    <circle cx="180" cy="180" r="2" />
+    <circle cx="460" cy="180" r="2.5" />
+    <circle cx="120" cy="320" r="3" />
+    <circle cx="520" cy="320" r="3.5" />
+    <circle cx="180" cy="460" r="2.5" />
+    <circle cx="460" cy="460" r="2" />
+    <circle cx="320" cy="520" r="3" />
+    <circle cx="250" cy="250" r="4" />
+    <circle cx="390" cy="250" r="2" />
+    <circle cx="250"cy="390" r="2" />
+    <circle cx="390" cy="390" r="4" />
+  </g>
+
+  <!-- Brand Text -->
+  <text class="gb-brand-text" x="320" y="580" font-size="36">SKSTU</text>
+</svg>

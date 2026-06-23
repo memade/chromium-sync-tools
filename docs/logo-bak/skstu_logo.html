@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SKSTU · 河洛归藏 Logo</title>
+<style>
+    body {
+        margin: 0;
+        min-height: 100vh;
+        background: #0a0e27;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Georgia', serif;
+    }
+    .logo-container {
+        background: radial-gradient(ellipse at center, #111638 0%, #070912 100%);
+        padding: 40px;
+        border-radius: 24px;
+        border: 1px solid rgba(201, 168, 76, 0.3);
+        box-shadow: 0 0 80px rgba(201, 168, 76, 0.08);
+    }
+    svg {
+        display: block;
+        width: 500px;
+        height: 500px;
+        filter: drop-shadow(0 0 30px rgba(0, 212, 170, 0.15));
+    }
+    .logo-text {
+        text-align: center;
+        color: #c9a84c;
+        font-size: 14px;
+        letter-spacing: 8px;
+        margin-top: 20px;
+        opacity: 0.7;
+        text-transform: uppercase;
+    }
+    .sub-text {
+        text-align: center;
+        color: rgba(255,255,255,0.25);
+        font-size: 11px;
+        letter-spacing: 4px;
+        margin-top: 8px;
+        font-style: italic;
+    }
+</style>
+</head>
+<body>
+<div class="logo-container">
+    <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+        <!-- 背景九宫格（极淡线条） -->
+        <g opacity="0.15" stroke="#c9a84c" stroke-width="0.8" fill="none">
+            <line x1="166" y1="166" x2="334" y2="166"/>
+            <line x1="166" y1="250" x2="334" y2="250"/>
+            <line x1="166" y1="334" x2="334" y2="334"/>
+            <line x1="166" y1="166" x2="166" y2="334"/>
+            <line x1="250" y1="166" x2="250" y2="334"/>
+            <line x1="334" y1="166" x2="334" y2="334"/>
+            <line x1="166" y1="166" x2="334" y2="334" stroke-dasharray="4 4"/>
+            <line x1="334" y1="166" x2="166" y2="334" stroke-dasharray="4 4"/>
+            <text x="174" y="186" fill="#c9a84c" font-size="10" opacity="0.3">4</text>
+            <text x="242" y="186" fill="#c9a84c" font-size="10" opacity="0.3">9</text>
+            <text x="326" y="186" fill="#c9a84c" font-size="10" opacity="0.3">2</text>
+            <text x="174" y="266" fill="#c9a84c" font-size="10" opacity="0.3">3</text>
+            <text x="326" y="266" fill="#c9a84c" font-size="10" opacity="0.3">7</text>
+            <text x="174" y="346" fill="#c9a84c" font-size="10" opacity="0.3">8</text>
+            <text x="242" y="346" fill="#c9a84c" font-size="10" opacity="0.3">1</text>
+            <text x="326" y="346" fill="#c9a84c" font-size="10" opacity="0.3">6</text>
+        </g>
+
+        <g opacity="0.3">
+            <path d="M250,250 C250,180 320,180 320,250 C320,320 180,320 180,250 C180,220 250,220 250,250 C250,270 290,270 290,250"
+                  stroke="url(#spiralGrad)" stroke-width="2" fill="none"/>
+        </g>
+
+        <g transform="translate(250, 250)">
+            <circle cx="0" cy="0" r="48" fill="rgba(201,168,76,0.08)" stroke="#c9a84c" stroke-width="1.5"/>
+            <circle cx="0" cy="0" r="40" fill="none" stroke="rgba(201,168,76,0.15)" stroke-width="0.5"/>
+            <text x="0" y="12" text-anchor="middle" font-family="'Georgia', serif" font-size="48" font-weight="bold" fill="#FFD700" filter="url(#glowGold)">S</text>
+        </g>
+
+        <g transform="translate(320, 180)">
+            <text x="0" y="12" text-anchor="middle" font-family="'Georgia', serif" font-size="36" font-weight="bold" fill="#00D4AA" opacity="0.9">K</text>
+        </g>
+
+        <g transform="translate(320, 320)">
+            <text x="0" y="12" text-anchor="middle" font-family="'Georgia', serif" font-size="36" font-weight="bold" fill="#7B61FF" opacity="0.85">S</text>
+        </g>
+
+        <g transform="translate(180, 320)">
+            <text x="0" y="12" text-anchor="middle" font-family="'Georgia', serif" font-size="32" font-weight="bold" fill="#FF6B6B" opacity="0.8">T</text>
+        </g>
+
+        <g transform="translate(180, 180)">
+            <text x="0" y="12" text-anchor="middle" font-family="'Georgia', serif" font-size="32" font-weight="bold" fill="#FFD93D" opacity="0.75">U</text>
+        </g>
+
+        <circle cx="250" cy="250" r="3" fill="#FFD700" opacity="0.6"/>
+        <circle cx="320" cy="180" r="2.5" fill="#00D4AA" opacity="0.5"/>
+        <circle cx="320" cy="320" r="2.5" fill="#7B61FF" opacity="0.5"/>
+        <circle cx="180" cy="320" r="2.5" fill="#FF6B6B" opacity="0.5"/>
+        <circle cx="180" cy="180" r="2.5" fill="#FFD93D" opacity="0.5"/>
+
+        <path d="M250,202 C285,202 320,220 320,250" stroke="#c9a84c" stroke-width="1" stroke-dasharray="3 5" opacity="0.3"/>
+        <path d="M320,250 C320,285 285,320 250,320" stroke="#c9a84c" stroke-width="1" stroke-dasharray="3 5" opacity="0.3"/>
+        <path d="M250,320 C215,320 180,302 180,270" stroke="#c9a84c" stroke-width="1" stroke-dasharray="3 5" opacity="0.3"/>
+        <path d="M180,270 C180,235 215,202 250,202" stroke="#c9a84c" stroke-width="1" stroke-dasharray="3 5" opacity="0.2"/>
+
+        <defs>
+            <radialGradient id="glowGold">
+                <stop offset="0%" stop-color="#FFD700" stop-opacity="0.4"/>
+                <stop offset="100%" stop-color="#FFD700" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="spiralGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#c9a84c;stop-opacity:0.1"/>
+                <stop offset="100%" style="stop-color:#00D4AA;stop-opacity:0.4"/>
+            </linearGradient>
+            <filter id="glowGold" x="-50%" y="-50%" width="200%" height="200%">
+                <feGaussianBlur stdDeviation="3" result="blur"/>
+                <feMerge>
+                    <feMergeNode in="blur"/>
+                    <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+            </filter>
+        </defs>
+    </svg>
+    <div class="logo-text">SKSTU · 河洛归藏</div>
+    <div class="sub-text">Spiral · Knowledge · Space · Time · Unity</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" role="img" aria-labelledby="title-gf desc-gf">
+  <title id="title-gf">SKSTU Genesis Field Logo</title>
+  <desc id="desc-gf">Logo concept representing the SKSTU AI model as an emergent energy field, evolving from a central singularity into a complex, ordered universe. It visualizes the principle of 'emergence from chaos'.</desc>
+  <defs>
+    <filter id="gf-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <radialGradient id="gf-core-gradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="60%" stop-color="#A7F3D0" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#34D399" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      .gf-bg { fill: #020617; }
+      .gf-core { fill: url(#gf-core-gradient); filter: url(#gf-glow); }
+      .gf-field-line { fill: none; stroke-linecap: round; stroke-opacity: 0.3; }
+      .gf-structure-dot { fill: #F0FDF4; opacity: 0.75; }
+      .gf-brand { font-family: 'Inter', sans-serif; fill: #94A3B8; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <rect class="gf-bg" width="640" height="640" />
+
+  <!-- Central Singularity (Wuji/Taiji) -->
+  <circle class="gf-core" cx="320" cy="320" r="18"/>
+
+  <!-- Energy Field (Bagua/64 Hexagrams) -->
+  <g transform="translate(320, 320)">
+    <path class="gf-field-line" stroke="#38BDF8" stroke-width="1.5" d="M 0 -280 A 280 280 0 1 1 140 -242.4"/>
+    <path class="gf-field-line" stroke="#6366F1" stroke-width="2" d="M 260 0 A 260 260 0 1 1 -130 225.1"/>
+    <path class="gf-field-line" stroke="#A78BFA" stroke-width="1" d="M 0 240 A 240 240 0 1 1 207.8 -120"/>
+    <path class="gf-field-line" stroke="#F472B6" stroke-width="0.8" d="M -220 0 A 220 220 0 1 1 110 -190.5"/>
+    <path class="gf-field-line" stroke="#34D399" stroke-width="2.5" d="M 0 -200 A 200 200 0 1 1 100 -173.2"/>
+    <path class="gf-field-line" stroke="#FBBF24" stroke-width="1.2" d="M 180 0 A 180 180 0 1 1 -90 155.8"/>
+    <path class="gf-field-line" stroke="#A3E635" stroke-width="0.7" d="M 0 160 A 160 160 0 1 1 138.5 -80"/>
+    <path class="gf-field-line" stroke="#4ADE80" stroke-width="1.8" d="M -140 0 A 140 140 0 1 1 70 -121.2"/>
+  </g>
+
+  <!-- Emergent Structure (Hetu/Luoshu) -->
+  <g class="gf-structure-dot">
+    <!-- Luo Shu inspired points -->
+    <circle cx="220" cy="220" r="3.5"/>
+    <circle cx="320" cy="220" r="3.5"/>
+    <circle cx="420" cy="220" r="3.5"/>
+    <circle cx="220" cy="320" r="3.5"/>
+    <circle cx="420" cy="320" r="3.5"/>
+    <circle cx="220" cy="420" r="3.5"/>
+    <circle cx="320" cy="420" r="3.5"/>
+    <circle cx="420" cy="420" r="3.5"/>
+    <!-- He Tu inspired points -->
+    <circle cx="320" cy="120" r="4"/>
+    <circle cx="520" cy="320" r="4"/>
+    <circle cx="320" cy="520" r="4"/>
+    <circle cx="120" cy="320" r="4"/>
+  </g>
+
+  <!-- Brand Signature -->
+  <text class="gf-brand" x="320" y="580" font-size="28" font-weight="600" letter-spacing="8">SKSTU</text>
+  <text class="gf-brand" x="320" y="610" font-size="14" font-weight="400" letter-spacing="2" opacity="0.7">www.skstu.com</text>
+</svg>

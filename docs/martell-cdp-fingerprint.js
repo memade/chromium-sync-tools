@@ -35,8 +35,8 @@
     });
 
     const MARTELL_FINGERPRINT_DEFAULTS = Object.freeze({
-        timeout: 10000,
-        settleGraceMs: 750,
+        timeout: 5000,
+        settleGraceMs: 250,
         lite: false,
         ipv6Priority: false,
         networkMode: "off",
@@ -47,8 +47,8 @@
         enableConsoleProbe: false,
         enableWorkerScheduler: false,
         enableEvalProbe: false,
-        enableAsyncProfile: true,
-        profileExtraTimeout: 10000,
+        enableAsyncProfile: false,
+        profileExtraTimeout: 2500,
         enableFontProfile: true,
         enableOfflineAudioProfile: true,
         enableWebglProfile: true,

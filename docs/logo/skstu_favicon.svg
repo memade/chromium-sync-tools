@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">SKSTU favicon</title>
+  <desc id="desc">A minimal SKSTU S/K monogram for small app icons and favicons.</desc>
+  <defs>
+    <linearGradient id="skstuFavField" x1="16" y1="10" x2="112" y2="118" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#10231C"/>
+      <stop offset="0.58" stop-color="#071411"/>
+      <stop offset="1" stop-color="#1B1510"/>
+    </linearGradient>
+    <linearGradient id="skstuFavBronze" x1="18" y1="12" x2="110" y2="116" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F1D18A"/>
+      <stop offset="0.55" stop-color="#B88A33"/>
+      <stop offset="1" stop-color="#E5B967"/>
+    </linearGradient>
+    <linearGradient id="skstuFavFlow" x1="38" y1="32" x2="88" y2="96" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F1D18A"/>
+      <stop offset="0.48" stop-color="#2BD1A8"/>
+      <stop offset="1" stop-color="#3F6FAE"/>
+    </linearGradient>
+    <style>
+      .line { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+    </style>
+  </defs>
+
+  <rect x="8" y="8" width="112" height="112" rx="26" fill="url(#skstuFavField)"/>
+  <rect x="14" y="14" width="100" height="100" rx="20" fill="none" stroke="url(#skstuFavBronze)" stroke-width="1.7"/>
+  <path class="line" d="M64 24 C88 24 104 40 104 64 C104 88 88 104 64 104 C40 104 24 88 24 64 C24 48 33 35 46 28" stroke="url(#skstuFavBronze)" stroke-width="3.2"/>
+  <circle cx="64" cy="64" r="36" fill="#071411" opacity="0.94"/>
+  <path class="line" d="M76 39 C65 30 42 32 39 48 C36 62 50 67 65 69 C83 72 92 80 86 93 C79 109 48 107 37 94" stroke="url(#skstuFavFlow)" stroke-width="16"/>
+  <path class="line" d="M80 39 V89 M80 64 L98 45 M80 64 L99 85" stroke="#F7F2E7" stroke-width="7.2"/>
+  <circle cx="64" cy="64" r="3.5" fill="#F1D18A"/>
+</svg>

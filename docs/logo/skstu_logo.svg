@@ -1,52 +1,63 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
-  <rect width="500" height="500" rx="36" fill="#07131F"/>
-
-  <circle cx="250" cy="250" r="176" fill="none" stroke="#1B4C64" stroke-width="1.2" opacity="0.8"/>
-  <circle cx="250" cy="250" r="138" fill="none" stroke="#2A6F8D" stroke-width="0.9" opacity="0.28"/>
-
-  <path d="M250 120 C326 120 378 172 378 250 C378 328 326 380 250 380 C174 380 122 328 122 250 C122 196 148 154 182 132" fill="none" stroke="url(#spiralGrad)" stroke-width="2.8" stroke-linecap="round"/>
-
-  <g transform="translate(250 250)">
-    <circle cx="0" cy="0" r="48" fill="#0C1726" stroke="#D8B56B" stroke-width="1"/>
-    <text x="0" y="16" text-anchor="middle" font-family="'Inter', 'Segoe UI', 'Arial', 'sans-serif'" font-size="48" font-weight="700" fill="#FFD46A">S</text>
-  </g>
-
-  <g transform="translate(250 116)">
-    <circle cx="0" cy="0" r="18" fill="#0C1726" stroke="#4FD1C5" stroke-width="1"/>
-    <text x="0" y="8" text-anchor="middle" font-family="'Inter', 'Segoe UI', 'Arial', 'sans-serif'" font-size="22" font-weight="700" fill="#4FD1C5">S</text>
-  </g>
-
-  <g transform="translate(382 188)">
-    <circle cx="0" cy="0" r="18" fill="#0C1726" stroke="#6EA8FF" stroke-width="1"/>
-    <text x="0" y="8" text-anchor="middle" font-family="'Inter', 'Segoe UI', 'Arial', 'sans-serif'" font-size="22" font-weight="700" fill="#6EA8FF">K</text>
-  </g>
-
-  <g transform="translate(376 334)">
-    <circle cx="0" cy="0" r="18" fill="#0C1726" stroke="#E57B5B" stroke-width="1"/>
-    <text x="0" y="8" text-anchor="middle" font-family="'Inter', 'Segoe UI', 'Arial', 'sans-serif'" font-size="22" font-weight="700" fill="#E57B5B">T</text>
-  </g>
-
-  <g transform="translate(124 300)">
-    <circle cx="0" cy="0" r="18" fill="#0C1726" stroke="#F4C542" stroke-width="1"/>
-    <text x="0" y="8" text-anchor="middle" font-family="'Inter', 'Segoe UI', 'Arial', 'sans-serif'" font-size="22" font-weight="700" fill="#F4C542">U</text>
-  </g>
-
-  <circle cx="250" cy="250" r="4" fill="#FFD46A"/>
-  <circle cx="250" cy="116" r="2.2" fill="#4FD1C5" opacity="0.9"/>
-  <circle cx="382" cy="188" r="2.2" fill="#6EA8FF" opacity="0.9"/>
-  <circle cx="376" cy="334" r="2.2" fill="#E57B5B" opacity="0.9"/>
-  <circle cx="124" cy="300" r="2.2" fill="#F4C542" opacity="0.9"/>
-
-  <path d="M250 250 L250 116" stroke="#4FD1C5" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
-  <path d="M250 250 L382 188" stroke="#6EA8FF" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
-  <path d="M250 250 L376 334" stroke="#E57B5B" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
-  <path d="M250 250 L124 300" stroke="#F4C542" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
-
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="320" viewBox="0 0 1180 320" role="img" aria-labelledby="title desc">
+  <title id="title">SKSTU logo</title>
+  <desc id="desc">A clean horizontal SKSTU logo lockup for a He Tu and Luo Shu inspired model architecture product.</desc>
   <defs>
-    <linearGradient id="spiralGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FFD46A" stop-opacity="0.95"/>
-      <stop offset="50%" stop-color="#4FD1C5" stop-opacity="0.95"/>
-      <stop offset="100%" stop-color="#6EA8FF" stop-opacity="0.95"/>
+    <linearGradient id="skstuLogoField" x1="60" y1="34" x2="304" y2="286" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#10231C"/>
+      <stop offset="0.55" stop-color="#071411"/>
+      <stop offset="1" stop-color="#1B1510"/>
     </linearGradient>
+    <linearGradient id="skstuLogoBronze" x1="72" y1="48" x2="292" y2="272" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F1D18A"/>
+      <stop offset="0.52" stop-color="#B88A33"/>
+      <stop offset="1" stop-color="#E5B967"/>
+    </linearGradient>
+    <linearGradient id="skstuLogoFlow" x1="128" y1="105" x2="236" y2="230" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F1D18A"/>
+      <stop offset="0.48" stop-color="#2BD1A8"/>
+      <stop offset="1" stop-color="#3F6FAE"/>
+    </linearGradient>
+    <filter id="skstuLogoShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#000000" flood-opacity="0.24"/>
+    </filter>
+    <style>
+      .line { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .word { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 92px; font-weight: 830; letter-spacing: 13px; fill: #111816; }
+      .cn { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; font-size: 25px; font-weight: 680; letter-spacing: 6px; fill: #1F2A27; }
+      .en { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 16px; font-weight: 740; letter-spacing: 5.5px; fill: #6B5A38; }
+    </style>
   </defs>
+
+  <g transform="translate(32 28)" filter="url(#skstuLogoShadow)">
+    <rect x="0" y="0" width="264" height="264" rx="54" fill="url(#skstuLogoField)"/>
+    <rect x="13" y="13" width="238" height="238" rx="42" fill="none" stroke="url(#skstuLogoBronze)" stroke-width="1.3" opacity="0.82"/>
+    <circle cx="132" cy="132" r="96" fill="none" stroke="#F7F2E7" stroke-width="1" opacity="0.16"/>
+    <circle cx="132" cy="132" r="76" fill="none" stroke="#2BD1A8" stroke-width="0.9" opacity="0.22"/>
+    <path class="line" d="M132 38 C185 38 226 79 226 132 C226 185 185 226 132 226 C79 226 38 185 38 132 C38 96 58 66 88 50" stroke="url(#skstuLogoBronze)" stroke-width="3"/>
+    <g opacity="0.32">
+      <rect x="79" y="79" width="106" height="106" rx="12" fill="none" stroke="#F7F2E7" stroke-width="1"/>
+      <path class="line" d="M114 79 V185 M150 79 V185 M79 114 H185 M79 150 H185" stroke="#F7F2E7" stroke-width="0.8"/>
+      <rect x="94" y="94" width="76" height="76" rx="10" transform="rotate(45 132 132)" fill="none" stroke="#2BD1A8" stroke-width="1.2"/>
+    </g>
+    <circle cx="132" cy="40" r="5" fill="#2BD1A8"/>
+    <circle cx="224" cy="132" r="5" fill="#68A6D9"/>
+    <circle cx="132" cy="224" r="5" fill="#C95F45"/>
+    <circle cx="40" cy="132" r="5" fill="#E5B967"/>
+    <circle cx="132" cy="132" r="46" fill="#071411" stroke="url(#skstuLogoBronze)" stroke-width="1.6"/>
+    <path class="line" d="M151 97 C138 85 106 86 101 108 C96 128 114 137 135 140 C160 144 171 156 164 174 C155 195 114 195 96 175" stroke="url(#skstuLogoFlow)" stroke-width="20"/>
+    <path class="line" d="M162 96 V168 M162 132 L184 106 M162 132 L185 160" stroke="#F7F2E7" stroke-width="8.8" opacity="0.96"/>
+    <circle cx="132" cy="132" r="3.5" fill="#F1D18A"/>
+  </g>
+
+  <g transform="translate(348 78)">
+    <text class="word" x="0" y="80">SKSTU</text>
+    <path class="line" d="M4 112 H596" stroke="url(#skstuLogoBronze)" stroke-width="3.6"/>
+    <circle cx="5" cy="112" r="5" fill="#2BD1A8"/>
+    <circle cx="153" cy="112" r="5" fill="#E5B967"/>
+    <circle cx="301" cy="112" r="5" fill="#F1D18A"/>
+    <circle cx="449" cy="112" r="5" fill="#C95F45"/>
+    <circle cx="596" cy="112" r="5" fill="#68A6D9"/>
+    <text class="cn" x="2" y="158">河图洛书 · 模型架构</text>
+    <text class="en" x="3" y="202">HELUO MODEL ARCHITECTURE</text>
+  </g>
 </svg>

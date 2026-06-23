@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">SKSTU brand mark</title>
+  <desc id="desc">A simplified SKSTU mark with a hidden Luo Shu matrix, He Tu orbit points, and a central S/K model-flow monogram.</desc>
+  <defs>
+    <linearGradient id="skstuMarkField" x1="70" y1="44" x2="438" y2="468" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#10231C"/>
+      <stop offset="0.55" stop-color="#071411"/>
+      <stop offset="1" stop-color="#1B1510"/>
+    </linearGradient>
+    <linearGradient id="skstuMarkBronze" x1="86" y1="62" x2="426" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F1D18A"/>
+      <stop offset="0.52" stop-color="#B88A33"/>
+      <stop offset="1" stop-color="#E5B967"/>
+    </linearGradient>
+    <linearGradient id="skstuMarkFlow" x1="178" y1="166" x2="336" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F1D18A"/>
+      <stop offset="0.48" stop-color="#2BD1A8"/>
+      <stop offset="1" stop-color="#3F6FAE"/>
+    </linearGradient>
+    <filter id="skstuMarkShadow" x="-22%" y="-22%" width="144%" height="144%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#000000" flood-opacity="0.32"/>
+    </filter>
+    <style>
+      .line { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+    </style>
+  </defs>
+
+  <rect x="32" y="32" width="448" height="448" rx="90" fill="url(#skstuMarkField)"/>
+  <rect x="48" y="48" width="416" height="416" rx="74" fill="none" stroke="url(#skstuMarkBronze)" stroke-width="1.7" opacity="0.8"/>
+
+  <g opacity="0.82">
+    <circle cx="256" cy="256" r="176" fill="none" stroke="#F7F2E7" stroke-width="1.2" opacity="0.16"/>
+    <circle cx="256" cy="256" r="136" fill="none" stroke="#2BD1A8" stroke-width="1.2" opacity="0.2"/>
+    <path class="line" d="M256 86 C350 86 426 162 426 256 C426 350 350 426 256 426 C162 426 86 350 86 256 C86 194 122 138 176 109" stroke="url(#skstuMarkBronze)" stroke-width="4.2"/>
+    <path class="line" d="M188 118 C238 94 298 104 342 141 C386 178 402 238 384 292 C366 346 318 384 262 388 C207 392 154 363 130 313" stroke="#2BD1A8" stroke-width="1.4" opacity="0.45"/>
+  </g>
+
+  <g opacity="0.36">
+    <rect x="151" y="151" width="210" height="210" rx="20" fill="none" stroke="#F7F2E7" stroke-width="1.3"/>
+    <path class="line" d="M221 151 V361 M291 151 V361 M151 221 H361 M151 291 H361" stroke="#F7F2E7" stroke-width="1"/>
+    <rect x="181" y="181" width="150" height="150" rx="16" transform="rotate(45 256 256)" fill="none" stroke="#2BD1A8" stroke-width="1.7"/>
+  </g>
+
+  <g>
+    <circle cx="256" cy="92" r="7.5" fill="#2BD1A8"/>
+    <circle cx="420" cy="256" r="7.5" fill="#68A6D9"/>
+    <circle cx="256" cy="420" r="7.5" fill="#C95F45"/>
+    <circle cx="92" cy="256" r="7.5" fill="#E5B967"/>
+    <circle cx="256" cy="256" r="6.5" fill="#F1D18A"/>
+  </g>
+
+  <g filter="url(#skstuMarkShadow)">
+    <circle cx="256" cy="256" r="88" fill="#071411" stroke="url(#skstuMarkBronze)" stroke-width="2.4"/>
+    <circle cx="256" cy="256" r="68" fill="none" stroke="#F7F2E7" stroke-width="1" opacity="0.13"/>
+    <path class="line" d="M294 190 C269 166 207 169 195 211 C185 247 219 263 259 269 C307 277 329 300 314 334 C297 375 219 376 184 338" stroke="url(#skstuMarkFlow)" stroke-width="38"/>
+    <path class="line" d="M312 192 V320 M312 256 L352 210 M312 256 L354 306" stroke="#F7F2E7" stroke-width="16" opacity="0.96"/>
+    <circle cx="256" cy="256" r="6" fill="#F1D18A"/>
+  </g>
+</svg>
